@@ -1,7 +1,11 @@
 npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
 
-
-
+التصميم
+https://www.figma.com/design/y9e7N1KgKLqhwj4V9tRHRs/Untitled?node-id=0-1&p=f&t=5WJT6UUyKQj9JVnU-0
 
 font-rubik
 font-thmanyah
+
+
+
+بعدينش بسوي اراء العملاء
