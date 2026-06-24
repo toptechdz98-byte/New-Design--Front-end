@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <!-- Grid -->
+  <div class="grid grid-cols-1 w- md:grid-cols-2 gap-5 gap-x-6" id="faqGrid">
+    <div class="faq-item bg-white border border-[#DCE8FF] rounded-2xl overflow-hidden ">
+      <button type="button" class="
+      faq-question w-full flex justify-between items-center gap-4 px-6 py-5 text-right font-medium text-[17px] text-[#1B1D29]">
+          <span>ما هي الخدمات التي تقدمونها؟</span>
+          <span class="faq-toggle flex-shrink-0 w-8 h-8 rounded-full bg-[#F1F3FA] text-[#0B2A6B] flex items-center justify-center text-lg font-bold transition-all duration-300">+</span>
+      </button>
+      <div class="faq-answer-wrap h-0 overflow-hidden transition-[height] duration-300">
+        <div class="px-6 pb-6 pr-[60px] text-[15px] leading-7 text-gray-500">
+          نقدم خدمات التصميم والتطوير وبناء الهوية البصرية والتسويق الرقمي، إضافة إلى الاستشارات المتخصصة التي تساعدك على تنفيذ مشروعك من الفكرة حتى الإطلاق.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="mt-14 bg-gradient-to-br from-[#0B2A6B] to-[#06224F] rounded-2xl px-9 py-8 flex items-center justify-between gap-5 flex-wrap">
+    <div class="text-white text-lg font-bold">لم تجد إجابة لسؤالك؟ 🤝</div>
+    <div class="flex gap-3.5 flex-wrap">
+      <button type="button" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-[#FFC400] text-[#06224F] hover:bg-[#E0A800]">احجز استشارة مجانية</button>
+      <button type="button" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-transparent text-white border border-white/35 hover:bg-white/10">راسلنا على واتساب</button>
+    </div>
+  </div>
+
+</section>
+
+<script>
+(function () {
+  var grid = document.getElementById('faqGrid');
+  if (!grid) return;
+
+  var items = grid.querySelectorAll('.faq-item');
+
+  function closeItem(item) {
+    item.classList.remove('open', 'border-[#DCE8FF]');
+    item.classList.add('border-gray-200');
+    item.classList.remove('shadow-[0px_10px_15px_-3px_rgba(255,196,0,0.18),0px_4px_6px_-4px_rgba(255,196,0,0.18)]');
+
+    var question = item.querySelector('.faq-question');
+    var toggle = item.querySelector('.faq-toggle');
+    var wrap = item.querySelector('.faq-answer-wrap');
+
+    question.setAttribute('aria-expanded', 'false');
+    toggle.textContent = '+';
+    toggle.classList.remove('bg-[#DCE8FF]', 'text-[#DCE8FF]', 'rotate-[135deg]');
+    toggle.classList.add('bg-[#F1F3FA]', 'text-[#0B2A6B]');
+    wrap.style.height = '0px';
+  }
+
+  function openItem(item) {
+    item.classList.add('open', 'border-[#DCE8FF]');
+    item.classList.remove('border-gray-200');
+
+    var question = item.querySelector('.faq-question');
+    var toggle = item.querySelector('.faq-toggle');
+    var wrap = item.querySelector('.faq-answer-wrap');
+    var answer = wrap.firstElementChild;
+
+    question.setAttribute('aria-expanded', 'true');
+    toggle.textContent = '×';
+    toggle.classList.remove('bg-[#F1F3FA]', 'text-[#0B2A6B]');
+    toggle.classList.add('bg-[#FFC400]', 'text-[#06224F]', 'rotate-[135deg]');
+    wrap.style.height = answer.scrollHeight + 'px';
+  }
+
+  items.forEach(function (item) {
+    var question = item.querySelector('.faq-question');
+    question.setAttribute('aria-expanded', 'false');
+
+    question.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+
+      // اقفل الكل أولًا (يضمن عدم فتح أكثر من عنصر بنفس الوقت)
+      items.forEach(closeItem);
+
+      // افتح هذا العنصر فقط إذا كان مسكر قبل الضغطة
+      if (!isOpen) {
+        openItem(item);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
