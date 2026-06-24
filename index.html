@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="font-thmanyah">
-     <header dir="rtl" class="flex justify-around items-center gap-[20px] pl-[50px] pt-[35px] pb-[20px] border-b border-[#DADADA] relative">
-
+     <header dir="rtl" class="flex justify-around items-center px-[120px]  gap-[20px] pl-[50px] pt-[35px] pb-[20px] border-b border-[#DADADA] relative">
   <img src="img/logo.jpeg" class="w-[150px] h-[70px]">
 
   <!-- Desktop Menu -->
@@ -23,18 +22,12 @@
   </ul>
 
   <a href="" class="hidden lg:flex w-[237px] h-[60px] bg-[#1E40AF] justify-center items-center rounded-[12px] text-[#FFFFFF] font-[700] text-[16px]">احجز استشارة مجانية</a>
-
-  <!-- Hamburger Button (Mobile only) -->
   <button id="menu-toggle" class="lg:hidden relative z-50 w-[40px] h-[40px] flex flex-col justify-center items-center gap-[6px]" aria-label="فتح القائمة">
     <span id="bar1" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
     <span id="bar2" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
     <span id="bar3" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
   </button>
-
-  <!-- Overlay -->
   <div id="menu-overlay" class="lg:hidden fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
-
-  <!-- Mobile Drawer -->
   <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-[300px] bg-white shadow-[0px_0px_25px_-5px_#0000004D] translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col px-[30px] pt-[35px]">
 
     <div class="flex justify-between items-center mb-[40px]">
@@ -53,11 +46,8 @@
       <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">تواصل معنا</a></li>
       <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الأسئلة الشائعة</a></li>
     </ul>
-
     <a href="" class="mt-auto mb-[40px] w-full h-[55px] bg-[#1E40AF] flex justify-center items-center rounded-[12px] text-[#FFFFFF] font-[700] text-[16px]">احجز استشارة مجانية</a>
-
   </div>
-
 </header>
      <!-- hero -->
       <section class="flex flex-wrap justify-around  mt-[100px]">
@@ -95,7 +85,7 @@
 <section class="flex flex-wrap   mt-[70px]  
 w-[70%]    gap-[20px]  py-[50px]
 m-auto rounded-[24px]  
-bg-[#DBEAFE]  justify-center items-center  shadow-[0px_8px_10px_-6px_#1E3A8A0D,_0px_20px_25px_-5px_#1E3A8A0D]">
+bg-[##F6F9FF]  justify-center items-center  shadow-[0px_8px_10px_-6px_#1E3A8A0D,_0px_20px_25px_-5px_#1E3A8A0D]">
 
 <div class="flex flex-col justify-center items-center    lg:border-l lg:border-[#5279DB] px-[50px] ">
   <svg width="68" height="88" viewBox="0 0 68 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +179,7 @@ bg-[#DBEAFE]  justify-center items-center  shadow-[0px_8px_10px_-6px_#1E3A8A0D,_
 </div>
 </section>
 <!-- services -->
-<section class="bg-[#F6F9FF] flex flex-col justify-center items-center mt-[100px]   pt-[50px] ">
+<section class="bg-[#F6F9FF] flex flex-col justify-center items-center mt-[100px]   py-[100px] ">
 <span class="relative 
 flex items-center justify-center gap-4 text-3xl font-bold text-blue-900 
            before:block before:h-1 before:w-24 before:bg-blue-700 
@@ -202,25 +192,9 @@ flex items-center justify-center gap-4 text-3xl font-bold text-blue-900
      <p class="text-[#64748B] font-[400] lg:text-[20px] text-[18px] text-center">   
              نقدّم حلولًا رقمية متكاملة تساعدك على بناء حضور قوي، جذب العملاء، وتحقيق نمو
 حقيقي.</p>
-<div class="slider mt-[50px] relative 
-max-w-[320px]  lg:max-w-7xl 
-mx-auto px-6">
-    <button
-        class="next absolute   right-[-50px] top-[10px]  flex justify-center items-center text-[#0633A0] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg  hover:scale-110 transition">
-      <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.66667 9.42303L0 1.75637L1.75637 0L11.1794 9.42303L1.75637 18.8461L0 17.0897L7.66667 9.42303Z" fill="#0633A0"/>
-</svg>
-    </button>
-    <button
-        class="prev absolute  flex justify-center items-center  left-[-50px]  top-[10px]  text-[#0633A0] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg  hover:scale-110 transition">
-   <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.42303 18.8461L0 9.42303L9.42303 0L11.1794 1.75637L3.51274 9.42303L11.1794 17.0897L9.42303 18.8461Z" fill="#0633A0"/>
-</svg>
-    </button>
-    <div class="overflow-hidden flex  fade-mask  py-[80px] ">
-        <div class="track flex  gap-8  select-none">
-<!-- first -->
-    <div class="flex ml-[30px] items-center justify-center w-[280px] h-[280px] bg-blue-800 rounded-[56px] rotate-45 shadow-[inset_0_0_20px_0_rgba(255,255,255,0.8)]">
+   <div class="flex mt-[100px] flex-row flex-wrap justify-center gap-[12px]">
+    <!-- first -->
+     <div class="flex   items-center justify-center w-[280px] h-[280px] bg-[#1E40AF] rounded-[56px] rotate-45 shadow-[inset_0_0_20px_0_rgba(255,255,255,0.8)]">
   <div class="-rotate-45 flex flex-col gap-[20px] justify-center items-center ">
     <svg width="57" height="44" viewBox="0 0 57 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M46.241 24.2564V19.8565H57V24.2564H46.241ZM49.6404 44L41.0332 37.6369L43.7458 34.1283L52.353 40.4914L49.6404 44ZM43.6313 9.87171L40.9188 6.36306L49.5259 0L52.2385 3.50865L43.6313 9.87171ZM8.41264 41.0667V29.6153H5.37949C3.89536 29.6153 2.62775 29.0973 1.57665 28.0612C0.52555 27.0252 0 25.7757 0 24.3128V19.8C0 18.3371 0.52555 17.0877 1.57665 16.0516C2.62775 15.0155 3.89536 14.4975 5.37949 14.4975H16.8825L30.2168 6.6565V37.4563L16.8825 29.6153H12.8764V41.0667H8.41264ZM25.753 29.638V14.4748L18.1186 18.8974H5.37949C5.15056 18.8974 4.9407 18.9914 4.74993 19.1795C4.55915 19.3675 4.46376 19.5744 4.46376 19.8V24.3128C4.46376 24.5384 4.55915 24.7453 4.74993 24.9333C4.9407 25.1214 5.15056 25.2154 5.37949 25.2154H18.1186L25.753 29.638ZM34.3374 31.2062V12.9067C35.5048 13.9484 36.4453 15.2609 37.1587 16.8441C37.8722 18.4274 38.2289 20.1648 38.2289 22.0564C38.2289 23.948 37.8722 25.6855 37.1587 27.2687C36.4453 28.852 35.5048 30.1644 34.3374 31.2062Z" fill="white"/>
@@ -229,62 +203,38 @@ mx-auto px-6">
   </div>
 </div>
 <!-- second -->
-    <div class="flex ml-[30px] mt-[150px] items-center justify-center w-[280px] h-[280px] bg-[#DCE8FF] rounded-[56px] rotate-45  relative before:absolute before:inset-0 before:shadow-[inset_0px_0px_20px_0px_#1E40AF33]">
+    <div class="flex   items-center justify-center w-[280px] h-[280px] mt-[120px] bg-[#DCE8FF] rounded-[56px] rotate-45 shadow-[inset_0px_0px_20px_0px_#1E40AF33]">
   <div class="-rotate-45 flex flex-col gap-[20px] justify-center items-center ">
-   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.7368 35.577C24.1228 35.577 27.8509 34.0394 30.9211 30.9643C33.9913 27.8892 35.5264 24.1551 35.5264 19.7621C35.5264 15.3691 33.9913 11.6351 30.9211 8.55995C27.8509 5.48484 24.1228 3.94729 19.7368 3.94729C15.3508 3.94729 11.6228 5.48484 8.55257 8.55995C5.48238 11.6351 3.94729 15.3691 3.94729 19.7621C3.94729 24.1551 5.48238 27.8892 8.55257 30.9643C11.6228 34.0394 15.3508 35.577 19.7368 35.577ZM17.7632 27.1002V10.0456H21.7105V27.1002H17.7632ZM8.75506 27.1002V15.1822H12.7023V27.1002H8.75506ZM26.7713 27.1002V17.7632H30.7186V27.1002H26.7713ZM47.2521 50L32.2672 35.0151C30.5533 36.4186 28.6323 37.5126 26.5042 38.297C24.3761 39.0814 22.1203 39.4736 19.7368 39.4736C14.227 39.4736 9.56002 37.562 5.73601 33.7388C1.912 29.9156 0 25.2496 0 19.7408C0 14.2321 1.91162 9.56477 5.73485 5.73886C9.55808 1.91295 14.2241 0 19.7328 0C25.2416 0 29.9089 1.912 33.7348 5.73601C37.5607 9.56002 39.4736 14.227 39.4736 19.7368C39.4736 22.1203 39.0814 24.3761 38.297 26.5042C37.5126 28.6323 36.4186 30.5449 35.0151 32.2419L50 47.2268L47.2521 50Z" fill="#1E40AF"/>
 </svg>
-<span class="font-[500] text-[18px] lg:text-[20px] text-[#1E40AF]"> تحسين محركات البحث
-SEO </span>
+
+<span class="font-[500] text-[18px] lg:text-[20px] text-[#1E40AF]">إدارة السوشيال ميديا</span>
   </div>
 </div>
-<!-- thrid -->
-<div class="flex ml-[50px] items-center justify-center w-[280px] h-[280px] bg-blue-800 rounded-[56px] rotate-45 shadow-[inset_0_0_20px_0_rgba(255,255,255,0.8)]">
+<!-- third -->
+   <div class="flex   items-center justify-center w-[280px] h-[280px] bg-[#1E40AF] rounded-[56px] rotate-45 shadow-[inset_0_0_20px_0_rgba(255,255,255,0.8)]">
   <div class="-rotate-45 flex flex-col gap-[20px] justify-center items-center ">
- <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.75707 40C3.42779 40 2.30262 39.5333 1.38157 38.6C0.460524 37.6667 0 36.5265 0 35.1795V4.8205C0 3.47349 0.460524 2.33332 1.38157 1.39999C2.30262 0.466665 3.42779 0 4.75707 0H45.2429C46.5722 0 47.6974 0.466665 48.6184 1.39999C49.5395 2.33332 50 3.47349 50 4.8205V35.1795C50 36.5265 49.5395 37.6667 48.6184 38.6C47.6974 39.5333 46.5722 40 45.2429 40H4.75707ZM4.75707 36.0001H32.2369V26.1538H3.94729V35.1795C3.94729 35.3846 4.03164 35.5727 4.20034 35.7436C4.36905 35.9146 4.55462 36.0001 4.75707 36.0001ZM36.1842 36.0001H45.2429C45.4454 36.0001 45.631 35.9146 45.7997 35.7436C45.9684 35.5727 46.0527 35.3846 46.0527 35.1795V12.3077H36.1842V36.0001ZM3.94729 22.1539H32.2369V12.3077H3.94729V22.1539Z" fill="white"/>
+    <svg width="57" height="44" viewBox="0 0 57 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M46.241 24.2564V19.8565H57V24.2564H46.241ZM49.6404 44L41.0332 37.6369L43.7458 34.1283L52.353 40.4914L49.6404 44ZM43.6313 9.87171L40.9188 6.36306L49.5259 0L52.2385 3.50865L43.6313 9.87171ZM8.41264 41.0667V29.6153H5.37949C3.89536 29.6153 2.62775 29.0973 1.57665 28.0612C0.52555 27.0252 0 25.7757 0 24.3128V19.8C0 18.3371 0.52555 17.0877 1.57665 16.0516C2.62775 15.0155 3.89536 14.4975 5.37949 14.4975H16.8825L30.2168 6.6565V37.4563L16.8825 29.6153H12.8764V41.0667H8.41264ZM25.753 29.638V14.4748L18.1186 18.8974H5.37949C5.15056 18.8974 4.9407 18.9914 4.74993 19.1795C4.55915 19.3675 4.46376 19.5744 4.46376 19.8V24.3128C4.46376 24.5384 4.55915 24.7453 4.74993 24.9333C4.9407 25.1214 5.15056 25.2154 5.37949 25.2154H18.1186L25.753 29.638ZM34.3374 31.2062V12.9067C35.5048 13.9484 36.4453 15.2609 37.1587 16.8441C37.8722 18.4274 38.2289 20.1648 38.2289 22.0564C38.2289 23.948 37.8722 25.6855 37.1587 27.2687C36.4453 28.852 35.5048 30.1644 34.3374 31.2062Z" fill="white"/>
 </svg>
-<span class="font-[500] text-[18px] lg:text-[20px] text-[white]">تطوير مواقع الويب</span>
+<span class="font-[500] text-[18px] lg:text-[20px] text-[white]">إدارة السوشيال ميديا</span>
   </div>
 </div>
 <!-- four -->
-    <div class="flex ml-[30px] mt-[150px] items-center justify-center w-[280px] h-[280px] bg-[#DCE8FF] rounded-[56px] rotate-45  relative before:absolute before:inset-0 before:shadow-[inset_0px_0px_20px_0px_#1E40AF33]">
+    <div class="flex   items-center justify-center w-[280px] h-[280px] mt-[120px] bg-[#DCE8FF] rounded-[56px] rotate-45 shadow-[inset_0px_0px_20px_0px_#1E40AF33]">
   <div class="-rotate-45 flex flex-col gap-[20px] justify-center items-center ">
-<svg width="53" height="33" viewBox="0 0 53 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M34.8333 21.5L47.4806 27.19C48.3414 27.5771 49.3636 27.5357 50.1822 27.0805C51.0009 26.6253 51.4995 25.8211 51.5 24.955V8.045C51.4995 7.1789 51.0009 6.37474 50.1822 5.91951C49.3636 5.46429 48.3414 5.42285 47.4806 5.81L34.8333 11.5L7.05556 31.5M7.05556 31.5H29.2778C32.344 31.5 34.8333 29.2596 34.8333 26.5V6.5C34.8333 3.74042 32.344 1.5 29.2778 1.5H7.05556C3.98936 1.5 1.5 3.74042 1.5 6.5V26.5C1.5 29.2596 3.98936 31.5 7.05556 31.5Z" stroke="#0633A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7368 35.577C24.1228 35.577 27.8509 34.0394 30.9211 30.9643C33.9913 27.8892 35.5264 24.1551 35.5264 19.7621C35.5264 15.3691 33.9913 11.6351 30.9211 8.55995C27.8509 5.48484 24.1228 3.94729 19.7368 3.94729C15.3508 3.94729 11.6228 5.48484 8.55257 8.55995C5.48238 11.6351 3.94729 15.3691 3.94729 19.7621C3.94729 24.1551 5.48238 27.8892 8.55257 30.9643C11.6228 34.0394 15.3508 35.577 19.7368 35.577ZM17.7632 27.1002V10.0456H21.7105V27.1002H17.7632ZM8.75506 27.1002V15.1822H12.7023V27.1002H8.75506ZM26.7713 27.1002V17.7632H30.7186V27.1002H26.7713ZM47.2521 50L32.2672 35.0151C30.5533 36.4186 28.6323 37.5126 26.5042 38.297C24.3761 39.0814 22.1203 39.4736 19.7368 39.4736C14.227 39.4736 9.56002 37.562 5.73601 33.7388C1.912 29.9156 0 25.2496 0 19.7408C0 14.2321 1.91162 9.56477 5.73485 5.73886C9.55808 1.91295 14.2241 0 19.7328 0C25.2416 0 29.9089 1.912 33.7348 5.73601C37.5607 9.56002 39.4736 14.227 39.4736 19.7368C39.4736 22.1203 39.0814 24.3761 38.297 26.5042C37.5126 28.6323 36.4186 30.5449 35.0151 32.2419L50 47.2268L47.2521 50Z" fill="#1E40AF"/>
 </svg>
-<span class="font-[500] text-[18px] lg:text-[20px] text-[#1E40AF]">   
-الفيديوهات 
-والموشن جرافيك </span>
+<span class="font-[500] text-[18px] lg:text-[20px] text-[#1E40AF]">إدارة السوشيال ميديا</span>
   </div>
 </div>
 <!-- five -->
- <div class="flex ml-[30px] items-center justify-center w-[280px] h-[280px] bg-blue-800 rounded-[56px] rotate-45 shadow-[inset_0_0_20px_0_rgba(255,255,255,0.8)]">
-  <div class="-rotate-45 flex flex-col gap-[20px] justify-center items-center ">
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.78126 50C3.44522 50 2.31433 49.538 1.3886 48.6139C0.462867 47.6899 0 46.5611 0 45.2275V9.89032C0 8.55672 0.462867 7.4279 1.3886 6.50386C2.31433 5.57982 3.44522 5.1178 4.78126 5.1178H27.6755L23.7081 9.07791H4.78126C4.57779 9.07791 4.39127 9.16254 4.22171 9.33179C4.05215 9.50104 3.96737 9.68722 3.96737 9.89032V45.2275C3.96737 45.4306 4.05215 45.6168 4.22171 45.786C4.39127 45.9553 4.57779 46.0399 4.78126 46.0399H40.1831C40.3866 46.0399 40.5731 45.9553 40.7427 45.786C40.9122 45.6168 40.997 45.4306 40.997 45.2275V26.1676L44.9644 22.2075V45.2275C44.9644 46.5611 44.5015 47.6899 43.5758 48.6139C42.6501 49.538 41.5192 50 40.1831 50H4.78126ZM15.8699 34.1592V25.0965L39.8323 1.17788C40.2426 0.768328 40.6936 0.469627 41.1853 0.281776C41.677 0.0939253 42.1771 0 42.6857 0C43.2046 0 43.703 0.0939253 44.1811 0.281776C44.6593 0.469627 45.095 0.759865 45.4883 1.15249L48.8098 4.45771C49.193 4.86726 49.4871 5.31912 49.6923 5.81329C49.8974 6.30746 50 6.8084 50 7.31611C50 7.82382 49.9127 8.31629 49.7381 8.79354C49.5634 9.27078 49.271 9.71418 48.8607 10.1237L24.8219 34.1592H15.8699ZM19.8372 30.199H23.1332L39.6186 13.7438L37.9706 12.0988L36.2056 10.403L19.8372 26.7415V30.199Z" fill="white"/>
-</svg>
-<span class="font-[500] text-[18px] lg:text-[20px] text-[white]">تصميم تجربة المستخدم 
-UX/UI  </span>
-  </div>
-</div>
-<!-- six -->
-    <div class="flex ml-[30px] mt-[150px] items-center justify-center w-[280px] h-[280px] bg-[#DCE8FF] rounded-[56px] rotate-45  relative before:absolute before:inset-0 before:shadow-[inset_0px_0px_20px_0px_#1E40AF33]">
-  <div class="-rotate-45 flex flex-col gap-[20px] justify-center items-center ">
-<svg width="53" height="33" viewBox="0 0 53 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M34.8333 21.5L47.4806 27.19C48.3414 27.5771 49.3636 27.5357 50.1822 27.0805C51.0009 26.6253 51.4995 25.8211 51.5 24.955V8.045C51.4995 7.1789 51.0009 6.37474 50.1822 5.91951C49.3636 5.46429 48.3414 5.42285 47.4806 5.81L34.8333 11.5L7.05556 31.5M7.05556 31.5H29.2778C32.344 31.5 34.8333 29.2596 34.8333 26.5V6.5C34.8333 3.74042 32.344 1.5 29.2778 1.5H7.05556C3.98936 1.5 1.5 3.74042 1.5 6.5V26.5C1.5 29.2596 3.98936 31.5 7.05556 31.5Z" stroke="#0633A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-<span class="font-[500] text-[18px] lg:text-[20px] text-[#1E40AF]">   
-الفيديوهات 
-والموشن جرافيك </span>
-  </div>
-</div>
-        </div>
-    </div>
-</div>
+
+   </div>
 </section>
 <!-- why chosie -->
- 
  <section class="flex mt-[100px]  flex-col justify-center items-center mb-[100px]">
   <div class="relative pr-[50px] text-[#0633A0] font-[700] text-[18px] before:absolute  
   before:right-0 before:top-1/2  before:w-[32px]  before:h-[2px] before:bg-[#0633A0] before:content-['']">
@@ -403,7 +353,6 @@ rounded-2xl gap-[10px] p-[12px] w-[350px] h-[50px] text-[#1E40AF] font-[500] tex
 </svg>
 جميع الباقات بعرض مخصص بعد الاستشارة
 </span>
-
 <div class="flex flex-wrap justify-center items-center   gap-[32px] mt-[50px]">
     <!-- first -->
     <div class="relative flex flex-col gap-[20px] bg-white  border-[2px] rounded-[40px] p-[40px] border-[#FFC700] shadow-[20px_20px_50px_-12px_#FFC4001A]  w-[290px] lg:w-[560px] ">
@@ -593,8 +542,74 @@ rounded-2xl gap-[10px] p-[12px] w-[350px] h-[50px] text-[#1E40AF] font-[500] tex
 </span>
 </div>
  </section>
+<!-- testemail -->
+<section class="flex flex-col  pt-[50px] pb-[50px] mb-[100px]">
+    <span class="relative 
+flex items-center justify-center gap-4 text-[18px] font-bold text-[#1E40AF]
+           before:block before:h-[1px] before:w-[48px] before:bg-[#1E40AF]
+           after:block after:h-[1px] after:w-[48px] after:bg-[#1E40AF]">
+  اراء عملائنا
+</span>
+<span class="font-[700] text-center   lg:text-[60px] text-[30px] ">
+         ماذا يقول عملاؤنا عن    <span class="text-[#FFC400]">TOP TECHDZ</span>  ؟
+    </span>
+       <p class="text-[#64748B] text-center m-auto font-[400] w-[70%] lg:text-[20px] text-[18px] text-center"> آراء حقيقية تعكس جودة خدماتنا وتجربتنا في بناء نتائج رقمية ملموسة.
+</p>
 
 
+<div class="flex justify-start items-start  pr-[250px]  "> 
+    <img src="img/c334b74e87aa594191c88cd0cb0ee0ee8f836fc5.png" class="w-[500px]">
+    <div class="flex justify-center relative  items-center rounded-[26px]  w-[250px] lg:w-[600px]  mt-[150px] mr-[-150px] flex-col bg-[white] shadow-[0_10px_40px_-10px_#0020711A] p-[48px]">
+        <div class="flex icons self-end">
+<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z" fill="#FFC400"/>
+</svg>
+<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z" fill="#FFC400"/>
+</svg>
+<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z" fill="#FFC400"/>
+</svg>
+<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.825 19L5.45 11.975L0 7.25L7.2 6.625L10 0L12.8 6.625L20 7.25L14.55 11.975L16.175 19L10 15.275L3.825 19Z" fill="#FFC400"/>
+</svg>
+
+
+
+        </div>
+        <p class="text-[#0F172A] font-[700] text-[20px] mt-[10px] lg:text-[24px]">"العمل مع توب تك كان نقطة تحول حقيقية في أعمالنا.
+من أول تحليل إلى تنفيذ كامل للخطة، كان كل شيء منظمًا
+واحترافيًا. النتائج كانت واضحة خلال فترة قصيرة، وازدادت
+طلبات التواصل والمبيعات بشكل ملحوظ."</p>
+<div class="flex mt-[20px] justify-between w-full ">
+<div class="flex flex-col">
+    <span class="text-[#0F172A] font-[400] text-[18px] lg:text-[20px]">أحمد خالد</span>
+    <span class="text-[#64748B] font-[500] text-[14px]">CEO - منصة نمو الرقمية</span>
+</div>
+<span class="bg-[#FFC400] flex justify-center items-center w-[48px] h-[48px] rounded-[8px] rotate-6"><svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.878978 11.7184L3.58449 7.98073C2.49052 7.86575 1.59495 7.3778 0.897787 6.51688C0.200625 5.65596 -0.0904658 4.67851 0.0245149 3.58453C0.139496 2.49056 0.627447 1.59499 1.48837 0.897829C2.34929 0.200667 3.32674 -0.0904235 4.42071 0.0245573C5.51469 0.139538 6.41026 0.62749 7.10742 1.48841C7.80458 2.34933 8.09567 3.32678 7.98069 4.42076C7.94062 4.80199 7.85802 5.14943 7.73288 5.46306C7.60775 5.7767 7.43833 6.07312 7.22465 6.35231L3.16638 11.9588L0.878978 11.7184ZM9.82968 12.6592L12.5352 8.92149C11.4412 8.8065 10.5456 8.31855 9.84848 7.45763C9.15132 6.59671 8.86023 5.61926 8.97521 4.52529C9.09019 3.43131 9.57814 2.53574 10.4391 1.83858C11.3 1.14142 12.2774 0.850329 13.3714 0.965309C14.4654 1.08029 15.361 1.56824 16.0581 2.42916C16.7553 3.29009 17.0464 4.26754 16.9314 5.36151C16.8913 5.74274 16.8087 6.09018 16.6836 6.40382C16.5584 6.71745 16.389 7.01387 16.1753 7.29306L12.1171 12.8996L9.82968 12.6592Z" fill="white"/>
+</svg>
+</span>
+
+
+</div>
+
+<button class="absolute flex justify-center items-center top-[37%] right-[-20px] w-[60px] h-[60px] rounded-[50%] bg-[white] shadow-[0_14px_14px_0_#0000001A]">
+    <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 1.5L9.44118 9.44118L1.5 17.3824" stroke="#1B1C31" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+
+<button class="absolute flex justify-center items-center top-[37%] left-[-20px] w-[60px] h-[60px] rounded-[50%] bg-[white] shadow-[0_14px_14px_0_#0000001A]">
+ <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.44116 1.5L1.49999 9.44118L9.44116 17.3824" stroke="#1B1C31" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</button>
+    </div>
+</div>
+
+</section>
  <!-- contact -->
  <section class="flex flex-wrap gap-[20px] justify-around  bg-[#F6F9FF] py-[60px]">
 <div>
@@ -876,8 +891,47 @@ flex items-center justify-center gap-4 text-[18px] font-bold text-[#1E40AF]
         </div>
       </div>
     </div>
+  </div>
+  <div class="flex bg-[#F6F9FF]  justify-center gap-[100px] mt-[100px] border-1  border-[#DCE8FF] rounded-[24px]  px-[46px] py-[84px] "> 
+<div class="flex  w-[300px] lg:w-[700px]  mt-[10px] justify-start items-center p-[16px] rounded-[12px] gap-[10px]">
+<div class="w-[48px] h-[48px] rounded-[50%] shadow-[0px_2px_4px_-2px_#0000001A] shadow-[0px_4px_6px_-1px_#0000001A] bg-[white] flex justify-center items-center ">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7707 12.2292L24.4853 7.51449L28 15.9998M19.7707 19.7705L24.4853 24.4852M12.2293 12.2292L7.51467 7.51449M12.2293 19.7705L7.51467 24.4852M28 15.9998C28 22.6228 22.623 27.9998 16 27.9998C9.37702 27.9998 4 22.6228 4 15.9998C4 9.37684 9.37702 3.99982 16 3.99982C22.623 3.99982 28 9.37684 28 15.9998ZM17.8187 7.51449C17.8187 10.458 15.4289 12.8478 12.4853 12.8478C9.54179 12.8478 7.152 10.458 7.152 7.51449C7.152 4.57094 9.54179 2.18115 12.4853 2.18115C15.4289 2.18115 17.8187 4.57094 17.8187 7.51449Z" stroke="#0633A0" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="flex flex-col">
+    <span class="font-[700] text-[20px] lg:text-[24px]"> لم تجد إجابة لسؤالك؟  </span>
+    <span class="font-[400] text-[#64748B] text-[16px]"> تواصل معنا وسنجيب عليك بكل سرور.  </span>
+</div>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-[20px]">
+    <a href="" class="flex justify-center items-center rounded-[12px] gap-[10px] text-[#0633A0] font-[700] text-[16px] bg-[white] border-1 border-[#0633A0] w-[200px] h-[54px] ">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_52_1038)">
+<path d="M17.0012 2.90756C15.1491 1.03824 12.624 -0.00926463 9.9925 6.17483e-05C4.53375 6.17483e-05 0.085 4.44756 0.08 9.90756C0.08 11.6563 0.5375 13.3576 1.40125 14.8638L0 20.0001L5.255 18.6226C6.70876 19.4137 8.33741 19.8284 9.9925 19.8288H9.9975C15.4575 19.8288 19.905 15.3813 19.91 9.91631C19.9129 7.28585 18.8658 4.76301 17.0012 2.90756ZM9.9925 18.1501C8.51625 18.1506 7.06713 17.7533 5.7975 17.0001L5.4975 16.8201L2.38 17.6376L3.2125 14.5963L3.0175 14.2826C2.19226 12.9705 1.75581 11.4513 1.75875 9.90131C1.75875 5.36881 5.455 1.67131 9.9975 1.67131C12.1833 1.66739 14.2801 2.53629 15.8225 4.08506C17.3703 5.62781 18.2378 7.72476 18.2325 9.91006C18.2275 14.4588 14.5312 18.1501 9.9925 18.1501ZM14.5112 11.9826C14.265 11.8588 13.0487 11.2601 12.82 11.1751C12.5925 11.0938 12.4263 11.0513 12.2638 11.2988C12.0975 11.5451 11.6225 12.1063 11.48 12.2676C11.3375 12.4338 11.19 12.4526 10.9425 12.3301C10.6962 12.2051 9.8975 11.9451 8.9525 11.0988C8.215 10.4426 7.72125 9.63006 7.57375 9.38381C7.43125 9.13631 7.56 9.00381 7.68375 8.88006C7.7925 8.77006 7.93 8.59006 8.05375 8.44756C8.17875 8.30506 8.22 8.20006 8.30125 8.03506C8.3825 7.86756 8.34375 7.72506 8.2825 7.60131C8.22 7.47756 7.72625 6.25631 7.5175 5.76381C7.3175 5.27756 7.11375 5.34506 6.96125 5.33881C6.81875 5.33006 6.6525 5.33006 6.48625 5.33006C6.23245 5.33637 5.99278 5.44827 5.825 5.63881C5.5975 5.88631 4.96125 6.48506 4.96125 7.70631C4.96125 8.92756 5.84875 10.1013 5.97375 10.2676C6.09625 10.4338 7.71625 12.9326 10.2025 14.0076C10.79 14.2638 11.2525 14.4151 11.6138 14.5301C12.2075 14.7201 12.7438 14.6913 13.1713 14.6301C13.6463 14.5576 14.635 14.0301 14.8438 13.4513C15.0487 12.8713 15.0487 12.3763 14.9862 12.2726C14.925 12.1676 14.7587 12.1063 14.5112 11.9826Z" fill="#0633A0"/>
+</g>
+<defs>
+<clipPath id="clip0_52_1038">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+راسلنا على واتساب
+    </a>
+    <a href="" class="flex justify-center items-center shadow-[0px_4px_6px_-4px_#1E3A8A33] rounded-[12px]   shadow-[0px_10px_15px_-3px_#1E3A8A33] gap-[10px] bg-[#0633A0]  w-[183px] h-[54px] text-[white] ">
+تواصل معنا
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.33333 15.8335L2.5 10.0002M2.5 10.0002L8.33333 4.16683M2.5 10.0002H17.5" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </a>
+</div>
+
 
   </div>
+
+
+
 </section>
 
 <!-- newsletter -->

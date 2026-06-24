@@ -37,3 +37,25 @@
 body {
   direction: rtl;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E40AF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E3A8A;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #1E40AF #F3F4F6;
+}
