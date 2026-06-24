@@ -7,58 +7,8 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="font-thmanyah">
-     <header dir="rtl" class="flex justify-around items-center gap-[20px] pl-[50px] pt-[35px] pb-[20px] border-b border-[#DADADA] relative">
 
-  <img src="img/logo.jpeg" class="w-[150px] h-[70px]">
 
-  <!-- Desktop Menu -->
-  <ul class="hidden lg:flex m-auto gap-[30px]">
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الرئيسية</a></li>
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الخدمات</a></li>
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الباقات</a></li>
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">المدونة</a></li>
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">اراء العملاء</a></li>
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">تواصل معنا</a></li>
-    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الأسئلة الشائعة</a></li>
-  </ul>
-
-  <a href="" class="hidden lg:flex w-[237px] h-[60px] bg-[#1E40AF] justify-center items-center rounded-[12px] text-[#FFFFFF] font-[700] text-[16px]">احجز استشارة مجانية</a>
-
-  <!-- Hamburger Button (Mobile only) -->
-  <button id="menu-toggle" class="lg:hidden relative z-50 w-[40px] h-[40px] flex flex-col justify-center items-center gap-[6px]" aria-label="فتح القائمة">
-    <span id="bar1" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
-    <span id="bar2" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
-    <span id="bar3" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
-  </button>
-
-  <!-- Overlay -->
-  <div id="menu-overlay" class="lg:hidden fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
-
-  <!-- Mobile Drawer -->
-  <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-[300px] bg-white shadow-[0px_0px_25px_-5px_#0000004D] translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col px-[30px] pt-[35px]">
-
-    <div class="flex justify-between items-center mb-[40px]">
-      <img src="img/logo.jpeg" class="w-[120px] h-[55px]">
-      <button id="menu-close" class="w-[36px] h-[36px] flex items-center justify-center rounded-full border border-[#DADADA]" aria-label="إغلاق القائمة">
-        <svg class="w-[18px] h-[18px]" fill="none" stroke="#1E40AF" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-
-    <ul class="flex flex-col gap-[28px]">
-      <li><a href="" class="block text-[#1E40AF] font-[400] text-[18px] font-thmanyah border-b border-[#1E40AF] pb-[12px] w-fit">الرئيسية</a></li>
-      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الخدمات</a></li>
-      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الباقات</a></li>
-      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">المدونة</a></li>
-      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">اراء العملاء</a></li>
-      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">تواصل معنا</a></li>
-      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الأسئلة الشائعة</a></li>
-    </ul>
-
-    <a href="" class="mt-auto mb-[40px] w-full h-[55px] bg-[#1E40AF] flex justify-center items-center rounded-[12px] text-[#FFFFFF] font-[700] text-[16px]">احجز استشارة مجانية</a>
-
-  </div>
-
-</header>
      <!-- hero -->
       <section class="flex flex-wrap justify-around  mt-[100px]">
  <div class="flex flex-col justify-center lg:justify-start   items-center lg:items-start">
@@ -1172,41 +1122,6 @@ document.querySelectorAll(".slider").forEach(slider => {
       }
     });
   });
-</script>
-
-
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const menuClose = document.getElementById('menu-close');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const overlay = document.getElementById('menu-overlay');
-  const bar1 = document.getElementById('bar1');
-  const bar2 = document.getElementById('bar2');
-  const bar3 = document.getElementById('bar3');
-
-  function openMenu() {
-    mobileMenu.classList.remove('translate-x-full');
-    overlay.classList.remove('opacity-0', 'pointer-events-none');
-    overlay.classList.add('opacity-100');
-    bar1.style.transform = 'translateY(8px) rotate(45deg)';
-    bar2.style.opacity = '0';
-    bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    mobileMenu.classList.add('translate-x-full');
-    overlay.classList.add('opacity-0', 'pointer-events-none');
-    overlay.classList.remove('opacity-100');
-    bar1.style.transform = 'translateY(0) rotate(0deg)';
-    bar2.style.opacity = '1';
-    bar3.style.transform = 'translateY(0) rotate(0deg)';
-    document.body.style.overflow = '';
-  }
-
-  menuToggle.addEventListener('click', openMenu);
-  menuClose.addEventListener('click', closeMenu);
-  overlay.addEventListener('click', closeMenu);
 </script>
 </body> 
 </html>
