@@ -9,20 +9,19 @@
 <body class="font-thmanyah">
 <!-- Header -->
 <header dir="rtl"
-class="flex items-center justify-between lg:justify-around px-6 lg:px-24 py-5 border-b border-[#DADADA] bg-white">
-
+class="flex items-center justify-between lg:justify-around px-6 lg:px-12 py-5 border-b border-[#DADADA] bg-white">
     <!-- Logo -->
     <img src="img/logo.jpeg" class="w-[60px] lg:w-[98px]">
 
     <!-- Desktop Menu -->
     <ul class="hidden lg:flex gap-8 text-[20px]">
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الرئيسية</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الخدمات</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الباقات</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">المدونة</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">آراء العملاء</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">تواصل معنا</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الأسئلة الشائعة</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الرئيسية</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الخدمات</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الباقات</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">المدونة</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">آراء العملاء</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">تواصل معنا</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الأسئلة الشائعة</a></li>
     </ul>
 
     <!-- Desktop Button -->
@@ -101,54 +100,6 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
     </aside>
 
 </div>
-<script>
-
-  const overlay = document.getElementById("overlay");
-const sidebar = document.getElementById("sidebar");
-
-const menuBtn = document.getElementById("menuBtn");
-const closeBtn = document.getElementById("closeBtn");
-
-function openMenu() {
-
-    overlay.classList.remove("opacity-0","invisible");
-
-    sidebar.classList.remove("translate-x-full");
-
-    document.body.style.overflow = "hidden";
-
-}
-
-function closeMenu() {
-
-    overlay.classList.add("opacity-0");
-
-    sidebar.classList.add("translate-x-full");
-
-    document.body.style.overflow = "";
-
-    setTimeout(() => {
-
-        overlay.classList.add("invisible");
-
-    },300);
-
-}
-
-menuBtn.addEventListener("click", openMenu);
-
-closeBtn.addEventListener("click", closeMenu);
-
-overlay.addEventListener("click",(e)=>{
-
-    if(e.target===overlay){
-
-        closeMenu();
-
-    }
-
-});
-</script>
      <!-- hero -->
       <section class="flex flex-wrap justify-around  mt-[100px]">
  <div class="flex flex-col justify-center lg:justify-start   items-center lg:items-start">
@@ -1378,6 +1329,54 @@ document.querySelectorAll(".slider").forEach(slider => {
   });
 </script>
 
+<script>
+
+  const overlay = document.getElementById("overlay");
+const sidebar = document.getElementById("sidebar");
+
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+
+function openMenu() {
+
+    overlay.classList.remove("opacity-0","invisible");
+
+    sidebar.classList.remove("translate-x-full");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+function closeMenu() {
+
+    overlay.classList.add("opacity-0");
+
+    sidebar.classList.add("translate-x-full");
+
+    document.body.style.overflow = "";
+
+    setTimeout(() => {
+
+        overlay.classList.add("invisible");
+
+    },300);
+
+}
+
+menuBtn.addEventListener("click", openMenu);
+
+closeBtn.addEventListener("click", closeMenu);
+
+overlay.addEventListener("click",(e)=>{
+
+    if(e.target===overlay){
+
+        closeMenu();
+
+    }
+
+});
+</script>
 
 </body> 
 </html>
