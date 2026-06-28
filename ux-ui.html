@@ -7,48 +7,48 @@
   <link rel="stylesheet" href="output.css">
 </head>
 <body dir="rtl" class="overflow-x-hidden font-thmanyah bg-white text-[#101828] antialiased">
-  <header class="border-b border-[#DADADA] bg-white">
-    <div class="mx-auto flex max-w-[1260px] items-center justify-between px-5 py-4 lg:h-[100px] lg:px-0 lg:py-0">
-      <a href="index.html" class="flex items-center">
-        <img src="img/logo.jpeg" alt="TOP TECHDZ" class="h-[54px] w-[118px] object-contain lg:h-[92px] lg:w-[98px]">
-      </a>
+  <header dir="rtl" class="flex justify-around items-center px-[120px]  gap-[20px] pl-[50px] pt-[35px] pb-[20px] border-b border-[#DADADA] relative">
+  <img src="img/logo.jpeg" class="w-[150px] h-[70px]">
 
-      <nav aria-label="القائمة الرئيسية" class="hidden items-center gap-5 lg:flex">
-        <a href="index.html" class="border-b-2 border-[#1E40AF] pb-4 text-[20px] font-[400] leading-[25px] text-[#1E40AF]">الرئيسية</a>
-        <a href="#" class="pb-4 text-[20px] font-[400] leading-[25px] text-black hover:text-[#1E40AF]">الخدمات</a>
-        <a href="#" class="pb-4 text-[20px] font-[400] leading-[25px] text-black hover:text-[#1E40AF]">الباقات</a>
-        <a href="#" class="pb-4 text-[20px] font-[400] leading-[25px] text-black hover:text-[#1E40AF]">المدونة</a>
-        <a href="#" class="pb-4 text-[20px] font-[400] leading-[25px] text-black hover:text-[#1E40AF]">آراء العملاء</a>
-        <a href="#" class="pb-4 text-[20px] font-[400] leading-[25px] text-black hover:text-[#1E40AF]">تواصل معنا</a>
-        <a href="#" class="pb-4 text-[20px] font-[400] leading-[25px] text-black hover:text-[#1E40AF]">الأسئلة الشائعة</a>
-      </nav>
+  <!-- Desktop Menu -->
+  <ul class="hidden lg:flex m-auto gap-[30px]">
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الرئيسية</a></li>
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الخدمات</a></li>
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الباقات</a></li>
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">المدونة</a></li>
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">اراء العملاء</a></li>
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">تواصل معنا</a></li>
+    <li><a href="" class="hover:text-[#1E40AF] hover:border-b hover:border-[#1E40AF] pb-[18px] font-[400] text-[20px] font-thmanyah">الأسئلة الشائعة</a></li>
+  </ul>
 
-      <a href="#contact" class="hidden h-[60px] w-[237px] items-center justify-center rounded-[12px] bg-[#1E40AF] px-10 text-[16px] font-[700] leading-6 text-white shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)] lg:flex">
-        احجز استشارة مجانية
-      </a>
+  <a href="" class="hidden lg:flex w-[237px] h-[60px] bg-[#1E40AF] justify-center items-center rounded-[12px] text-[#FFFFFF] font-[700] text-[16px]">احجز استشارة مجانية</a>
+  <button id="menu-toggle" class="lg:hidden relative z-50 w-[40px] h-[40px] flex flex-col justify-center items-center gap-[6px]" aria-label="فتح القائمة">
+    <span id="bar1" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
+    <span id="bar2" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
+    <span id="bar3" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
+  </button>
+  <div id="menu-overlay" class="lg:hidden fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
+  <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-[300px] bg-white shadow-[0px_0px_25px_-5px_#0000004D] translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col px-[30px] pt-[35px]">
 
-      <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-[10px] border border-[#DCE8FF] lg:hidden" aria-label="فتح القائمة" aria-expanded="false">
-        <span class="flex flex-col gap-1.5">
-          <span class="block h-0.5 w-6 rounded-full bg-[#1E40AF]"></span>
-          <span class="block h-0.5 w-6 rounded-full bg-[#1E40AF]"></span>
-          <span class="block h-0.5 w-6 rounded-full bg-[#1E40AF]"></span>
-        </span>
+    <div class="flex justify-between items-center mb-[40px]">
+      <img src="img/logo.jpeg" class="w-[120px] h-[55px]">
+      <button id="menu-close" class="w-[36px] h-[36px] flex items-center justify-center rounded-full border border-[#DADADA]" aria-label="إغلاق القائمة">
+        <svg class="w-[18px] h-[18px]" fill="none" stroke="#1E40AF" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
-    <nav id="mobile-menu" aria-label="قائمة الهاتف" class="hidden border-t border-[#E5E7EB] bg-white px-5 py-5 lg:hidden">
-      <div class="flex flex-col gap-4 text-[16px] font-[600] text-[#111827]">
-        <a href="index.html" class="text-[#1E40AF]">الرئيسية</a>
-        <a href="#">الخدمات</a>
-        <a href="#">الباقات</a>
-        <a href="#">المدونة</a>
-        <a href="#">آراء العملاء</a>
-        <a href="#">تواصل معنا</a>
-        <a href="#">الأسئلة الشائعة</a>
-        <a href="#contact" class="mt-2 flex h-[48px] items-center justify-center rounded-[10px] bg-[#1E40AF] text-white">احجز استشارة مجانية</a>
-      </div>
-    </nav>
-  </header>
+    <ul class="flex flex-col gap-[28px]">
+      <li><a href="" class="block text-[#1E40AF] font-[400] text-[18px] font-thmanyah border-b border-[#1E40AF] pb-[12px] w-fit">الرئيسية</a></li>
+      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الخدمات</a></li>
+      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الباقات</a></li>
+      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">المدونة</a></li>
+      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">اراء العملاء</a></li>
+      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">تواصل معنا</a></li>
+      <li><a href="" class="block hover:text-[#1E40AF] font-[400] text-[18px] font-thmanyah pb-[12px]">الأسئلة الشائعة</a></li>
+    </ul>
+    <a href="" class="mt-auto mb-[40px] w-full h-[55px] bg-[#1E40AF] flex justify-center items-center rounded-[12px] text-[#FFFFFF] font-[700] text-[16px]">احجز استشارة مجانية</a>
+  </div>
+</header>
 
   <main class="overflow-hidden">
     <section dir="ltr" class="mx-auto grid max-w-[1438px] items-center gap-10 px-5 py-16 lg:min-h-[777px] lg:grid-cols-[770px_528px] lg:gap-[42px] lg:px-0 lg:py-0">
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="bg-[#F8F9FF] px-5 py-20 lg:min-h-[1024px] lg:py-[60px]">
+    <section id="services" class="scroll-mt-24 bg-[#F8F9FF] px-5 py-20 lg:min-h-[1024px] lg:py-[60px]">
       <div class="mx-auto max-w-[1246px]">
         <div class="text-center">
           <span class="inline-flex h-[34px] items-center rounded-full border border-[#F3F4F6] bg-white px-4 py-1.5 text-[16px] font-[500] leading-5 text-[#1E40AF] shadow-sm">ما نقدمه</span>
@@ -197,7 +197,7 @@
       </div>
     </section>
 
-    <section class="bg-[#F6F8FF] px-5 py-20 lg:py-24">
+    <section id="process" class="scroll-mt-24 bg-[#F6F8FF] px-5 py-20 lg:py-24">
       <div class="mx-auto max-w-[1280px] text-center">
         <span class="inline-flex rounded-full bg-white px-4 py-2 text-[12px] font-[800] text-[#1E40AF] shadow-sm">كيف نعمل؟</span>
         <h2 class="ux-section-title mt-5 font-[700] text-black">
@@ -207,32 +207,59 @@
           نعمل بخطوات واضحة تبدأ من فهم مشروعك وتنتهي بتسليم تصميم منظم وجاهز للتطوير.
         </p>
 
-        <div class="mx-auto mt-12 grid max-w-[1280px] justify-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <article class="min-h-[298.25px] rounded-[16px] bg-white p-8 shadow-[0_18px_45px_-36px_#1E40AF]">
-            <span class="mb-5 block text-[20px] font-[700] leading-7 text-[#FFC400]">01</span>
-            <h3 class="text-[20px] font-[700] leading-7 text-black">نفهم مشروعك</h3>
-            <p class="mt-4 text-[16px] leading-[26px] text-[#64748B]">نحلل الجمهور والأهداف قبل بدء التصميم.</p>
+        <div class="mx-auto mt-12 grid max-w-[1224px] justify-items-center gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="process-card">
+            <span class="process-number">01</span>
+            <div class="process-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M13 10h20a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H13a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3Z"/>
+                <path d="M18 39h12M24 34v5M17 19l4 4 8-8M15 29h18"/>
+              </svg>
+            </div>
+            <h3>نفهم مشروعك</h3>
+            <p>نبدأ بتحليل فكرة المشروع، أهدافه، الجمهور المستهدف، والمشكلة التي تريد حلها.</p>
           </article>
-          <article class="min-h-[298.25px] rounded-[16px] bg-white p-8 shadow-[0_18px_45px_-36px_#1E40AF]">
-            <span class="mb-5 block text-[20px] font-[700] leading-7 text-[#FFC400]">02</span>
-            <h3 class="text-[20px] font-[700] leading-7 text-black">نرسم تجربة المستخدم</h3>
-            <p class="mt-4 text-[16px] leading-[26px] text-[#64748B]">نبني التدفق والشاشات الأساسية بعناية.</p>
+          <article class="process-card">
+            <span class="process-number">02</span>
+            <div class="process-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="7" y="13" width="10" height="22" rx="2"/>
+                <rect x="19" y="13" width="10" height="22" rx="2"/>
+                <rect x="31" y="13" width="10" height="22" rx="2"/>
+                <path d="M17 19h2M29 29h2"/>
+              </svg>
+            </div>
+            <h3>نرسم تجربة المستخدم</h3>
+            <p>نحدد رحلة المستخدم، الصفحات الأساسية، وطريقة انتقاله داخل الموقع أو التطبيق.</p>
           </article>
-          <article class="min-h-[298.25px] rounded-[16px] bg-white p-8 shadow-[0_18px_45px_-36px_#1E40AF]">
-            <span class="mb-5 block text-[20px] font-[700] leading-7 text-[#FFC400]">03</span>
-            <h3 class="text-[20px] font-[700] leading-7 text-black">نصمم الواجهات</h3>
-            <p class="mt-4 text-[16px] leading-[26px] text-[#64748B]">نحول الهيكل إلى واجهة متناسقة ومريحة.</p>
+          <article class="process-card">
+            <span class="process-number">03</span>
+            <div class="process-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="7" y="8" width="34" height="9" rx="2"/>
+                <rect x="7" y="23" width="14" height="17" rx="2"/>
+                <rect x="27" y="23" width="14" height="17" rx="2"/>
+              </svg>
+            </div>
+            <h3>نصمم الواجهات</h3>
+            <p>نحوّل الهيكل إلى واجهات UI عصرية، واضحة، ومتناسقة مع هوية مشروعك.</p>
           </article>
-          <article class="min-h-[298.25px] rounded-[16px] bg-white p-8 shadow-[0_18px_45px_-36px_#1E40AF]">
-            <span class="mb-5 block text-[20px] font-[700] leading-7 text-[#FFC400]">04</span>
-            <h3 class="text-[20px] font-[700] leading-7 text-black">نراجع ونسلم</h3>
-            <p class="mt-4 text-[16px] leading-[26px] text-[#64748B]">نسلم ملفات منظمة ومهيأة لفريق التطوير.</p>
+          <article class="process-card">
+            <span class="process-number">04</span>
+            <div class="process-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="8" y="8" width="32" height="24" rx="2"/>
+                <path d="M18 40h12M24 32v8M17 19l5 5 10-10"/>
+              </svg>
+            </div>
+            <h3>نراجع ونسلّم</h3>
+            <p>نراجع التصميم معك، نعدّل حسب الملاحظات، ثم نسلّم ملف Figma منظماً وجاهزاً للتطوير.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="px-5 py-20 lg:py-24">
+    <section id="benefits" class="scroll-mt-24 px-5 py-20 lg:py-24">
       <div class="mx-auto max-w-[1080px] text-center">
         <span class="inline-flex rounded-full bg-[#F3F6FF] px-4 py-2 text-[12px] font-[800] text-[#1E40AF]">لماذا نحن؟</span>
         <h2 class="ux-section-title mt-5 font-[700] text-black">
@@ -275,7 +302,7 @@
       </div>
     </section>
 
-    <section class="bg-[#F6F8FF] px-5 py-20 lg:py-24">
+    <section id="faq" class="scroll-mt-24 bg-[#F6F8FF] px-5 py-20 lg:py-24">
       <div class="mx-auto max-w-[980px]">
         <div class="text-center">
           <span class="inline-flex rounded-full bg-white px-4 py-2 text-[12px] font-[800] text-[#1E40AF] shadow-sm">الأسئلة الشائعة</span>
@@ -320,83 +347,301 @@
             <p class="mt-2 text-[15px] text-[#667085]">راسلنا وسنساعدك على اختيار الحل الأنسب لمشروعك.</p>
           </div>
           <div class="flex flex-col gap-3 sm:flex-row">
-            <a href="#" class="flex h-[48px] items-center justify-center rounded-[10px] border border-[#1E40AF] px-6 text-[14px] font-[800] text-[#1E40AF]">راسلنا عبر واتساب</a>
-            <a href="#" class="flex h-[48px] items-center justify-center rounded-[10px] bg-[#1E40AF] px-6 text-[14px] font-[800] text-white">تواصل معنا</a>
+            <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer" class="flex h-[48px] items-center justify-center rounded-[10px] border border-[#1E40AF] px-6 text-[14px] font-[800] text-[#1E40AF] transition hover:-translate-y-0.5 hover:bg-[#EFF6FF]">راسلنا عبر واتساب</a>
+            <a href="mailto:info@toptech.com" class="flex h-[48px] items-center justify-center rounded-[10px] bg-[#1E40AF] px-6 text-[14px] font-[800] text-white transition hover:-translate-y-0.5 hover:bg-[#16358f]">تواصل معنا</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="px-5 py-20">
-      <div class="mx-auto grid max-w-[1120px] gap-8 rounded-[18px] bg-white p-8 shadow-[0_20px_60px_-40px_#1E40AF] md:grid-cols-2">
-        <div>
-          <h2 class="text-[28px] font-[900] leading-tight text-black">لتصنع <span class="text-[#FFC400]">نجاحك الرقمي</span></h2>
-          <p class="mt-4 text-[16px] leading-7 text-[#667085]">ابدأ معنا بخطوة منظمة تجعل مشروعك أوضح وأسهل استخداما وأكثر قابلية للنمو.</p>
+    <section class="bg-[#F8F9FF] px-5 py-16 lg:px-12">
+      <div class="mx-auto flex w-full max-w-[1339px] flex-col items-stretch justify-between gap-10 rounded-[24px] bg-white px-6 py-10 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)] lg:min-h-[252px] lg:flex-row lg:items-center lg:gap-12 lg:px-12 lg:py-12">
+        <div class="flex flex-1 flex-col items-end gap-4 text-right lg:w-[527.55px]">
+          <h2 class="text-[30px] font-[700] leading-[40px] text-black sm:text-[36px]">
+            لنصنع <span class="text-[#FFC400]">معاً</span> نجاحك الرقمي
+          </h2>
+          <p class="max-w-[461px] text-[17px] font-[400] leading-[29px] text-[#64748B] sm:text-[18px]">
+            هل لديك مشروع في ذهنك؟ تواصل معنا الآن ونحوّل رؤيتك إلى واقع رقمي ناجح.
+          </p>
         </div>
-        <form class="flex flex-col justify-center gap-4 sm:flex-row md:border-r md:border-[#E5E7EB] md:pr-8">
-          <label class="sr-only" for="newsletter-email">البريد الإلكتروني</label>
-          <input id="newsletter-email" type="email" placeholder="أدخل بريدك الإلكتروني" class="h-[50px] flex-1 rounded-[10px] border border-[#E5E7EB] px-5 text-[14px] outline-none focus:border-[#1E40AF]">
-          <button class="h-[50px] rounded-[10px] bg-[#1E40AF] px-8 text-[14px] font-[800] text-white" type="submit">اشترك الآن</button>
-        </form>
+
+        <div class="hidden h-[128px] w-px shrink-0 bg-[#E5E7EB] lg:block" aria-hidden="true"></div>
+
+        <div class="flex flex-1 flex-col items-end gap-3 text-right lg:w-[527.54px]">
+          <h3 class="text-[24px] font-[700] leading-8 text-black">اشترك في نشرتنا البريدية</h3>
+          <p class="text-[16px] font-[400] leading-6 text-[#64748B]">
+            احصل على نصائح رقمية وأحدث المقالات والعروض مباشرة على بريدك.
+          </p>
+          <form id="newsletter-form" class="mt-2 flex w-full max-w-[512px] flex-col sm:h-[56px] sm:flex-row">
+            <label class="sr-only" for="newsletter-email">البريد الإلكتروني</label>
+            <button class="order-2 flex h-[56px] shrink-0 items-center justify-center gap-4 rounded-b-[12px] bg-[#0633A0] px-8 text-[16px] font-[700] leading-6 text-white transition hover:bg-[#052978] sm:order-1 sm:w-[176.36px] sm:rounded-r-[12px] sm:rounded-l-none" type="submit">
+              <svg class="h-5 w-[17px]" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M18.3 11.2c.4-.2.6-.6.6-1s-.2-.8-.6-1L2.2.5a1.2 1.2 0 0 0-1.6 1.4l1.5 5.9c.1.5.6.9 1.1.9l5.3.2a1.2 1.2 0 0 1 0 2.4l-5.3-.2c-.5 0-1 .3-1.2.8L.2 17.7a1.2 1.2 0 0 0 1.6 1.4l16.5-7.9Z" fill="currentColor"/>
+              </svg>
+              اشترك الآن
+            </button>
+            <input id="newsletter-email" type="email" required autocomplete="email" placeholder="أدخل بريدك الإلكتروني" class="order-1 h-[56px] min-w-0 flex-1 rounded-t-[12px] border border-[#E5E7EB] bg-[#F9FAFB] px-6 text-right text-[16px] leading-5 text-[#0F172A] outline-none transition placeholder:text-[#64748B] focus:z-10 focus:border-[#1E40AF] focus:ring-4 focus:ring-blue-100 sm:order-2 sm:rounded-l-[12px] sm:rounded-r-none">
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-[#1E40AF] px-5 pt-16 text-white">
-    <div class="mx-auto grid max-w-[1120px] gap-10 pb-14 md:grid-cols-3">
-      <div>
-        <h2 class="text-[20px] font-[900]">TOP TECH</h2>
-        <p class="mt-3 text-[14px] leading-7 text-white/75">شريكك في بناء تجارب رقمية واضحة وواجهات تخدم نمو مشروعك.</p>
-        <div class="mt-6 flex gap-3">
-          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[12px]">in</span>
-          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[12px]">ig</span>
-          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[12px]">wa</span>
-        </div>
-      </div>
-      <div>
-        <h3 class="text-[16px] font-[900]">روابط سريعة</h3>
-        <ul class="mt-5 space-y-3 text-[14px] text-white/75">
-          <li><a href="index.html" class="hover:text-white">الرئيسية</a></li>
-          <li><a href="#" class="hover:text-white">الخدمات</a></li>
-          <li><a href="#" class="hover:text-white">الباقات</a></li>
-          <li><a href="#portfolio" class="hover:text-white">أعمالنا</a></li>
-          <li><a href="#contact" class="hover:text-white">تواصل معنا</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-[16px] font-[900]">تواصل معنا</h3>
-        <ul class="mt-5 space-y-3 text-[14px] text-white/75">
-          <li>+966 50 123 4567</li>
-          <li>+213 551 234 567</li>
-          <li>info@toptech.com</li>
-        </ul>
-      </div>
+  <section class="bg-[#1E40AF] p-[70px] mt-[100px] gap-[100px] flex flex-col">
+    <!-- first -->
+    <div class="flex justify-around flex-wrap gap-[50px] lg:gap-[200px] ">
+    <!-- first -->
+ <div class="flex flex-col">
+    <span class="font-bold text-[20px] text-[#FFFFFF]">TOP TECHDZ</span>
+    <p class="text-[#9CA3AF] font-[400] text-[14px] w-[290px] mt-[50px]">نساعد الشركات والعلامات التجارية على النمو رقمياً من
+خلال حلول مبتكرة في تصميم المواقع، التسويق
+الرقمي، والهوية البصرية.</p>
+
+<div class="flex gap-[16px] mt-[25px]">
+<a class="flex items-center justify-center w-[60px] h-[60px]  border-1 border-[rgba(255,255,255,0.2)] rounded-[50%]">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_54_1215)">
+<path d="M10 1.80236C12.67 1.80236 12.9867 1.81236 14.0417 1.86069C16.7517 1.98402 18.0175 3.26986 18.1408 5.95986C18.1892 7.01402 18.1983 7.33069 18.1983 10.0007C18.1983 12.6707 18.1892 12.9882 18.1408 14.0424C18.0167 16.7299 16.7542 18.0182 14.0417 18.1415C12.9867 18.1899 12.6717 18.1999 10 18.1999C7.32833 18.1999 7.01333 18.1899 5.95917 18.1415C3.2425 18.0174 1.98333 16.7257 1.86 14.0415C1.81167 12.9874 1.80167 12.6715 1.80167 10.0007C1.80167 7.32986 1.81167 7.01402 1.86 5.95986C1.98417 3.27069 3.24667 1.98402 5.95917 1.86069C7.01417 1.81319 7.33 1.80319 10 1.80319V1.80236ZM10 -0.000143229C7.28417 -0.000143229 6.94417 0.0115234 5.8775 0.0598568C2.24583 0.226523 0.2275 2.24152 0.0608333 5.87652C0.0116667 6.94402 0 7.28402 0 9.99986Cnan nan 0.0116667 13.0557 0.06 14.1224C0.226667 17.7365 2.24333 19.7724 5.87667 19.939C6.94417 19.9874 7.28417 19.999 10 19.999Cnan nan 13.0558 19.9874 14.1225 19.939C17.7508 19.7724 19.7742 17.7574 19.9383 14.1224C19.9875 13.0557 19.9992 12.7149 19.9992 9.99902Cnan nan 19.9875 6.94319 19.9392 5.87652C19.7758 2.24819 17.7583 0.226523 14.1233 0.0598568C13.0558 0.0106901 12.715 -0.000976563 9.99917 -0.000976563L10 -0.000143229ZM10 4.86486C7.16417 4.86486 4.865 7.16402 4.865 9.99986Cnan nan 7.16417 15.1357 10 15.1357Cnan nan 15.135 12.8365 15.135 9.99986C15.135 7.16402 12.8358 4.86486 10 4.86486ZM10 13.3332C8.15917 13.3332 6.66667 11.8415 6.66667 9.99986C6.66667 8.15902 8.15917 6.66652 10 6.66652Cnan nan 13.3333 8.15902 13.3333 9.99986C13.3333 11.8415 11.8408 13.3332 10 13.3332ZM15.3383 3.46236C14.675 3.46236 14.1375 3.99986 14.1375 4.66236Cnan nan 14.675 5.86236 15.3383 5.86236C16.0008 5.86236 16.5375 5.32486 16.5375 4.66236Cnan nan 16.0008 3.46236 15.3383 3.46236Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_54_1215">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</a>
+<a class="flex items-center justify-center w-[60px] h-[60px]  border-1 border-[rgba(255,255,255,0.2)] rounded-[50%]">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_54_1212)">
+<path d="M4.15 2.91634C4.15 4.06717 3.225 4.99967 2.08333 4.99967C0.941667 4.99967 0.0166667 4.06717 0.0166667 2.91634C0.0166667 1.76634 0.941667 0.833008 2.08333 0.833008C3.225 0.833008 4.15 1.76634 4.15 2.91634ZM4.16667 6.66634H0V19.9997H4.16667V6.66634ZM10.8183 6.66634H6.67833V19.9997H10.8192V13.0005C10.8192 9.10884 15.8433 8.79051 15.8433 13.0005V19.9997H20V11.5572C20 4.99051 12.565 5.22967 10.8183 8.46217V6.66634Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_54_1212">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+</a>
+<a class="flex items-center justify-center w-[60px] h-[60px]  border-1 border-[rgba(255,255,255,0.2)] rounded-[50%]">
+
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_54_1204)">
+<path d="M14.56 11.985C14.3125 11.8609 13.095 11.2625 12.8683 11.1792C12.6408 11.0967 12.4758 11.0559 12.31 11.3042C12.1458 11.5517 11.6708 12.1092 11.5267 12.2742C11.3825 12.44 11.2375 12.46 10.99 12.3367C10.7425 12.2117 9.94417 11.9509 8.99833 11.1075C8.2625 10.4509 7.765 9.64003 7.62083 9.3917C7.47667 9.1442 7.60583 9.01003 7.72917 8.8867C7.84083 8.77587 7.9775 8.59753 8.10083 8.45337C8.225 8.30837 8.26583 8.20503 8.34917 8.0392C8.43167 7.8742 8.39083 7.73003 8.32833 7.60587C8.26583 7.4817 7.77083 6.26253 7.565 5.7667C7.36333 5.2842 7.15917 5.35003 7.0075 5.3417C6.86333 5.33503 6.69833 5.33337 6.5325 5.33337C6.3675 5.33337 6.09917 5.39503 5.8725 5.64337C5.64583 5.89087 5.00583 6.49003 5.00583 7.7092C5.00583 8.92753 5.89333 10.105 6.01667 10.2709C6.14083 10.4359 7.76333 12.9375 10.2475 14.01C10.8383 14.265 11.2992 14.4175 11.6592 14.5309C12.2525 14.72 12.7925 14.6934 13.2183 14.6292C13.6942 14.5584 14.6833 14.03 14.89 13.4517C15.0967 12.8734 15.0967 12.3775 15.0342 12.2742C14.9725 12.1709 14.8075 12.1092 14.5592 11.985H14.56ZM10.0417 18.1542H10.0383C8.56314 18.1543 7.11507 17.7577 5.84583 17.0059L5.545 16.8275L2.4275 17.6459L3.25917 14.6059L3.06333 14.2942C2.2387 12.9811 1.80245 11.4614 1.805 9.91087C1.80583 5.3692 5.50167 1.6742 10.045 1.6742C12.245 1.6742 14.3133 2.53253 15.8683 4.0892C17.418 5.63207 18.2861 7.73076 18.2792 9.91753C18.2767 14.4592 14.5817 18.1542 10.0417 18.1542ZM17.0525 2.9067C15.1979 1.03985 12.6731 -0.0068961 10.0417 3.41949e-05C4.57917 3.41949e-05 0.133333 4.44587 0.130833 9.91003C0.130833 11.6567 0.586667 13.3617 1.45417 14.8642L0 20L5.27917 18.615C6.7125 19.3984 8.32833 19.8125 9.97083 19.8134H9.975C15.4367 19.8134 19.8833 15.3675 19.8858 9.90253C19.894 7.27213 18.8498 4.74773 16.9858 2.8917L17.0525 2.9067Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_54_1204">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+</a>
+</div>
+ </div>
+ <!-- second -->
+    <div class="flex flex-col justify-start">
+<span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start   lg:justify-center  items-start  lg:items-center gap-[12px]">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="12" rx="6" fill="#FFC400"/>
+</svg>
+    روابط سريعة
+</span>
+    <a href="" class="flex justify-start items-center mt-[35px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+الرئيسية
+    </a>
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+الخدمات
+    </a>
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+الباقات
+    </a>
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+المدونة
+    </a>
+
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+اراء العملاء
+    </a>
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+تواصل معنا
+    </a>
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>الاسئلة الشائعة
+    </a>
     </div>
-    <div class="mx-auto flex max-w-[1120px] flex-col items-center justify-between gap-4 border-t border-white/20 py-6 text-[13px] text-white/70 md:flex-row">
-      <p>جميع الحقوق محفوظة ©2026 TOP TECH</p>
-      <div class="flex gap-6">
-        <a href="#">سياسة الخصوصية</a>
-        <a href="#">الشروط والأحكام</a>
-      </div>
-    </div>
-  </footer>
+    <!-- thrid -->
+       <div class="flex flex-col">
+<span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start items-center gap-[12px]">
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="12" rx="6" fill="#FFC400"/>
+</svg>
+  تواصل معنا
+</span>
+<div class="flex  justify-start items-start  mt-[32px] rounded-[12px] gap-[10px]">
+<div class="w-[44px] h-[44px] rounded-[12px] bg-[#ffff] flex justify-center items-center ">
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.833252 2.49967C0.833252 1.5792 1.57944 0.833008 2.49992 0.833008H5.23325C5.59178 0.83328 5.90996 1.06285 6.02325 1.40301L7.27158 5.14717C7.40235 5.54055 7.22408 5.97023 6.85325 6.15551L4.97242 7.09717C5.89435 9.13762 7.52864 10.7719 9.56909 11.6938L10.5108 9.81301C10.696 9.44218 11.1257 9.26391 11.5191 9.39467L15.2633 10.643C15.6037 10.7564 15.8333 11.075 15.8333 11.4338V14.1663C15.8333 15.0868 15.0871 15.833 14.1666 15.833H13.3333C6.42992 15.833 0.833252 10.2363 0.833252 3.33301V2.49967V2.49967" stroke="#0633A0" stroke-width="1.66667"/>
+</svg>
+</div>
+<div class="flex flex-col">
+    <span class="font-[400] text-[14px] text-[#9CA3AF]"> اتصل بنا</span>
+    <span class="font-[500] text-[#FFFFFF] text-[16px]">+966 50 123 4567</span>
+</div>
+</div>
+<div class="flex  justify-start items-start  mt-[22px] rounded-[12px] gap-[10px]">
+<div class="w-[44px] h-[44px] rounded-[12px] bg-[#ffff] flex justify-center items-center ">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 6.66699L9.075 11.0503C9.63506 11.424 10.3649 11.424 10.925 11.0503L17.5 6.66699M4.16667 15.8337H15.8333C16.7538 15.8337 17.5 15.0875 17.5 14.167V5.83366C17.5 4.91318 16.7538 4.16699 15.8333 4.16699H4.16667C3.24619 4.16699 2.5 4.91318 2.5 5.83366V14.167C2.5 15.0875 3.24619 15.8337 4.16667 15.8337L2.5 6.66699" stroke="#0633A0" stroke-width="1.66667"/>
+</svg>
+
+</div>
+<div class="flex flex-col">
+    <span class="font-[400] text-[14px] text-[#9CA3AF]"> البريد الإلكتروني </span>
+    <span class="font-[500] text-[#FFFFFF] text-[16px]">info@toptech.com  </span>
+</div>
+</div>
+
+</div>
+</div>
+<!-- second -->
+<div class="flex flex-wrap gap-[30px] lg:gap-[0]  justify-around pt-[44px] border-t-1 border-t-[#fff]">
+    <span class="flex items-center justify-center gap-[12px] text-[white] font-[400] text-[12px]">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM11 16L7 12L8.41 10.59L11 13.17L16.59 7.58L18 9L11 16Z" fill="white"/>
+</svg>
+        نحافظ على خصوصية بياناتك ولا نشاركها مع أي جهة خارجية.
+    </span>
+    <span class="font-[400] text-[14px] text-[white]">توب تك
+جميع الحقوق محفوظة © 2026 </span>
+
+<div class="flex gap-[20px]">
+    <a href="" class="font-[400] text-[14px] text-[white] flex  pl-[20px] border-l-1 border-l-[white]">سياسة الخصوصية</a>
+    <a href="" class="font-[400] text-[14px] text-[white]">الشروط والأحكام </a>
+</div>
+</div>
+
+ </section>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const faqAnswers = [
+      'نعم، نصمم تجربة متجاوبة بعناية لتعمل بوضوح على الهاتف والجهاز اللوحي وشاشات سطح المكتب.',
+      'نعم، نستخدم Figma لتصميم الواجهات، بناء نظام التصميم، وإعداد نموذج تفاعلي قابل للمراجعة.',
+      'بالتأكيد. تتضمن كل مرحلة جولات مراجعة واضحة لضمان توافق النتيجة مع أهداف المشروع.',
+      'تعتمد المدة على حجم المنتج، وعادة تبدأ المشاريع المتوسطة من أسبوعين إلى أربعة أسابيع.',
+      'لا. يمكننا البدء بهوية موجودة أو مساعدتك في تحديد الأسلوب البصري المناسب قبل تصميم الواجهات.',
+      'نعم، نسلم ملفات منظمة ومواصفات واضحة، وننسق مع فريق التطوير لضمان تنفيذ التصميم بدقة.'
+    ];
 
-    menuToggle.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.contains('hidden');
-      mobileMenu.classList.toggle('hidden');
-      menuToggle.setAttribute('aria-expanded', String(!isOpen));
-    });
+    document.querySelectorAll('.faq-item').forEach((item, index) => {
+      const answer = document.createElement('span');
+      const answerId = `faq-answer-${index + 1}`;
+      answer.id = answerId;
+      answer.className = 'col-span-2 grid max-h-0 overflow-hidden text-[14px] font-[400] leading-7 text-[#667085] opacity-0 transition-all duration-300';
+      answer.textContent = faqAnswers[index];
+      item.appendChild(answer);
+      item.setAttribute('aria-expanded', 'false');
+      item.setAttribute('aria-controls', answerId);
 
-    document.querySelectorAll('.faq-item').forEach((item) => {
       item.addEventListener('click', () => {
         const icon = item.querySelector('.faq-icon');
-        icon.textContent = icon.textContent === '+' ? '-' : '+';
+        const isOpen = item.getAttribute('aria-expanded') === 'true';
+        item.setAttribute('aria-expanded', String(!isOpen));
+        icon.textContent = isOpen ? '+' : '−';
+        answer.classList.toggle('max-h-0', isOpen);
+        answer.classList.toggle('max-h-32', !isOpen);
+        answer.classList.toggle('mt-0', isOpen);
+        answer.classList.toggle('mt-3', !isOpen);
+        answer.classList.toggle('opacity-0', isOpen);
+        answer.classList.toggle('opacity-100', !isOpen);
       });
     });
+
+    const newsletterForm = document.getElementById('newsletter-form');
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const button = newsletterForm.querySelector('button');
+      button.textContent = 'تم الاشتراك بنجاح ✓';
+      button.classList.remove('bg-[#0633A0]', 'hover:bg-[#052978]');
+      button.classList.add('bg-emerald-600');
+      newsletterForm.reset();
+    });
+
+    const revealTargets = document.querySelectorAll('main section > div, main article');
+    revealTargets.forEach((element) => element.classList.add('reveal'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealTargets.forEach((element) => observer.observe(element));
   </script>
+
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('menu-overlay');
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+  const bar3 = document.getElementById('bar3');
+
+  function openMenu() {
+    mobileMenu.classList.remove('translate-x-full');
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    overlay.classList.add('opacity-100');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    bar1.style.transform = 'translateY(8px) rotate(45deg)';
+    bar2.style.opacity = '0';
+    bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add('translate-x-full');
+    overlay.classList.add('opacity-0', 'pointer-events-none');
+    overlay.classList.remove('opacity-100');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    bar1.style.transform = 'translateY(0) rotate(0deg)';
+    bar2.style.opacity = '1';
+    bar3.style.transform = 'translateY(0) rotate(0deg)';
+    document.body.style.overflow = '';
+  }
+
+  menuToggle.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+</script>
 </body>
 </html>
