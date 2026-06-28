@@ -223,9 +223,12 @@ input {
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, 560px);
-  max-width: 1144px;
+  max-width: 1152px;
   margin: auto;
-  gap: 24px;
+  gap: 32px;
+}
+.packages-section .section-heading {
+  margin-bottom: 63px;
 }
 .price-card {
   width: 560px;
@@ -351,6 +354,31 @@ input {
 }
 .blue-bg b {
   color: #0633a0;
+}
+.bonus-badge {
+  width: 476px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+  background: #fff9e5;
+  border-radius: 12px;
+  color: #ffc700;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.bonus-badge i {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  font-style: normal;
 }
 .text-link {
   text-align: center;
@@ -822,6 +850,9 @@ footer {
   .price-card {
     width: 100%;
   }
+  .bonus-badge {
+    width: 100%;
+  }
   .comparison-section > .container,
   .comparison-wrap,
   .help-strip {
@@ -897,6 +928,9 @@ footer {
   }
   .section-heading h2 {
     font-size: 29px;
+  }
+  .packages-section .section-heading {
+    margin-bottom: 42px;
   }
   .pricing-grid,
   .faq-grid {
