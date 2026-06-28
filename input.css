@@ -377,73 +377,121 @@ input {
 }
 .comparison-section {
   min-height: 1360px;
-  padding: 90px 0;
+  padding: 77px 0 139px;
+}
+.comparison-section > .container {
+  width: min(1152px, calc(100% - 40px));
+  height: 1144px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.comparison-section .section-heading {
+  height: 100px;
+  margin: 0;
+}
+.comparison-section .section-heading h2 {
+  height: 56px;
+  margin: 0;
+  padding-top: 8px;
+  font-size: 48px;
+  line-height: 48px;
+}
+.comparison-section .section-heading p {
+  height: 28px;
+  font-size: 18px;
+  line-height: 28px;
 }
 .comparison-wrap {
-  border: 1px solid var(--line);
-  border-radius: 20px;
+  flex: 0 0 826px;
+  width: 1152px;
+  height: 826px;
+  border: 1px solid #cbd5e1;
+  border-radius: 32px;
   overflow: auto;
-  box-shadow: 0 8px 24px #17255410;
+  box-shadow:
+    0 20px 25px -5px rgb(30 58 138 / 5%),
+    0 8px 10px -6px rgb(30 58 138 / 5%);
 }
 .comparison-wrap table {
   border-collapse: collapse;
   width: 100%;
+  height: 824px;
+  table-layout: fixed;
   min-width: 720px;
   text-align: right;
   background: #fff;
 }
 .comparison-wrap th,
 .comparison-wrap td {
-  padding: 15px 28px;
-  border-bottom: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  width: 33.333%;
+  padding: 0 32px;
+  border-bottom: 1px solid #cbd5e1;
+  border-left: 1px solid #cbd5e1;
 }
 .comparison-wrap th {
-  font-size: 19px;
+  height: 184px;
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 32px;
 }
 .comparison-wrap th span {
   display: block;
   width: max-content;
   color: #fff;
   background: var(--blue);
-  border-radius: 12px;
-  padding: 2px 9px;
-  font-size: 10px;
-  margin-bottom: 9px;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 20px;
 }
 .comparison-wrap th .gold-label {
-  background: #ffd331;
+  background: #ffc400;
   color: #111;
 }
 .comparison-wrap td {
-  font-size: 13px;
+  height: 64px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .comparison-wrap td:not(:first-child):before {
   content: "✓";
   display: inline-grid;
   place-items: center;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   color: #fff;
   background: var(--blue);
   border-radius: 50%;
-  font-size: 8px;
-  margin-left: 8px;
+  font-size: 11px;
+  margin-left: 12px;
+}
+.comparison-wrap tr > *:nth-child(2) {
+  background: #f8f9ff;
 }
 .comparison-wrap tr > *:last-child {
-  background: #fffaf0;
+  background: #fffbec;
+}
+.comparison-wrap tr > *:last-child:before {
+  background: #ffc400;
 }
 .comparison-wrap tr:last-child td {
   border-bottom: 0;
 }
 .help-strip {
-  margin-top: 35px;
-  background: #f1f6ff;
-  border-radius: 12px;
-  padding: 22px 28px;
+  flex: 0 0 122px;
+  width: 1152px;
+  height: 122px;
+  margin-top: 0;
+  background: #f5f9ff;
+  border: 1px solid #eff6ff;
+  border-radius: 16px;
+  padding: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
 }
 .help-strip > div,
 .contact-box > div,
@@ -461,10 +509,23 @@ input {
   display: block;
   color: var(--muted);
 }
+.help-strip p b {
+  font-size: 20px;
+  line-height: 28px;
+}
+.help-strip p small {
+  font-size: 16px;
+  line-height: 24px;
+}
+.help-strip .button {
+  width: 232px;
+  height: 56px;
+  border-radius: 12px;
+}
 .help-icon,
 .contact-icon {
-  width: 42px;
-  height: 42px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -735,6 +796,11 @@ footer {
   .price-card {
     width: 100%;
   }
+  .comparison-section > .container,
+  .comparison-wrap,
+  .help-strip {
+    width: min(100%, calc(100vw - 40px));
+  }
   .footer-grid {
     gap: 40px;
   }
@@ -784,6 +850,21 @@ footer {
     min-height: auto;
     padding: 60px 0;
   }
+  .comparison-section > .container {
+    width: min(1152px, calc(100% - 28px));
+    height: auto;
+    gap: 30px;
+  }
+  .comparison-section .section-heading,
+  .comparison-section .section-heading h2,
+  .comparison-section .section-heading p {
+    height: auto;
+  }
+  .comparison-section .section-heading h2 {
+    padding-top: 0;
+    font-size: 29px;
+    line-height: 1.3;
+  }
   .section-heading h2 {
     font-size: 29px;
   }
@@ -818,7 +899,15 @@ footer {
     order: 1;
   }
   .comparison-wrap {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
     margin-inline: -4px;
+  }
+  .help-strip {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
   }
   .help-strip,
   .contact-box {
