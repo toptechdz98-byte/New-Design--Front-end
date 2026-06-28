@@ -279,7 +279,14 @@ body.menu-open {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 26px;
+}
+.round-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: currentcolor;
+  stroke-width: 2.6667;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .round-icon.gold {
   background: #fff7d8;
