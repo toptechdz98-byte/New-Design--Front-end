@@ -1,20 +1,31 @@
 const menuButton = document.querySelector("#menuButton");
+const mobileOverlay = document.querySelector("#mobileOverlay");
 const mobileNav = document.querySelector("#mobileNav");
+const closeMenuButton = document.querySelector("#closeMenuButton");
 const faqItems = document.querySelectorAll(".faq-item");
 const newsletterForm = document.querySelector("#newsletterForm");
 const formMessage = document.querySelector("#formMessage");
 
 function setMenuOpen(isOpen) {
-  mobileNav.classList.toggle("open", isOpen);
+  mobileOverlay.classList.toggle("open", isOpen);
   menuButton.setAttribute("aria-expanded", String(isOpen));
+  document.body.classList.toggle("menu-open", isOpen);
 }
 
 menuButton.addEventListener("click", () => {
-  setMenuOpen(!mobileNav.classList.contains("open"));
+  setMenuOpen(!mobileOverlay.classList.contains("open"));
 });
 
 mobileNav.addEventListener("click", (event) => {
   if (event.target.closest("a")) {
+    setMenuOpen(false);
+  }
+});
+
+closeMenuButton.addEventListener("click", () => setMenuOpen(false));
+
+mobileOverlay.addEventListener("click", (event) => {
+  if (event.target === mobileOverlay) {
     setMenuOpen(false);
   }
 });

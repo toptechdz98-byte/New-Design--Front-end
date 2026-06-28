@@ -65,8 +65,8 @@ input {
   gap: 24px;
 }
 .brand img {
-  width: 84px;
-  height: 66px;
+  width: 98px;
+  height: 70px;
   object-fit: contain;
 }
 .desktop-nav {
@@ -79,7 +79,8 @@ input {
   display: grid;
   place-items: center;
   position: relative;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .desktop-nav a:hover,
 .desktop-nav .active {
@@ -123,10 +124,16 @@ input {
 }
 .nav-cta {
   min-width: 190px;
+  height: 56px;
+  padding-inline: 32px;
 }
 .menu-button,
+.mobile-overlay,
 .mobile-nav {
   display: none;
+}
+body.menu-open {
+  overflow: hidden;
 }
 .hero {
   min-height: 650px;
@@ -729,23 +736,25 @@ footer {
 }
 .footer-about > b {
   font-family: Arial, sans-serif;
+  font-size: 20px;
 }
 .footer-about > b span {
   font: 12px Thmanyah;
 }
 .footer-about p {
   color: #c4cef2;
-  max-width: 330px;
-  font-size: 13px;
-  margin-top: 30px;
+  width: 290px;
+  max-width: 100%;
+  font-size: 14px;
+  margin-top: 50px;
 }
 .socials {
   display: flex;
   gap: 10px;
 }
 .socials a {
-  width: 33px;
-  height: 33px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #ffffff40;
   border-radius: 50%;
   display: grid;
@@ -814,22 +823,73 @@ footer {
     height: 2px;
     background: var(--blue);
   }
-  .mobile-nav {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    box-shadow: 0 15px 25px #0002;
-    padding: 10px 20px;
+  .mobile-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: rgb(0 0 0 / 40%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
   }
-  .mobile-nav.open {
+  .mobile-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(85%, 360px);
+    height: 100vh;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 20px 40px rgb(0 0 0 / 20%);
+    padding: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+  }
+  .mobile-overlay.open .mobile-nav {
+    transform: translateX(0);
+  }
+  .mobile-nav-header {
+    min-height: 86px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .mobile-nav-header img {
+    width: 92px;
+    height: 54px;
+    object-fit: contain;
+  }
+  .mobile-nav-header button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .mobile-nav nav {
     flex-direction: column;
   }
   .mobile-nav a {
-    padding: 12px;
+    display: block;
+    padding: 16px 24px;
     border-bottom: 1px solid #eee;
+  }
+  .mobile-nav-cta {
+    display: flex !important;
+    margin: 20px;
+    color: #fff;
   }
   .hero-grid {
     gap: 25px;
@@ -876,9 +936,6 @@ footer {
   .brand img {
     width: 65px;
     height: 55px;
-  }
-  .mobile-nav {
-    top: 78px;
   }
   .hero {
     min-height: auto;
