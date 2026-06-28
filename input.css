@@ -541,6 +541,9 @@ input {
 .faq-section {
   min-height: 1000px;
 }
+.faq-section > .container {
+  width: min(1152px, calc(100% - 40px));
+}
 .faq-item {
   background: #fff;
   border: 1px solid #e1e7f1;
@@ -579,11 +582,13 @@ input {
   transform: rotate(45deg);
 }
 .contact-box {
+  width: 1152px;
+  height: 178px;
   background: #fff;
-  border: 1px solid #e1e7f1;
-  border-radius: 16px;
-  margin-top: 40px;
-  padding: 30px 40px;
+  border: 1px solid #dce8ff;
+  border-radius: 24px;
+  margin-top: 44px;
+  padding: 64px 48px 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -603,16 +608,32 @@ input {
   align-items: center;
 }
 .newsletter-box {
+  position: relative;
+  width: min(1339px, calc(100% - 40px));
+  max-width: none;
+  height: 252px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 90px;
-  padding: 45px 65px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px #0f172a20;
+  gap: 96px;
+  padding: 48px;
+  border-radius: 24px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 10%),
+    0 8px 10px -6px rgb(0 0 0 / 10%);
+}
+.newsletter-box::before {
+  content: "";
+  position: absolute;
+  top: 62px;
+  bottom: 62px;
+  left: 50%;
+  width: 1px;
+  background: #e5e7eb;
 }
 .newsletter h2 {
-  font-size: 31px;
+  font-size: 36px;
+  line-height: 40px;
   margin: 0;
 }
 .newsletter h2 strong {
@@ -627,7 +648,8 @@ input {
   display: block;
 }
 .newsletter form label {
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 700;
 }
 .newsletter form small {
@@ -637,9 +659,11 @@ input {
 .newsletter form > div {
   display: flex;
   direction: rtl;
+  max-width: 512px;
+  padding-top: 20px;
 }
 .newsletter input {
-  height: 49px;
+  height: 56px;
   flex: 1;
   min-width: 0;
   border: 1px solid #d9dfe9;
@@ -651,6 +675,8 @@ input {
   border-color: var(--blue);
 }
 .newsletter form button {
+  width: 176px;
+  height: 56px;
   border: 0;
   border-radius: 7px 0 0 7px;
   background: var(--blue);
@@ -801,6 +827,10 @@ footer {
   .help-strip {
     width: min(100%, calc(100vw - 40px));
   }
+  .faq-section > .container,
+  .contact-box {
+    width: min(100%, calc(100vw - 40px));
+  }
   .footer-grid {
     gap: 40px;
   }
@@ -911,9 +941,14 @@ footer {
   }
   .help-strip,
   .contact-box {
+    width: 100%;
+    height: auto;
     align-items: stretch;
     flex-direction: column;
     gap: 20px;
+  }
+  .contact-box {
+    padding: 32px 24px;
   }
   .contact-box > div:last-child {
     flex-direction: column;
@@ -926,9 +961,14 @@ footer {
     padding-top: 70px;
   }
   .newsletter-box {
+    width: calc(100% - 28px);
+    height: auto;
     grid-template-columns: 1fr;
     padding: 32px 24px;
     gap: 30px;
+  }
+  .newsletter-box::before {
+    display: none;
   }
   .newsletter form > div {
     flex-direction: column;
