@@ -727,7 +727,7 @@ footer {
   min-height: 327px;
   background: var(--blue);
   color: #fff;
-  padding: 70px 0 24px;
+  padding: 50px 0 17px;
 }
 .footer-grid {
   display: grid;
@@ -794,8 +794,8 @@ footer {
 }
 .footer-bottom {
   border-top: 1px solid #ffffff70;
-  margin-top: 60px;
-  padding-top: 27px;
+  margin-top: 40px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -924,6 +924,18 @@ footer {
   }
   .footer-grid {
     gap: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .packages-section {
+    min-height: auto;
+  }
+  .pricing-grid {
+    grid-template-columns: minmax(0, 560px);
+    justify-content: center;
+  }
+  .price-card {
+    max-width: 560px;
   }
 }
 @media (max-width: 760px) {
