@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tailwindcss";
 
 @font-face {
   font-family: 'Thmanyah Serif';
@@ -36,6 +35,15 @@
 }
 body {
   direction: rtl;
+}
+
+.font-thmanyah {
+  font-family: 'Thmanyah Serif', 'Rubik', system-ui, sans-serif;
+}
+
+.ux-section-title {
+  font-size: clamp(1.75rem, 5vw, 3.75rem);
+  line-height: 1.12;
 }
 
 ::-webkit-scrollbar {
