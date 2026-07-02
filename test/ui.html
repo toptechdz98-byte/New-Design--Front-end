@@ -380,17 +380,14 @@
       </div>
     </div>
   </footer>
-
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-
     menuToggle.addEventListener('click', () => {
       const isOpen = !mobileMenu.classList.contains('hidden');
       mobileMenu.classList.toggle('hidden');
       menuToggle.setAttribute('aria-expanded', String(!isOpen));
     });
-
     document.querySelectorAll('.faq-item').forEach((item) => {
       item.addEventListener('click', () => {
         const icon = item.querySelector('.faq-icon');
