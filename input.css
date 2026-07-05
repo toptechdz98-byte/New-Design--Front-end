@@ -2,17 +2,38 @@
 
 @font-face {
   font-family: Thmanyah;
-  src: url("fonts/thmanyah-serif-text-regular.otf");
+  src: url("fonts/thmanyah-serif-text-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Thmanyah;
-  src: url("fonts/thmanyah-serif-text-bold.otf");
+  src: url("fonts/thmanyah-serif-text-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Thmanyah;
+  src: url("fonts/thmanyah-serif-text-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Thmanyah;
+  src: url("fonts/thmanyah-serif-text-bold.otf") format("opentype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Thmanyah;
-  src: url("fonts/thmanyah-serif-text-black.otf");
+  src: url("fonts/thmanyah-serif-text-black.otf") format("opentype");
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 :root {
   --blue: #1e40af;
