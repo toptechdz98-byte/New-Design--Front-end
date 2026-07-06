@@ -97,8 +97,7 @@ body.menu-open {
 .comparison-wrap th,
 .comparison-wrap td {
   width: 33.333%;
-  padding: 0 32px;
-  border-bottom: 1px solid #cbd5e1;
+  padding-inline: 32px;
   border-left: 1px solid #cbd5e1;
 }
 .comparison-wrap th {
@@ -124,6 +123,8 @@ body.menu-open {
 }
 .comparison-wrap td {
   height: 64px;
+  padding-inline: 40px;
+  border-bottom: 1px solid #cbd5e1;
   font-size: 16px;
   line-height: 24px;
 }
@@ -178,6 +179,7 @@ body.menu-open {
 }
 .comparison-wrap tr > *:last-child {
   background: #fffbec;
+  border-left: 0;
 }
 .comparison-wrap tr > *:last-child:before {
   background: #ffc400;
