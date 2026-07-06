@@ -811,9 +811,53 @@ body.menu-open {
   gap: 12px;
 }
 .contact-icon {
+  box-sizing: border-box;
+  isolation: isolate;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
   background: #fff;
-  color: var(--blue);
-  border: 1px solid #e4e8ef;
+  border: 0;
+  border-radius: 9999px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.contact-icon::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  top: calc(50% - 64px / 2);
+  background: rgb(255 255 255 / 0.2%);
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 10%),
+    0 2px 4px -2px rgb(0 0 0 / 10%);
+  border-radius: 9999px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+.contact-icon svg {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+}
+.contact-icon svg path {
+  stroke: #0633a0;
+  stroke-width: 2.66667px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .newsletter {
   min-height: 440px;
