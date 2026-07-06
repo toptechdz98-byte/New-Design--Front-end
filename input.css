@@ -1227,13 +1227,12 @@ body.menu-open {
   background: #0633a0;
   order: 0;
   box-shadow:
-    0 10px 15px -3px rgb(30 58 138 / 20%),
-    0 4px 6px -4px rgb(30 58 138 / 20%);
+    0 10px 15px -3px rgb(29 78 216 / 20%),
+    0 4px 6px -4px rgb(29 78 216 / 20%);
 }
 .contact-primary svg {
-  width: 20px;
-  height: 20px;
-  transform: rotate(180deg);
+  width: 8px;
+  height: 14px;
   flex: none;
   order: 0;
   flex-grow: 0;
