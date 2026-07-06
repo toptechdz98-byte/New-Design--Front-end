@@ -1032,23 +1032,37 @@ footer {
   }
   .hero-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+    min-width: 0;
   }
   .hero-copy {
+    width: 100%;
+    min-width: 0;
     text-align: center;
     padding: 60px 0 20px;
   }
   .hero h1 {
-    font-size: 34px;
+    max-width: 100%;
+    font-size: clamp(28px, 8.5vw, 34px);
+    overflow-wrap: anywhere;
   }
   .hero-copy > p {
+    width: 100%;
+    max-width: 100%;
     font-size: 16px;
   }
   .hero-actions {
+    width: 100%;
     justify-content: center;
     flex-direction: column;
   }
+  .hero-actions .button {
+    width: 100%;
+    max-width: 100%;
+  }
   .package-visual {
     width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0;
   }
