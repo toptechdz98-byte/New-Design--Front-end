@@ -172,15 +172,10 @@ body.menu-open {
   order: 1;
   flex-grow: 0;
 }
-.packages-section,
 .faq-section {
   background: var(--pale);
   padding: 80px 0;
 }
-.packages-section {
-  min-height: 1360px;
-}
-.packages-section > .container,
 .faq-section > .container {
   min-height: calc(100% - 160px);
 }
@@ -199,34 +194,6 @@ body.menu-open {
 .section-heading > p {
   margin: 0;
   color: var(--muted);
-}
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 560px);
-  max-width: 1152px;
-  margin: auto;
-  gap: 32px;
-}
-.packages-section .section-heading {
-  margin-bottom: 63px;
-}
-.packages-section .packages-heading {
-  isolation: isolate;
-  direction: ltr;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 662px;
-  height: 48px;
-  margin: 13px auto 5px;
-  padding: 0;
-  font-family: "Thmanyah", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 48px;
-  text-align: center;
 }
 .packages-heading-suffix,
 .packages-heading-prefix,
@@ -256,37 +223,6 @@ body.menu-open {
   color: #1e293b;
   order: 2;
   z-index: 0;
-}
-.price-card {
-  width: 560px;
-  height: 969px;
-  background: #fff;
-  border: 2px solid;
-  border-radius: 40px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  isolation: isolate;
-}
-.gold-card {
-  border-color: #ffc700;
-  box-shadow:
-    4px 4px 5px rgb(255 196 0 / 10%),
-    20px 20px 50px -12px rgb(255 196 0 / 10%);
-}
-.blue-card {
-  border-color: #5279db;
-  box-shadow:
-    4px 4px 5px rgb(30 64 175 / 10%),
-    20px 20px 50px -12px rgb(30 64 175 / 10%);
-}
-.price-title {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 48px;
 }
 .price-title h3 {
   font-size: 36px;
@@ -1423,13 +1359,6 @@ footer {
   .faq-header h2 {
     width: 100%;
   }
-  .pricing-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
-  }
-  .price-card {
-    width: 100%;
-  }
   .bonus-badge {
     width: 100%;
   }
@@ -1482,23 +1411,10 @@ footer {
     gap: 40px;
   }
 }
-@media (max-width: 900px) {
-  .packages-section {
-    min-height: auto;
-  }
-  .pricing-grid {
-    grid-template-columns: minmax(0, 560px);
-    justify-content: center;
-  }
-  .price-card {
-    max-width: 560px;
-  }
-}
 @media (max-width: 760px) {
   .container {
     width: min(1180px, calc(100% - 28px));
   }
-  .packages-section,
   .faq-section,
   .comparison-section {
     min-height: auto;
@@ -1553,16 +1469,6 @@ footer {
     font-size: 16px;
     line-height: 24px;
   }
-  .packages-section .section-heading {
-    margin-bottom: 42px;
-  }
-  .packages-section .packages-heading {
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    font-size: clamp(30px, 9vw, 40px);
-    line-height: 1.15;
-  }
   .packages-heading-suffix,
   .packages-heading-prefix,
   .packages-heading > strong {
@@ -1571,15 +1477,8 @@ footer {
     max-width: 100%;
     overflow-wrap: anywhere;
   }
-  .pricing-grid,
   .faq-grid {
     grid-template-columns: 1fr;
-  }
-  .price-card {
-    width: 100%;
-    height: auto;
-    padding: 27px 23px;
-    min-height: 0;
   }
   .price-title h3 {
     font-size: 28px;
