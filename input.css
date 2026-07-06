@@ -1655,7 +1655,7 @@ footer {
   gap: 30px;
   font-size: 11px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
   .nav-wrap {
     width: min(1180px, calc(100% - 40px));
     max-width: none;
@@ -1765,9 +1765,14 @@ footer {
   }
   .hero h1 {
     position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     margin: 22px 0 14px;
+    gap: 0 10px;
     font-size: 40px;
     line-height: 1.25;
   }
@@ -1784,6 +1789,7 @@ footer {
   }
   .hero-title-subline {
     display: block;
+    flex-basis: 100%;
   }
   .hero-copy > p {
     position: static;
@@ -1862,6 +1868,27 @@ footer {
     gap: 40px;
   }
 }
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-copy {
+    text-align: center;
+    padding: 60px 0 20px;
+  }
+  .hero-badge,
+  .package-visual {
+    min-width: 0;
+    margin-inline: auto;
+  }
+  .hero-copy > p {
+    margin-inline: auto;
+    text-align: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+}
 @media (max-width: 900px) {
   .packages-section {
     min-height: auto;
@@ -1889,7 +1916,7 @@ footer {
     min-height: auto;
   }
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     width: 100%;
     min-width: 0;
   }
@@ -1907,7 +1934,9 @@ footer {
   .hero-copy > p {
     width: 100%;
     max-width: 100%;
+    padding-inline: 14px;
     font-size: 16px;
+    overflow-wrap: anywhere;
   }
   .hero-actions {
     width: 100%;
@@ -2002,6 +2031,8 @@ footer {
   .packages-heading > strong {
     width: auto;
     height: auto;
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
   .pricing-grid,
   .faq-grid {
