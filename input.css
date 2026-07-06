@@ -699,6 +699,40 @@ body.menu-open {
   font-size: 16px;
   line-height: 24px;
 }
+.feature-cell {
+  direction: ltr;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  gap: 12px;
+}
+.feature-cell > span {
+  direction: rtl;
+  color: inherit;
+}
+.feature-cell > svg {
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.feature-cell > .feature-document-icon {
+  width: 14px;
+  height: 17px;
+  margin-inline: 3px;
+}
+.feature-cell svg path {
+  fill: none;
+  stroke: #1e40af;
+  stroke-width: 1.66667px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .comparison-wrap td:not(:first-child):before {
   content: "✓";
   display: inline-grid;
