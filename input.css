@@ -80,28 +80,43 @@ input {
 }
 .nav-wrap {
   height: 100%;
+  width: min(1440px, 100%);
+  max-width: 1440px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 0;
+}
+.brand {
+  position: absolute;
+  top: 2px;
+  right: 90px;
 }
 .brand img {
   width: 98px;
-  height: 70px;
+  height: 92px;
   object-fit: contain;
 }
 .desktop-nav {
+  position: absolute;
+  top: 35px;
+  left: calc(50% - 254px);
   display: flex;
-  align-items: stretch;
-  height: 100%;
-  gap: 25px;
+  align-items: center;
+  width: 662px;
+  height: 25px;
+  gap: 20px;
 }
 .desktop-nav a {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  height: 25px;
   position: relative;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
+  line-height: 25px;
+  white-space: nowrap;
 }
 .desktop-nav a:hover,
 .desktop-nav .active {
@@ -112,7 +127,7 @@ input {
   height: 2px;
   background: var(--blue);
   position: absolute;
-  bottom: 0;
+  top: 42px;
   inset-inline: 0;
 }
 .button {
@@ -144,9 +159,14 @@ input {
   border-color: #7895e7;
 }
 .nav-cta {
-  min-width: 190px;
-  height: 56px;
-  padding-inline: 32px;
+  position: absolute;
+  top: 18px;
+  left: 90px;
+  width: 237px;
+  min-width: 237px;
+  height: 60px;
+  padding: 18px 40px;
+  border-radius: 12px;
 }
 .menu-button,
 .mobile-overlay,
@@ -336,6 +356,9 @@ body.menu-open {
   color: #000;
 }
 .hero-copy > p {
+  position: absolute;
+  top: 243px;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -351,7 +374,7 @@ body.menu-open {
   text-align: right;
   margin: 0;
   flex: none;
-  order: 2;
+  order: 0;
   flex-grow: 0;
 }
 .hero-actions {
@@ -365,7 +388,7 @@ body.menu-open {
   padding: 30px 0 0 74.3px;
   gap: 16px;
   flex: none;
-  order: 3;
+  order: 2;
   align-self: stretch;
   flex-grow: 0;
 }
@@ -1633,6 +1656,14 @@ footer {
   font-size: 11px;
 }
 @media (max-width: 1024px) {
+  .nav-wrap {
+    width: min(1180px, calc(100% - 40px));
+    max-width: none;
+    gap: 24px;
+  }
+  .brand {
+    position: static;
+  }
   .desktop-nav,
   .nav-cta {
     display: none;
@@ -1755,6 +1786,7 @@ footer {
     display: block;
   }
   .hero-copy > p {
+    position: static;
     display: block;
     width: 100%;
     max-width: 590px;
