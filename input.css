@@ -221,6 +221,7 @@ body.menu-open {
 }
 .hero-badge {
   box-sizing: border-box;
+  align-self: flex-start;
   direction: ltr;
   display: flex;
   flex-direction: row;
