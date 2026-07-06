@@ -640,7 +640,46 @@ body.menu-open {
   font-size: 24px;
   line-height: 32px;
 }
-.comparison-wrap th span {
+.feature-heading {
+  display: flex;
+  flex-direction: row;
+  direction: ltr;
+  align-items: center;
+  width: 92px;
+  height: 32px;
+  padding: 0;
+  gap: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.feature-heading > span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 56px;
+  height: 32px;
+  padding: 0;
+  font-family: "Thmanyah", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  direction: rtl;
+  color: #000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.feature-heading > svg {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.comparison-wrap th .comparison-label {
   display: block;
   width: max-content;
   color: #fff;
