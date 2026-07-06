@@ -270,21 +270,12 @@ body.menu-open {
   order: 0;
   flex-grow: 0;
 }
-.faq-badge i {
-  position: relative;
+.faq-badge > svg {
   width: 20px;
   height: 20px;
-  background: transparent;
   flex: none;
   order: 1;
   flex-grow: 0;
-}
-.faq-badge i::before {
-  content: "";
-  position: absolute;
-  inset: 12.5%;
-  border: 1.66667px solid #0633a0;
-  border-radius: 50%;
 }
 .hero h1 {
   font-size: 51px;
