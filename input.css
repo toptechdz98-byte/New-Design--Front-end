@@ -1959,6 +1959,9 @@ footer {
     border-radius: 7px;
     padding: 0 16px;
   }
+  .newsletter form button {
+    justify-content: center;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 35px;
