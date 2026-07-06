@@ -16,6 +16,9 @@ font-thmanyah
 
 بدي كود وليس ملف كامل
 
+
+
+npm install aos
 ---اضافات
 بدها ارقام تزيد تصاعدي
 عمل الjeader

@@ -241,32 +241,14 @@
   .top-0 {
     top: 0;
   }
-  .top-1 {
-    top: var(--spacing);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
-  }
-  .top-\[-20px\] {
-    top: -20px;
-  }
-  .top-\[-30px\] {
-    top: -30px;
-  }
-  .top-\[-40px\] {
-    top: -40px;
   }
   .top-\[-45px\] {
     top: -45px;
   }
   .top-\[-49px\] {
     top: -49px;
-  }
-  .top-\[-\] {
-    top: -;
-  }
-  .top-\[0\] {
-    top: 0;
   }
   .top-\[10px\] {
     top: 10px;
@@ -285,12 +267,6 @@
   }
   .right-\[-20px\] {
     right: -20px;
-  }
-  .right-\[-22px\] {
-    right: -22px;
-  }
-  .right-\[-32px\] {
-    right: -32px;
   }
   .right-\[-44px\] {
     right: -44px;
@@ -448,9 +424,6 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
-  .mb-\[21px\] {
-    margin-bottom: 21px;
-  }
   .mb-\[50px\] {
     margin-bottom: 50px;
   }
@@ -480,9 +453,6 @@
   }
   .inline-flex {
     display: inline-flex;
-  }
-  .table {
-    display: table;
   }
   .h-0 {
     height: 0;
@@ -595,26 +565,17 @@
   .h-\[80px\] {
     height: 80px;
   }
-  .h-\[83\[\]\] {
-    height: 83[];
-  }
   .h-\[83px\] {
     height: 83px;
   }
   .h-\[90px\] {
     height: 90px;
   }
-  .h-\[92px\] {
-    height: 92px;
-  }
   .h-\[96px\] {
     height: 96px;
   }
   .h-\[118px\] {
     height: 118px;
-  }
-  .h-\[120px\] {
-    height: 120px;
   }
   .h-\[130px\] {
     height: 130px;
@@ -709,12 +670,6 @@
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
-  .w-92 {
-    width: calc(var(--spacing) * 92);
-  }
-  .w-\[1\] {
-    width: 1;
-  }
   .w-\[20px\] {
     width: 20px;
   }
@@ -757,12 +712,6 @@
   .w-\[85\%\] {
     width: 85%;
   }
-  .w-\[90px\] {
-    width: 90px;
-  }
-  .w-\[92px\] {
-    width: 92px;
-  }
   .w-\[94px\] {
     width: 94px;
   }
@@ -771,9 +720,6 @@
   }
   .w-\[100px\] {
     width: 100px;
-  }
-  .w-\[110px\] {
-    width: 110px;
   }
   .w-\[118px\] {
     width: 118px;
@@ -786,9 +732,6 @@
   }
   .w-\[146px\] {
     width: 146px;
-  }
-  .w-\[150px\] {
-    width: 150px;
   }
   .w-\[162px\] {
     width: 162px;
@@ -840,12 +783,6 @@
   }
   .w-\[320px\] {
     width: 320px;
-  }
-  .w-\[330px\] {
-    width: 330px;
-  }
-  .w-\[334px\] {
-    width: 334px;
   }
   .w-\[350px\] {
     width: 350px;
@@ -922,24 +859,14 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   .shrink-0 {
     flex-shrink: 0;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .translate-x-full {
     --tw-translate-x: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -961,11 +888,11 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
+  .animate-fade-left {
+    animation: fade-left var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
+  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1120,6 +1047,9 @@
   }
   .rounded-\[24px\] {
     border-radius: 24px;
+  }
+  .rounded-\[25px\] {
+    border-radius: 25px;
   }
   .rounded-\[26px\] {
     border-radius: 26px;
@@ -1296,9 +1226,6 @@
   .border-transparent {
     border-color: transparent;
   }
-  .border-white {
-    border-color: var(--color-white);
-  }
   .border-white\/20 {
     border-color: color-mix(in srgb, #fff 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1409,9 +1336,6 @@
   }
   .bg-\[white\] {
     background-color: white;
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/40 {
     background-color: color-mix(in srgb, #000 40%, transparent);
@@ -1536,17 +1460,11 @@
   .px-\[70px\] {
     padding-inline: 70px;
   }
-  .py-1 {
-    padding-block: var(--spacing);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
@@ -1574,9 +1492,6 @@
   }
   .py-\[6\.55px\] {
     padding-block: 6.55px;
-  }
-  .py-\[10px\] {
-    padding-block: 10px;
   }
   .py-\[24px\] {
     padding-block: 24px;
@@ -1823,10 +1738,6 @@
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
   }
-  .font-\[300\] {
-    --tw-font-weight: 300;
-    font-weight: 300;
-  }
   .font-\[400\] {
     --tw-font-weight: 400;
     font-weight: 400;
@@ -2002,9 +1913,6 @@
       color: color-mix(in oklab, var(--color-white) 75%, transparent);
     }
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2054,6 +1962,10 @@
   }
   .shadow-\[0_20px_60px_-40px_\#1E40AF\] {
     --tw-shadow: 0 20px 60px -40px var(--tw-shadow-color, #1E40AF);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0px_0px_20px_0px_\#FFFFFFCC\] {
+    --tw-shadow: 0px 0px 20px 0px var(--tw-shadow-color, #FFFFFFCC);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[0px_1px_2px_0px_\#0000000D\] {
@@ -2144,10 +2056,6 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -2173,9 +2081,16 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .delay-300 {
+    transition-delay: 300ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
   }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
@@ -2188,6 +2103,18 @@
   .select-none {
     -webkit-user-select: none;
     user-select: none;
+  }
+  .animate-duration-700 {
+    animation-duration: 700ms;
+  }
+  .delay-300 {
+    animation-delay: .3s;
+  }
+  .duration-700 {
+    animation-duration: .7s;
+  }
+  .ease-in-out {
+    animation-timing-function: ease-in-out;
   }
   .before\:absolute {
     &::before {
@@ -2301,12 +2228,6 @@
     &::before {
       content: var(--tw-content);
       width: 32px;
-    }
-  }
-  .before\:w-\[41px\] {
-    &::before {
-      content: var(--tw-content);
-      width: 41px;
     }
   }
   .before\:w-\[48px\] {
@@ -2651,21 +2572,6 @@
       margin-top: 0;
     }
   }
-  .lg\:mt-\[5px\] {
-    @media (width >= 64rem) {
-      margin-top: 5px;
-    }
-  }
-  .lg\:mt-\[21px\] {
-    @media (width >= 64rem) {
-      margin-top: 21px;
-    }
-  }
-  .lg\:mt-\[51px\] {
-    @media (width >= 64rem) {
-      margin-top: 51px;
-    }
-  }
   .lg\:mt-\[100px\] {
     @media (width >= 64rem) {
       margin-top: 100px;
@@ -2756,31 +2662,6 @@
       width: 98px;
     }
   }
-  .lg\:w-\[100px\] {
-    @media (width >= 64rem) {
-      width: 100px;
-    }
-  }
-  .lg\:w-\[120px\] {
-    @media (width >= 64rem) {
-      width: 120px;
-    }
-  }
-  .lg\:w-\[144px\] {
-    @media (width >= 64rem) {
-      width: 144px;
-    }
-  }
-  .lg\:w-\[150px\] {
-    @media (width >= 64rem) {
-      width: 150px;
-    }
-  }
-  .lg\:w-\[154px\] {
-    @media (width >= 64rem) {
-      width: 154px;
-    }
-  }
   .lg\:w-\[170px\] {
     @media (width >= 64rem) {
       width: 170px;
@@ -2816,19 +2697,9 @@
       width: 232px;
     }
   }
-  .lg\:w-\[244px\] {
-    @media (width >= 64rem) {
-      width: 244px;
-    }
-  }
   .lg\:w-\[335px\] {
     @media (width >= 64rem) {
       width: 335px;
-    }
-  }
-  .lg\:w-\[344px\] {
-    @media (width >= 64rem) {
-      width: 344px;
     }
   }
   .lg\:w-\[400px\] {
@@ -2904,11 +2775,6 @@
   .lg\:w-\[1200px\] {
     @media (width >= 64rem) {
       width: 1200px;
-    }
-  }
-  .lg\:w-\[px\] {
-    @media (width >= 64rem) {
-      width: px;
     }
   }
   .lg\:w-full {
@@ -2991,6 +2857,11 @@
       gap: 42px;
     }
   }
+  .lg\:gap-\[52px\] {
+    @media (width >= 64rem) {
+      gap: 52px;
+    }
+  }
   .lg\:gap-\[100px\] {
     @media (width >= 64rem) {
       gap: 100px;
@@ -3045,11 +2916,6 @@
   .lg\:py-24 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 24);
-    }
-  }
-  .lg\:py-\[0\] {
-    @media (width >= 64rem) {
-      padding-block: 0;
     }
   }
   .lg\:py-\[60px\] {
@@ -3140,6 +3006,9 @@
     }
   }
 }
+.reveal {
+  opacity: 0;
+}
 @font-face {
   font-family: 'Thmanyah Serif';
   src: url('/fonts/thmanyah-serif-text-light.otf') format('opentype');
@@ -3198,6 +3067,126 @@ body {
 html {
   scrollbar-width: thin;
   scrollbar-color: #1E40AF #F3F4F6;
+}
+* @theme {
+  --animate-float: float 3s ease-in-out infinite;
+  @keyframes float {
+    0%,100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+}
+* =========================== Fade =========================== @utility animate-fade-in {
+  animation: fade-in .5s ease forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+* =========================== Slide Up =========================== @utility animate-slide-up {
+  animation: slide-up .6s ease forwards;
+}
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* =========================== Slide Down =========================== @utility animate-slide-down {
+  animation: slide-down .6s ease forwards;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* =========================== Slide Left =========================== @utility animate-slide-left {
+  animation: slide-left .6s ease forwards;
+}
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+* =========================== Slide Right =========================== @utility animate-slide-right {
+  animation: slide-right .6s ease forwards;
+}
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+* =========================== Zoom In =========================== @utility animate-zoom-in {
+  animation: zoom-in .5s ease forwards;
+}
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+* =========================== Zoom Out =========================== @utility animate-zoom-out {
+  animation: zoom-out .5s ease forwards;
+}
+@keyframes zoom-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(.7);
+  }
+}
+* مدة الحركة @utility duration-300 {
+  animation-duration: .3s;
+}
+* تأخير @utility delay-100 {
+  animation-delay: .1s;
+}
+* عدد مرات التكرار @utility repeat-1 {
+  animation-iteration-count: 1;
+}
+* نوع الحركة @utility ease-linear {
+  animation-timing-function: linear;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -3363,11 +3352,6 @@ html {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -3395,6 +3379,16 @@ html {
   syntax: "*";
   inherits: false;
   initial-value: 1;
+}
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -3435,7 +3429,6 @@ html {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-content: "";

@@ -1,5 +1,10 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animated";
 
+
+.reveal {
+  opacity: 0;
+}
 @font-face {
   font-family: 'Thmanyah Serif';
   src: url('/fonts/thmanyah-serif-text-light.otf') format('opentype');
@@ -67,3 +72,237 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #1E40AF #F3F4F6;
 }
+/*
+@theme {
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%,100%{
+      transform: translateY(0);
+    }
+
+    50%{
+      transform: translateY(-15px);
+    }
+  }
+}
+
+/* ===========================
+   Fade
+=========================== 
+
+@utility animate-fade-in {
+  animation: fade-in .5s ease forwards;
+}
+
+@utility animate-fade-out {
+  animation: fade-out .5s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* ===========================
+   Slide Up
+===========================
+
+@utility animate-slide-up {
+  animation: slide-up .6s ease forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Slide Down
+=========================== 
+
+@utility animate-slide-down {
+  animation: slide-down .6s ease forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Slide Left
+=========================== 
+
+@utility animate-slide-left {
+  animation: slide-left .6s ease forwards;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===========================
+   Slide Right
+=========================== 
+
+@utility animate-slide-right {
+  animation: slide-right .6s ease forwards;
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===========================
+   Zoom In
+=========================== 
+
+@utility animate-zoom-in {
+  animation: zoom-in .5s ease forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+   Zoom Out
+=========================== 
+
+@utility animate-zoom-out {
+  animation: zoom-out .5s ease forwards;
+}
+
+@keyframes zoom-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.7);
+  }
+}
+
+
+/* مدة الحركة 
+@utility duration-300 {
+  animation-duration: .3s;
+}
+
+@utility duration-500 {
+  animation-duration: .5s;
+}
+
+@utility duration-700 {
+  animation-duration: .7s;
+}
+
+@utility duration-1000 {
+  animation-duration: 1s;
+}
+
+/* تأخير 
+@utility delay-100 {
+  animation-delay: .1s;
+}
+
+@utility delay-200 {
+  animation-delay: .2s;
+}
+
+@utility delay-300 {
+  animation-delay: .3s;
+}
+
+@utility delay-500 {
+  animation-delay: .5s;
+}
+
+@utility delay-1000 {
+  animation-delay: 1s;
+}
+
+/* عدد مرات التكرار 
+@utility repeat-1 {
+  animation-iteration-count: 1;
+}
+
+@utility repeat-2 {
+  animation-iteration-count: 2;
+}
+
+@utility repeat-infinite {
+  animation-iteration-count: infinite;
+}
+
+/* نوع الحركة 
+@utility ease-linear {
+  animation-timing-function: linear;
+}
+
+@utility ease-in {
+  animation-timing-function: ease-in;
+}
+
+@utility ease-out {
+  animation-timing-function: ease-out;
+}
+
+@utility ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
