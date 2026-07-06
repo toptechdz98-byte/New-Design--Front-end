@@ -67,7 +67,7 @@
           >
         </nav>
         <a
-          class="button button-primary absolute top-[18px] left-[90px] inline-flex h-[60px] min-h-12 w-[237px] min-w-[237px] items-center justify-center gap-2.5 rounded-xl border border-transparent bg-brand-blue px-10 py-[18px] font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[1199px]:hidden!"
+          class="absolute top-[18px] left-[90px] inline-flex h-[60px] min-h-12 w-[237px] min-w-[237px] items-center justify-center gap-2.5 rounded-xl border border-transparent bg-brand-blue px-10 py-[18px] font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[1199px]:hidden!"
           href="#contact"
           >احجز استشارة مجانية</a
         >
@@ -127,7 +127,7 @@
             >
           </nav>
           <a
-            class="button button-primary m-5 hidden min-h-12 items-center justify-center gap-2.5 rounded-[7px] border border-transparent bg-brand-blue px-[25px] py-2.5 font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[1199px]:flex!"
+            class="m-5 hidden min-h-12 items-center justify-center gap-2.5 rounded-[7px] border border-transparent bg-brand-blue px-[25px] py-2.5 font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[1199px]:flex!"
             href="#contact"
             >احجز استشارة مجانية</a
           >
@@ -231,17 +231,17 @@
         class="packages-section min-h-[1360px] bg-brand-pale py-20 max-[900px]:min-h-0 max-[760px]:py-[60px]"
         id="packages"
       >
-        <div class="container min-h-[calc(100%-160px)]">
-          <div class="section-heading mb-[63px] max-[760px]:mb-[42px]">
-            <span class="eyebrow"><i></i> باقاتنا</span>
+        <div class="mx-auto min-h-[calc(100%-160px)] w-[min(1180px,calc(100%-40px))] max-[760px]:w-[min(1180px,calc(100%-28px))]">
+          <div class="section-heading mb-[63px] text-center max-[760px]:mb-[42px]">
+            <span class="eyebrow inline-flex items-center gap-2 rounded-[20px] bg-[#eef4ff] px-3 py-1.5 text-[13px] font-bold text-brand-blue"><i class="h-[7px] w-[7px] rounded-full bg-brand-gold"></i> باقاتنا</span>
             <h2
               class="packages-heading mx-auto mt-[13px] mb-[5px] flex h-12 w-[662px] flex-row items-start justify-center p-0 font-thmanyah text-[48px] leading-12 font-bold text-center [direction:ltr] [isolation:isolate] max-[760px]:h-auto max-[760px]:w-full max-[760px]:flex-wrap max-[760px]:text-[clamp(30px,9vw,40px)] max-[760px]:leading-[1.15]"
             >
-              <span class="packages-heading-suffix">الأنسب لمشروعك</span>
-              <strong>الباقة</strong>
-              <span class="packages-heading-prefix">اختر</span>
+              <span class="packages-heading-suffix order-0 z-2 flex h-12 w-[358px] flex-none items-center justify-center text-[#1e293b] [direction:rtl] max-[760px]:h-auto max-[760px]:w-auto max-[760px]:max-w-full max-[760px]:[overflow-wrap:anywhere]">الأنسب لمشروعك</span>
+              <strong class="order-1 z-1 flex h-12 w-[105px] flex-none items-center justify-center text-[#ffc400] [direction:rtl] max-[760px]:h-auto max-[760px]:w-auto max-[760px]:max-w-full max-[760px]:[overflow-wrap:anywhere]">الباقة</strong>
+              <span class="packages-heading-prefix order-2 z-0 flex h-12 w-[73px] flex-none items-center justify-center text-[#1e293b] [direction:rtl] max-[760px]:h-auto max-[760px]:w-auto max-[760px]:max-w-full max-[760px]:[overflow-wrap:anywhere]">اختر</span>
             </h2>
-            <p>
+            <p class="m-0 text-brand-muted max-[760px]:text-[14px]">
               تفاصيل واضحة تساعدك على اختيار الحل الأقرب لمرحلة نمو مشروعك
               واحتياجاته الفعلية.
             </p>
@@ -250,12 +250,15 @@
             class="pricing-grid mx-auto grid max-w-[1152px] grid-cols-[repeat(2,560px)] gap-8 max-[1199px]:w-full max-[1199px]:grid-cols-2 max-[900px]:grid-cols-[minmax(0,560px)] max-[900px]:justify-center max-[760px]:grid-cols-1"
           >
             <article
-              class="price-card gold-card flex h-[969px] w-[560px] flex-col justify-between rounded-[40px] border-2 border-[#ffc700] bg-white p-10 shadow-[4px_4px_5px_rgb(255_196_0/10%),20px_20px_50px_-12px_rgb(255_196_0/10%)] [isolation:isolate] max-[1199px]:w-full max-[900px]:max-w-[560px] max-[760px]:h-auto max-[760px]:min-h-0 max-[760px]:px-[23px] max-[760px]:py-[27px]"
+              class="price-card gold-card flex h-[969px] w-[560px] flex-col justify-between rounded-[40px] border-2 border-[#ffc700] bg-white p-10 shadow-[4px_4px_5px_rgb(255_196_0/10%),20px_20px_50px_-12px_rgb(255_196_0/10%)] [isolation:isolate] max-[1199px]:w-full max-[900px]:max-w-[560px] max-[760px]:order-2 max-[760px]:h-auto max-[760px]:min-h-0 max-[760px]:px-[23px] max-[760px]:py-[27px]"
             >
               <div
                 class="price-title flex min-h-12 flex-row-reverse items-center justify-between"
               >
-                <span class="round-icon gold" aria-hidden="true">
+                <span
+                  class="round-icon gold grid h-12 w-12 place-items-center rounded-full bg-[#fff7d8] text-brand-gold [&>svg]:h-8 [&>svg]:w-8 [&>svg]:stroke-current [&>svg]:[stroke-linecap:round] [&>svg]:[stroke-linejoin:round] [&>svg]:[stroke-width:2.6667]"
+                  aria-hidden="true"
+                >
                   <svg viewBox="0 0 32 32" fill="none">
                     <circle cx="16" cy="16" r="12" />
                     <path
@@ -263,14 +266,14 @@
                     />
                   </svg>
                 </span>
-                <h3>باقة 360°</h3>
+                <h3 class="m-0 text-[36px] leading-10 max-[760px]:text-[28px] max-[760px]:leading-[1.3]">باقة 360°</h3>
               </div>
-              <p class="card-lead">
+              <p class="card-lead m-0 min-h-[85px] px-4 pb-8 text-center text-[18px] leading-[26px] text-brand-muted max-[760px]:min-h-0 max-[760px]:text-[16px]">
                 للشركات التي تريد هيمنة رقمية كاملة، حل متكامل يغطي كل نقاط
                 التواصل مع العميل.
               </p>
               <ul
-                class="feature-list flex min-h-[326px] flex-col gap-4"
+                class="feature-list m-0 flex min-h-[326px] list-none flex-col gap-4 p-0 max-[760px]:min-h-0 [&>li]:min-h-[41px] [&>li]:border-b [&>li]:border-[#f9fafb] [&>li]:py-2 [&>li]:text-[20px] [&>li]:leading-6 [&>li]:font-medium max-[760px]:[&>li]:text-[16px] max-[760px]:[&>li>span:last-child]:text-[16px]"
               >
                 <li class="flex h-[41px] w-full items-center justify-between py-2 [direction:ltr] before:hidden!">
                   <span
@@ -312,7 +315,7 @@
                   <span class="flex h-6 items-center justify-end text-right font-thmanyah text-[20px] leading-6 font-medium text-black [direction:rtl]">تقرير تحليلي أسبوعي + لوحة بيانات</span>
                 </li>
               </ul>
-              <div class="suited gold-bg">
+              <div class="suited gold-bg min-h-36 rounded-2xl bg-[#fff9e6] px-4 pt-3.5 pb-4 text-center text-[14px] [&>b]:inline-flex [&>b]:min-h-[29px] [&>b]:items-center [&>b]:rounded-full [&>b]:bg-white/60 [&>b]:px-4 [&>b]:py-1 [&>b]:leading-5 [&>b]:text-[#ffc400] [&>ul]:mt-[5px] [&>ul]:mr-0 [&>ul]:mb-0 [&>ul]:list-none [&>ul]:pr-4 [&>ul]:text-right [&>ul]:leading-5">
                 <b>تناسبك إذا</b>
                 <ul>
                   <li>لديك شركة قائمة وتريد إدارة رقمية شاملة</li>
@@ -320,11 +323,11 @@
                   <li>تبحث عن نمو أسرع ومتابعة مستمرة</li>
                 </ul>
               </div>
-              <div class="bonus-badge">
+              <div class="bonus-badge flex h-12 w-[476px] flex-row items-center justify-center gap-2 rounded-xl bg-[#fff9e5] px-4 py-3 text-[16px] leading-6 font-bold text-[#ffc700] max-[1199px]:w-full [&>i]:grid [&>i]:h-5 [&>i]:w-5 [&>i]:place-items-center [&>i]:text-[15px] [&>i]:leading-5 [&>i]:not-italic">
                 <span>عرض مخصص بعد الاستشارة</span>
                 <i aria-hidden="true">★</i>
               </div>
-              <a class="button button-primary full-button" href="#contact"
+              <a class="mt-0 inline-flex min-h-14 w-full items-center justify-center gap-2.5 rounded-2xl border border-transparent bg-brand-blue px-[25px] py-2.5 font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f]" href="#contact"
                 >اطلب عرض الباقة
                 <svg
                   class="h-[14px] w-2 flex-none"
@@ -346,30 +349,30 @@
             </article>
 
             <article
-              class="price-card blue-card flex h-[969px] w-[560px] flex-col justify-between rounded-[40px] border-2 border-[#5279db] bg-white p-10 shadow-[4px_4px_5px_rgb(30_64_175/10%),20px_20px_50px_-12px_rgb(30_64_175/10%)] [isolation:isolate] max-[1199px]:w-full max-[900px]:max-w-[560px] max-[760px]:h-auto max-[760px]:min-h-0 max-[760px]:px-[23px] max-[760px]:py-[27px]"
+              class="price-card blue-card flex h-[969px] w-[560px] flex-col justify-between rounded-[40px] border-2 border-[#5279db] bg-white p-10 shadow-[4px_4px_5px_rgb(30_64_175/10%),20px_20px_50px_-12px_rgb(30_64_175/10%)] [isolation:isolate] max-[1199px]:w-full max-[900px]:max-w-[560px] max-[760px]:order-1 max-[760px]:h-auto max-[760px]:min-h-0 max-[760px]:px-[23px] max-[760px]:py-[27px]"
             >
               <div
                 class="price-title flex min-h-12 flex-row-reverse items-center justify-between"
               >
-                <span class="round-icon blue" aria-hidden="true">
+                <span class="round-icon blue grid h-12 w-12 place-items-center rounded-full bg-[#edf3ff] text-brand-blue [&>svg]:h-8 [&>svg]:w-8 [&>svg]:stroke-current [&>svg]:[stroke-linecap:round] [&>svg]:[stroke-linejoin:round] [&>svg]:[stroke-width:2.6667]" aria-hidden="true">
                   <svg viewBox="0 0 32 32" fill="none">
                     <path d="m18.67 4-12 16h10.66l-4 8 12-16H14.67l4-8Z" />
                   </svg>
                 </span>
-                <h3>باقة النمو الرقمي</h3>
+                <h3 class="m-0 text-[36px] leading-10 max-[760px]:text-[28px] max-[760px]:leading-[1.3]">باقة النمو الرقمي</h3>
               </div>
-              <p class="card-lead">
+              <p class="card-lead m-0 min-h-[85px] px-4 pb-8 text-center text-[18px] leading-[26px] text-brand-muted max-[760px]:min-h-0 max-[760px]:text-[16px]">
                 مثالية للشركات الناشئة والأعمال التي تريد بناء حضور رقمي قوي من
                 الصفر بتكلفة مدروسة.
               </p>
-              <ul class="feature-list">
+              <ul class="feature-list m-0 min-h-[326px] list-none p-0 max-[760px]:min-h-0 [&>li]:min-h-[41px] [&>li]:border-b [&>li]:border-[#f9fafb] [&>li]:py-2 [&>li]:text-[20px] [&>li]:leading-6 [&>li]:font-medium max-[760px]:[&>li]:text-[16px]">
                 <li>تصميم موقع احترافي (5 صفحات)</li>
                 <li>إدارة السوشيال (3 منصات)</li>
                 <li>تحسين SEO أساسي + تقرير شهري</li>
                 <li>12 محتوى شهرياً (صور + كتابة)</li>
                 <li>تقارير أداء شهرية مفصلة</li>
               </ul>
-              <div class="suited blue-bg">
+              <div class="suited blue-bg min-h-36 rounded-2xl bg-[#eff5ff] px-4 pt-3.5 pb-4 text-center text-[14px] [&>b]:inline-flex [&>b]:min-h-[29px] [&>b]:items-center [&>b]:rounded-full [&>b]:bg-white/60 [&>b]:px-4 [&>b]:py-1 [&>b]:leading-5 [&>b]:text-[#0633a0] [&>ul]:mt-[5px] [&>ul]:mr-0 [&>ul]:mb-0 [&>ul]:list-none [&>ul]:pr-4 [&>ul]:text-right [&>ul]:leading-5">
                 <b>تناسبك إذا</b>
                 <ul>
                   <li>كنت تبدأ مشروعك من الصفر</li>
@@ -377,10 +380,10 @@
                   <li>تبحث عن انطلاقة عملية بتكلفة مدروسة</li>
                 </ul>
               </div>
-              <a class="text-link secondary-link" href="#contact"
+              <a class="text-link secondary-link mt-0 flex min-h-12 items-center justify-center rounded-xl bg-[#f3f7ff] px-4 py-3 text-center text-[16px] leading-6 font-medium text-brand-blue" href="#contact"
                 >عرض مخصص بعد الاستشارة ★</a
               >
-              <a class="button button-primary full-button" href="#contact"
+              <a class="mt-0 inline-flex min-h-14 w-full items-center justify-center gap-2.5 rounded-2xl border border-transparent bg-brand-blue px-[25px] py-2.5 font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f]" href="#contact"
                 >اطلب عرض الباقة
                 <svg
                   class="h-[14px] w-2 flex-none"
@@ -409,27 +412,27 @@
         id="comparison"
       >
         <div
-          class="container flex h-[1144px] w-[min(1152px,calc(100%-40px))] flex-col gap-12 max-[760px]:h-auto max-[760px]:w-[min(1152px,calc(100%-28px))] max-[760px]:gap-[30px]"
+          class="mx-auto flex h-[1144px] w-[min(1152px,calc(100%-40px))] flex-col gap-12 max-[760px]:h-auto max-[760px]:w-[min(1152px,calc(100%-28px))] max-[760px]:gap-[30px]"
         >
-          <div class="section-heading relative m-0 h-[100px]">
+          <div class="section-heading relative m-0 h-[100px] text-center">
             <span
-              class="comparison-badge absolute top-[-48px] left-[calc(50%-69.5px+31px)] flex h-[34px] w-[139px] flex-row items-center gap-2 rounded-full border border-[#f3f4f6] bg-white px-4 py-1.5 font-thmanyah text-[16px] leading-5 font-medium text-brand-blue shadow-[0_1px_2px_rgb(0_0_0/5%)] [direction:ltr]"
+              class="comparison-badge absolute top-[-48px] left-[calc(50%-69.5px+31px)] flex h-[34px] w-[139px] flex-row items-center gap-2 rounded-full border border-[#f3f4f6] bg-white px-4 py-1.5 font-thmanyah text-[16px] leading-5 font-medium text-brand-blue shadow-[0_1px_2px_rgb(0_0_0/5%)] [direction:ltr] [&>span]:order-0 [&>span]:flex [&>span]:h-5 [&>span]:w-[87px] [&>span]:flex-none [&>span]:flex-col [&>span]:items-center [&>span]:whitespace-nowrap [&>span]:text-center [&>span]:[direction:rtl] [&>i]:order-1 [&>i]:h-2.5 [&>i]:w-2.5 [&>i]:flex-none [&>i]:rounded-full [&>i]:bg-[#ffc400]"
               ><span>مقارنة الباقات</span><i aria-hidden="true"></i
             ></span>
-            <h2><strong>قارن</strong> بين الباقات</h2>
-            <p>
+            <h2 class="m-0 h-14 pt-2 text-[48px] leading-12 max-[760px]:h-auto max-[760px]:pt-0 max-[760px]:text-[29px] max-[760px]:leading-[1.3]"><strong>قارن</strong> بين الباقات</h2>
+            <p class="h-7 text-[18px] leading-7 max-[760px]:h-auto">
               مقارنة واضحة تساعدك على اختيار الباقة الأنسب حسب مرحلة مشروعك
               واحتياجه.
             </p>
           </div>
           <div
-            class="comparison-wrap h-[826px] w-[1152px] flex-[0_0_826px] overflow-auto rounded-[32px] border border-[#cbd5e1] shadow-[0_20px_25px_-5px_rgb(30_58_138/5%),0_8px_10px_-6px_rgb(30_58_138/5%)] max-[1199px]:w-[min(100%,calc(100vw-40px))]"
+            class="comparison-wrap h-[826px] w-[1152px] flex-[0_0_826px] overflow-auto rounded-[32px] border border-[#cbd5e1] shadow-[0_20px_25px_-5px_rgb(30_58_138/5%),0_8px_10px_-6px_rgb(30_58_138/5%)] max-[1199px]:w-[min(100%,calc(100vw-40px))] max-[760px]:mx-[-4px] max-[760px]:h-auto max-[760px]:w-full max-[760px]:basis-auto"
           >
             <table>
               <thead>
                 <tr>
                   <th>
-                    <span class="feature-heading">
+                    <span class="feature-heading flex h-8 w-[92px] flex-row items-center gap-3 [direction:ltr] [&>span]:order-0 [&>span]:flex [&>span]:h-8 [&>span]:w-14 [&>span]:flex-none [&>span]:flex-col [&>span]:items-end [&>span]:font-thmanyah [&>span]:text-[24px] [&>span]:leading-8 [&>span]:font-bold [&>span]:text-black [&>span]:[direction:rtl] [&>svg]:order-1 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:flex-none">
                       <span>الميزة</span>
                       <svg
                         aria-hidden="true"
@@ -590,24 +593,25 @@
             </table>
           </div>
           <aside
-            class="help-strip mt-0 flex h-[122px] w-[1152px] flex-[0_0_122px] items-center justify-between rounded-2xl border border-[#eff6ff] bg-[#f5f9ff] p-8 shadow-[0_1px_2px_rgb(0_0_0/5%)] max-[1199px]:w-[min(100%,calc(100vw-40px))] max-[760px]:h-auto max-[760px]:flex-col max-[760px]:gap-5 max-[760px]:p-5"
+            class="help-strip mt-0 flex h-[122px] w-[1152px] flex-[0_0_122px] items-center justify-between rounded-2xl border border-[#eff6ff] bg-[#f5f9ff] p-8 shadow-[0_1px_2px_rgb(0_0_0/5%)] max-[1199px]:w-[min(100%,calc(100vw-40px))] max-[760px]:h-auto max-[760px]:w-full max-[760px]:basis-auto max-[760px]:flex-col max-[760px]:items-stretch max-[760px]:gap-5 max-[760px]:p-5"
             aria-label="المساعدة في اختيار الباقة"
           >
-            <div>
-              <span class="help-icon"
-                >?<span class="decorative-sparkle" aria-hidden="true">
-                  <svg viewBox="0 0 20 20">
+            <div class="flex items-center gap-[13px]">
+              <span class="help-icon relative grid h-14 w-14 place-items-center rounded-full bg-brand-blue text-[25px] text-white"
+                >?<span class="decorative-sparkle absolute -top-1 -right-1 z-1 flex h-5 w-5 flex-col items-start p-0" aria-hidden="true">
+                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20">
                     <path
+                      class="fill-[#ffc400]"
                       d="M11.45 2c.5 3.65 2.9 6.05 6.55 6.55-3.65.5-6.05 2.9-6.55 6.55-.5-3.65-2.9-6.05-6.55-6.55 3.65-.5 6.05-2.9 6.55-6.55ZM3.5 2c.12.84.66 1.38 1.5 1.5-.84.12-1.38.66-1.5 1.5-.12-.84-.66-1.38-1.5-1.5.84-.12 1.38-.66 1.5-1.5Zm1.3 11.2c.18 1.3 1.03 2.15 2.33 2.33-1.3.18-2.15 1.03-2.33 2.33-.18-1.3-1.03-2.15-2.33-2.33 1.3-.18 2.15-1.03 2.33-2.33Z"
                     />
                   </svg></span
               ></span>
-              <p>
-                <b>غير متأكد أي باقة تناسبك؟</b
-                ><small>احصل على ترشيح مجاني بناءً على احتياجك.</small>
+              <p class="m-0">
+                <b class="text-[20px] leading-7">غير متأكد أي باقة تناسبك؟</b
+                ><small class="block text-[16px] leading-6 text-brand-muted">احصل على ترشيح مجاني بناءً على احتياجك.</small>
               </p>
             </div>
-            <a class="button button-primary" href="#contact"
+            <a class="inline-flex h-14 min-h-12 w-[232px] items-center justify-center gap-2.5 rounded-xl border border-transparent bg-brand-blue px-[25px] py-2.5 font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[760px]:w-full" href="#contact"
               >احجز استشارة مجانية ←</a
             >
           </aside>
@@ -619,12 +623,12 @@
         id="faq"
       >
         <div
-          class="container min-h-[calc(100%-160px)] w-[min(1152px,calc(100%-40px))] max-[1199px]:w-[min(100%,calc(100vw-40px))]"
+          class="mx-auto min-h-[calc(100%-160px)] w-[min(1152px,calc(100%-40px))] max-[1199px]:w-[min(100%,calc(100vw-40px))]"
         >
           <div
-            class="section-heading faq-header mx-auto mb-12 flex h-[162px] w-full flex-col items-center gap-6 p-0 max-[760px]:h-auto max-[760px]:gap-4 max-[760px]:mb-[42px]"
+            class="section-heading faq-header mx-auto mb-12 flex h-[162px] w-full flex-col items-center gap-6 p-0 text-center max-[760px]:h-auto max-[760px]:gap-4 max-[760px]:mb-[42px]"
           >
-            <span class="eyebrow faq-badge"
+            <span class="eyebrow faq-badge order-0 mx-auto flex h-[38px] w-[160.99px] flex-none flex-row items-center gap-[7.99px] rounded-full border border-[#dbeafe] bg-[#f8faff] px-4 py-2 font-thmanyah text-[16px] leading-5 font-medium text-[#0633a0] [direction:ltr] [&>span]:order-0 [&>span]:flex [&>span]:h-5 [&>span]:w-[99px] [&>span]:flex-none [&>span]:flex-col [&>span]:items-center [&>span]:whitespace-nowrap [&>span]:text-center [&>span]:[direction:rtl] [&>svg]:order-1 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:flex-none"
               ><span>الأسئلة الشائعة</span
               ><svg
                 aria-hidden="true"
@@ -643,18 +647,19 @@
                 />
               </svg
             ></span>
-            <h2>
+            <h2 class="order-1 flex h-12 w-full flex-none flex-row items-start justify-center gap-[5px] self-stretch p-0 font-thmanyah text-[60px] leading-12 font-bold [direction:ltr] [isolation:isolate] max-[760px]:h-auto max-[760px]:w-full max-[760px]:flex-wrap max-[760px]:gap-1 max-[760px]:text-[clamp(32px,10vw,44px)] max-[760px]:leading-[1.1] [&>strong]:order-0 [&>strong]:z-1 [&>strong]:flex [&>strong]:h-12 [&>strong]:w-[181px] [&>strong]:flex-none [&>strong]:items-center [&>strong]:justify-center [&>strong]:text-center [&>strong]:text-[#ffc400] [&>span]:order-1 [&>span]:z-0 [&>span]:flex [&>span]:h-12 [&>span]:w-[432px] [&>span]:flex-none [&>span]:items-center [&>span]:justify-center [&>span]:text-center [&>span]:text-black [&>span]:[direction:rtl] max-[760px]:[&>strong]:h-auto max-[760px]:[&>strong]:w-auto max-[760px]:[&>span]:h-auto max-[760px]:[&>span]:w-auto">
               <strong>الباقات</strong><span>أسئلة شائعة حول</span>
             </h2>
-            <p>
+            <p class="order-2 mx-auto flex h-7 w-[672px] max-w-[672px] flex-none flex-col items-center p-0 max-[760px]:h-auto max-[760px]:w-full max-[760px]:max-w-full">
               <span
+                class="flex h-7 w-[687px] flex-none items-center justify-center font-thmanyah text-[20px] leading-7 font-normal text-center text-[#64748b] max-[760px]:h-auto max-[760px]:w-full max-[760px]:max-w-full max-[760px]:text-[16px] max-[760px]:leading-6"
                 >إجابات مختصرة على أكثر الأسئلة التي يطرحها عملاؤنا قبل اختيار
                 الباقة الأنسب لمشاريعهم.</span
               >
             </p>
           </div>
           <div
-            class="faq-grid grid grid-cols-2 gap-x-[25px] gap-y-[17px] max-[760px]:grid-cols-1"
+            class="faq-grid grid grid-cols-2 gap-x-[25px] gap-y-[17px] max-[760px]:grid-cols-1 [&>.faq-item]:overflow-hidden [&>.faq-item]:rounded-[10px] [&>.faq-item]:border [&>.faq-item]:border-[#e1e7f1] [&>.faq-item]:bg-white [&>.faq-item>button]:flex [&>.faq-item>button]:w-full [&>.faq-item>button]:cursor-pointer [&>.faq-item>button]:items-center [&>.faq-item>button]:justify-between [&>.faq-item>button]:border-0 [&>.faq-item>button]:bg-transparent [&>.faq-item>button]:px-[22px] [&>.faq-item>button]:py-[19px] [&>.faq-item>button]:text-right [&>.faq-item>button]:font-bold [&_.faq-item>button>i]:text-[21px] [&_.faq-item>button>i]:not-italic [&_.faq-item>button>i]:text-brand-blue [&_.faq-item>button>i]:transition [&_.faq-item>p]:m-0 [&_.faq-item>p]:hidden [&_.faq-item>p]:px-[22px] [&_.faq-item>p]:pb-[18px] [&_.faq-item>p]:text-[14px] [&_.faq-item>p]:text-brand-muted"
           >
             <article class="faq-item">
               <button type="button">
@@ -712,24 +717,24 @@
             </article>
           </div>
           <aside
-            class="contact-box mt-11 flex h-[178px] w-[1152px] flex-row items-center justify-between gap-[244.39px] rounded-3xl border border-[#dce8ff] bg-white px-12 pt-16 pb-12 [direction:ltr] max-[1199px]:h-auto max-[1199px]:w-[min(100%,calc(100vw-40px))] max-[1199px]:flex-col max-[1199px]:gap-6 max-[1199px]:p-8 max-[760px]:w-full max-[760px]:p-5"
+            class="contact-box mt-11 flex h-[178px] w-[1152px] flex-row items-center justify-between gap-[244.39px] rounded-3xl border border-[#dce8ff] bg-white px-12 pt-16 pb-12 [direction:ltr] max-[1199px]:h-auto max-[1199px]:w-[min(100%,calc(100vw-40px))] max-[1199px]:flex-col max-[1199px]:gap-6 max-[1199px]:p-8 max-[760px]:w-full max-[760px]:items-stretch max-[760px]:gap-5 max-[760px]:px-6 max-[760px]:py-8"
             aria-label="التواصل مع فريق الدعم"
           >
-            <div class="contact-details">
-              <div class="contact-copy">
+            <div class="contact-details order-1 flex h-16 w-[326px] flex-none flex-row items-center gap-6 max-[1199px]:order-0 max-[1199px]:h-auto max-[1199px]:w-[min(326px,100%)] max-[760px]:w-full">
+              <div class="contact-copy order-0 flex h-[60px] w-[238px] flex-none flex-col items-start gap-1 [direction:rtl] max-[760px]:h-auto max-[760px]:w-[calc(100%-88px)] [&>b]:flex [&>b]:h-8 [&>b]:w-[215px] [&>b]:items-center [&>b]:justify-start [&>b]:self-end [&>b]:font-thmanyah [&>b]:text-[24px] [&>b]:leading-8 [&>b]:font-bold [&>b]:text-black [&>small]:flex [&>small]:h-6 [&>small]:w-[238px] [&>small]:items-center [&>small]:font-thmanyah [&>small]:text-[16px] [&>small]:leading-6 [&>small]:font-normal [&>small]:text-[#64748b] max-[760px]:[&>b]:h-auto max-[760px]:[&>b]:w-full max-[760px]:[&>small]:h-auto max-[760px]:[&>small]:w-full">
                 <b>لم تجد إجابة لسؤالك؟</b>
                 <small>تواصل معنا وسنجيب عليك بكل سرور.</small>
               </div>
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32" fill="none">
+              <span class="contact-icon relative order-1 flex h-16 w-16 flex-none flex-row items-center justify-center rounded-full border-0 bg-white p-0 [isolation:isolate]" aria-hidden="true">
+                <svg class="order-1 z-1 h-8 w-8 flex-none" viewBox="0 0 32 32" fill="none">
                   <path
                     d="M4 17.18v-2.34C4 7.85 9.37 2.18 16 2.18s12 5.67 12 12.66v2.34M4 17.18h2.67A2.67 2.67 0 0 1 9.33 19.85v5.48A2.67 2.67 0 0 1 6.67 28H6.5A2.5 2.5 0 0 1 4 25.5v-8.32Zm24 0h-2.67a2.67 2.67 0 0 0-2.66 2.67v5.48A2.67 2.67 0 0 0 25.33 28h.17a2.5 2.5 0 0 0 2.5-2.5v-8.32ZM22.67 27.33A6.67 6.67 0 0 1 16 30h-1.33"
                   />
                 </svg>
               </span>
             </div>
-            <div class="contact-actions">
-              <a class="contact-primary" href="#contact">
+            <div class="contact-actions order-0 flex h-[54px] w-[413px] flex-none flex-row items-start gap-4 max-[1199px]:order-1 max-[1199px]:w-[min(413px,100%)] max-[760px]:h-auto max-[760px]:w-full max-[760px]:flex-col">
+              <a class="contact-primary relative order-0 flex h-[54px] w-[184px] flex-none items-center justify-center gap-2 self-stretch rounded-xl bg-[#0633a0] px-10 py-3.5 font-thmanyah text-[16px] leading-6 font-bold text-white no-underline shadow-[0_10px_15px_-3px_rgb(29_78_216/20%),0_4px_6px_-4px_rgb(29_78_216/20%)] [isolation:isolate] max-[760px]:w-full [&>svg]:order-0 [&>svg]:z-2 [&>svg]:h-[14px] [&>svg]:w-2 [&>span]:order-1 [&>span]:z-1 [&>span]:flex [&>span]:h-6 [&>span]:w-[76px] [&>span]:flex-col [&>span]:items-end [&>span]:[direction:rtl]" href="#contact">
                 <svg
                   aria-hidden="true"
                   width="8"
@@ -748,7 +753,7 @@
                 <span>تواصل معنا</span>
               </a>
               <a
-                class="contact-whatsapp"
+                class="contact-whatsapp order-1 flex h-[54px] w-[213px] flex-none items-center justify-center gap-2 self-stretch rounded-xl border border-[#0633a0] bg-white px-8 py-3.5 font-thmanyah text-[16px] leading-6 font-bold text-[#0633a0] no-underline max-[760px]:w-full [&>span]:order-0 [&>span]:flex [&>span]:h-6 [&>span]:w-[119px] [&>span]:flex-col [&>span]:items-end [&>span]:[direction:rtl] [&>svg]:order-1 [&>svg]:h-5 [&>svg]:w-5"
                 href="https://wa.me/966501234567"
               >
                 <span>راسلنا على واتساب</span>
@@ -782,34 +787,36 @@
         id="contact"
       >
         <div
-          class="container newsletter-box relative z-2 grid h-[252px] w-[min(1339px,calc(100%-40px))] max-w-none grid-cols-[527.54px_527.55px] items-center justify-between gap-0 rounded-3xl bg-white p-12 shadow-[0_20px_25px_-5px_rgb(0_0_0/10%),0_8px_10px_-6px_rgb(0_0_0/10%)] max-[1199px]:h-auto max-[1199px]:grid-cols-1 max-[760px]:w-[calc(100%-28px)] max-[760px]:gap-[30px] max-[760px]:px-6 max-[760px]:py-8"
+          class="newsletter-box relative z-2 mx-auto grid h-[252px] w-[min(1339px,calc(100%-40px))] max-w-none grid-cols-[527.54px_527.55px] items-center justify-between gap-0 rounded-3xl bg-white p-12 shadow-[0_20px_25px_-5px_rgb(0_0_0/10%),0_8px_10px_-6px_rgb(0_0_0/10%)] max-[1199px]:h-auto max-[1199px]:grid-cols-1 max-[760px]:w-[calc(100%-28px)] max-[760px]:gap-[30px] max-[760px]:px-6 max-[760px]:py-8"
         >
-          <div>
-            <h2>
-              <span class="newsletter-heading-prefix">لنصنع</span>
+          <div class="flex h-[115px] w-[527.55px] flex-col items-end gap-4 max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:items-stretch">
+            <h2 class="m-0 flex h-10 w-[527.55px] flex-row items-start justify-start text-[36px] leading-10 [direction:rtl] [isolation:isolate] max-[760px]:h-auto max-[760px]:w-full max-[760px]:flex-wrap max-[760px]:justify-center [&>span]:flex [&>span]:h-10 [&>span]:flex-none [&>span]:items-center [&>strong]:flex [&>strong]:h-10 [&>strong]:w-[51px] [&>strong]:flex-none [&>strong]:items-center [&>strong]:justify-center [&>strong]:text-brand-gold max-[760px]:[&>span]:h-auto max-[760px]:[&>span]:w-auto max-[760px]:[&>strong]:h-auto max-[760px]:[&>strong]:w-auto">
+              <span class="newsletter-heading-prefix w-[91px]">لنصنع</span>
               <strong>معاً</strong>
-              <span class="newsletter-heading-suffix">نجاحك الرقمي</span>
+              <span class="newsletter-heading-suffix w-[214px]">نجاحك الرقمي</span>
             </h2>
-            <p>
+            <p class="m-0 min-h-[59px] w-[448px] max-w-[448px] text-[18px] leading-[29px] text-brand-muted max-[1199px]:w-full max-[760px]:min-h-0">
               هل لديك مشروع في ذهنك؟ تواصل معنا الآن ونحوّل رؤيتك إلى واقع رقمي
               ناجح.
             </p>
           </div>
-          <form id="newsletterForm">
-            <label for="email">اشترك في نشرتنا البريدية</label>
-            <small
+          <form class="flex h-[156px] w-[527.54px] flex-col items-end gap-3 max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:items-stretch" id="newsletterForm">
+            <label class="block text-[24px] leading-8 font-bold" for="email">اشترك في نشرتنا البريدية</label>
+            <small class="block w-[440px] text-[16px] leading-6 text-brand-muted max-[760px]:w-full"
               >احصل على نصائح رقمية وأحدث المقالات والعروض مباشرة على
               بريدك.</small
             >
-            <div>
+            <div class="flex h-[76px] w-[512px] max-w-[512px] flex-row items-start pt-5 [direction:ltr] [isolation:isolate] max-[1199px]:w-full max-[760px]:h-auto max-[760px]:flex-col max-[760px]:gap-2 max-[760px]:pt-0">
               <input
+                class="order-0 z-1 flex h-14 w-[335.64px] min-w-0 flex-1 flex-col items-center justify-center rounded-l-xl border border-[#e5e7eb] bg-[#f9fafb] px-6 py-[27px] text-right font-thmanyah text-[16px] leading-5 font-normal text-[#64748b] outline-none [direction:rtl] placeholder:text-[#64748b] focus:border-brand-blue max-[760px]:h-[49px] max-[760px]:w-full max-[760px]:rounded-[7px] max-[760px]:px-4 max-[760px]:py-0"
                 id="email"
                 type="email"
                 placeholder="أدخل بريدك الإلكتروني"
                 required
-              ><button type="submit">
-                <span>اشترك الآن</span>
+              ><button class="order-1 z-0 flex h-14 w-[176.36px] flex-none cursor-pointer flex-row items-center gap-[16.67px] rounded-r-xl border-0 bg-[#0633a0] pt-4 pr-8 pb-4 pl-[40.66px] text-white [isolation:isolate] max-[760px]:h-[49px] max-[760px]:w-full max-[760px]:justify-center max-[760px]:rounded-[7px] max-[760px]:px-4" type="submit">
+                <span class="order-0 flex h-6 w-[70px] flex-none items-center font-thmanyah text-[16px] leading-6 font-bold text-center text-white">اشترك الآن</span>
                 <svg
+                  class="order-1 h-5 w-[17.03px] flex-none"
                   aria-hidden="true"
                   width="18"
                   height="20"
@@ -823,7 +830,7 @@
                 </svg>
               </button>
             </div>
-            <p class="form-message" id="formMessage" aria-live="polite"></p>
+            <p class="form-message m-0 text-[12px] text-[#138a4b] empty:hidden" id="formMessage" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -833,23 +840,23 @@
       class="min-h-[327px] bg-brand-blue pt-[50px] pb-[17px] text-white max-[760px]:min-h-0"
     >
       <div
-        class="container footer-grid grid grid-cols-[1.3fr_1fr_1fr] gap-[100px] max-[1199px]:gap-10 max-[760px]:grid-cols-1 max-[760px]:gap-[35px]"
+        class="footer-grid mx-auto grid w-[min(1180px,calc(100%-40px))] grid-cols-[1.3fr_1fr_1fr] gap-[100px] max-[1199px]:gap-10 max-[760px]:w-[min(1180px,calc(100%-28px))] max-[760px]:grid-cols-1 max-[760px]:gap-[35px]"
       >
-        <div class="footer-about">
+        <div class="footer-about [&>b]:font-[Arial,sans-serif] [&>b]:text-[20px] [&>b>span]:font-thmanyah [&>b>span]:text-[12px]">
           <b>TOP TECHDZ<br><span>توب تيك</span></b>
-          <p>
+          <p class="mt-[50px] w-[290px] max-w-full text-[14px] text-[#c4cef2]">
             نساعد الشركات والعلامات التجارية على النمو رقمياً من خلال حلول
             مبتكرة في تصميم المواقع، التسويق الرقمي، والهوية البصرية.
           </p>
-          <div class="socials">
+          <div class="socials flex gap-2.5 [&>a]:grid [&>a]:h-[60px] [&>a]:w-[60px] [&>a]:place-items-center [&>a]:rounded-full [&>a]:border [&>a]:border-white/25">
             <a href="#" aria-label="Instagram">◎</a
             ><a href="#" aria-label="LinkedIn">in</a
             ><a href="https://wa.me/966501234567" aria-label="WhatsApp">◉</a>
           </div>
         </div>
         <div>
-          <h3><i></i> روابط سريعة</h3>
-          <nav class="footer-links" aria-label="روابط التذييل">
+          <h3 class="flex items-center gap-2.5 text-[17px] [&>i]:h-[7px] [&>i]:w-[7px] [&>i]:rounded-full [&>i]:bg-brand-gold"><i></i> روابط سريعة</h3>
+          <nav class="footer-links flex flex-col gap-[7px] text-[13px] text-[#c4cef2]" aria-label="روابط التذييل">
             <a href="betakat.html">الرئيسية</a><a href="ux-ui.html">الخدمات</a
             ><a href="#packages">الباقات</a><a href="blogs.html">المدونة</a
             ><a href="#">آراء العملاء</a><a href="#contact">تواصل معنا</a
@@ -857,19 +864,19 @@
           </nav>
         </div>
         <div>
-          <h3><i></i> تواصل معنا</h3>
-          <p class="contact-line">
+          <h3 class="flex items-center gap-2.5 text-[17px] [&>i]:h-[7px] [&>i]:w-[7px] [&>i]:rounded-full [&>i]:bg-brand-gold"><i></i> تواصل معنا</h3>
+          <p class="contact-line my-[22px] flex items-center gap-[13px] [&>span]:grid [&>span]:h-10 [&>span]:w-10 [&>span]:place-items-center [&>span]:rounded-[9px] [&>span]:bg-white [&>span]:text-brand-blue [&>small]:text-[#c4cef2] [&_b]:block [&_b]:text-white">
             <span>☎</span
             ><small>اتصل بنا<b dir="ltr">+966 50 123 4567</b></small>
           </p>
-          <p class="contact-line">
+          <p class="contact-line my-[22px] flex items-center gap-[13px] [&>span]:grid [&>span]:h-10 [&>span]:w-10 [&>span]:place-items-center [&>span]:rounded-[9px] [&>span]:bg-white [&>span]:text-brand-blue [&>small]:text-[#c4cef2] [&_b]:block [&_b]:text-white">
             <span>✉</span
             ><small>البريد الإلكتروني<b>info@toptech.com</b></small>
           </p>
         </div>
       </div>
       <div
-        class="container footer-bottom mt-10 flex justify-between gap-[30px] border-t border-white/40 pt-5 text-[11px] max-[760px]:flex-col max-[760px]:text-center"
+        class="footer-bottom mx-auto mt-10 flex w-[min(1180px,calc(100%-40px))] justify-between gap-[30px] border-t border-white/40 pt-5 text-[11px] max-[760px]:w-[min(1180px,calc(100%-28px))] max-[760px]:flex-col max-[760px]:text-center"
       >
         <span>◈ نحافظ على خصوصية بياناتك ولا نشاركها مع أي جهة خارجية.</span
         ><span>جميع الحقوق محفوظة © 2026 توب تك</span
