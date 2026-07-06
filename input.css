@@ -747,6 +747,34 @@ body.menu-open {
   color: #fff;
   font-size: 25px;
 }
+.help-icon {
+  position: relative;
+}
+.decorative-sparkle {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.decorative-sparkle svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.decorative-sparkle path {
+  fill: #ffc400;
+}
 .faq-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
