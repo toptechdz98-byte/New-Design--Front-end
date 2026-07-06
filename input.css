@@ -184,9 +184,6 @@ body.menu-open {
 .comparison-wrap tr > *:last-child:before {
   background: #ffc400;
 }
-.comparison-wrap tr:last-child td {
-  border-bottom: 0;
-}
 .faq-item.open p {
   display: block;
 }
