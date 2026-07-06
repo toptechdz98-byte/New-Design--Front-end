@@ -9,38 +9,99 @@
     <link rel="stylesheet" href="output.css">
   </head>
   <body class="betakat-page">
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="betakat.html" aria-label="TOP TECHDZ">
-          <img src="img/logo.jpeg" alt="TOP TECHDZ">
+    <header
+      class="relative z-20 h-[100px] border-b border-[#ddd] bg-white max-[760px]:h-[78px]"
+    >
+      <div
+        class="relative mx-auto flex h-full w-full max-w-[1440px] items-center justify-between gap-0 max-[1199px]:w-[min(1180px,calc(100%-40px))] max-[1199px]:max-w-none max-[1199px]:gap-6"
+      >
+        <a
+          class="absolute right-[90px] top-0.5 max-[1199px]:static"
+          href="betakat.html"
+          aria-label="TOP TECHDZ"
+        >
+          <img
+            class="h-[92px] w-[98px] object-contain max-[760px]:h-[55px] max-[760px]:w-[65px]"
+            src="img/logo.jpeg"
+            alt="TOP TECHDZ"
+          >
         </a>
-        <nav class="desktop-nav" aria-label="التنقل الرئيسي">
-          <a class="active" href="betakat.html">الرئيسية</a>
-          <a href="ux-ui.html">الخدمات</a>
-          <a href="#packages">الباقات</a>
-          <a href="blogs.html">المدونة</a>
-          <a href="#">آراء العملاء</a>
-          <a href="#contact">تواصل معنا</a>
-          <a href="#faq">الأسئلة الشائعة</a>
+        <nav
+          class="absolute top-[35px] left-[calc(50%-254px)] flex h-[25px] w-[662px] items-center gap-5 max-[1199px]:hidden"
+          aria-label="التنقل الرئيسي"
+        >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal text-brand-blue after:absolute after:inset-x-0 after:top-[42px] after:h-0.5 after:bg-brand-blue after:content-['']"
+            href="betakat.html"
+            >الرئيسية</a
+          >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal hover:text-brand-blue"
+            href="ux-ui.html"
+            >الخدمات</a
+          >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal hover:text-brand-blue"
+            href="#packages"
+            >الباقات</a
+          >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal hover:text-brand-blue"
+            href="blogs.html"
+            >المدونة</a
+          >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal hover:text-brand-blue"
+            href="#"
+            >آراء العملاء</a
+          >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal hover:text-brand-blue"
+            href="#contact"
+            >تواصل معنا</a
+          >
+          <a
+            class="relative flex h-[25px] items-center whitespace-nowrap text-[20px] leading-[25px] font-normal hover:text-brand-blue"
+            href="#faq"
+            >الأسئلة الشائعة</a
+          >
         </nav>
-        <a class="button button-primary nav-cta" href="#contact"
+        <a
+          class="button button-primary absolute top-[18px] left-[90px] inline-flex h-[60px] min-h-12 w-[237px] min-w-[237px] items-center justify-center gap-2.5 rounded-xl border border-transparent bg-brand-blue px-10 py-[18px] font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[1199px]:hidden"
+          href="#contact"
           >احجز استشارة مجانية</a
         >
         <button
-          class="menu-button"
+          class="hidden h-[42px] w-[46px] flex-col items-center justify-center gap-[5px] rounded-[7px] border border-[#dce2ec] bg-white max-[1199px]:flex"
           id="menuButton"
           type="button"
           aria-label="فتح القائمة"
           aria-expanded="false"
         >
-          <span></span><span></span><span></span>
+          <span class="h-0.5 w-[21px] bg-brand-blue"></span
+          ><span class="h-0.5 w-[21px] bg-brand-blue"></span
+          ><span class="h-0.5 w-[21px] bg-brand-blue"></span>
         </button>
       </div>
-      <div class="mobile-overlay" id="mobileOverlay">
-        <aside class="mobile-nav" id="mobileNav" aria-label="قائمة الهاتف">
-          <div class="mobile-nav-header">
-            <img src="img/logo.jpeg" alt="TOP TECHDZ">
+      <div
+        class="mobile-overlay invisible fixed inset-0 z-50 hidden bg-black/40 opacity-0 transition-[opacity,visibility] duration-300 max-[1199px]:block"
+        id="mobileOverlay"
+      >
+        <aside
+          class="mobile-nav fixed top-0 right-0 hidden h-screen w-[min(85%,360px)] translate-x-full flex-col bg-white p-0 shadow-[0_20px_40px_rgb(0_0_0/20%)] transition-transform duration-300 max-[1199px]:flex"
+          id="mobileNav"
+          aria-label="قائمة الهاتف"
+        >
+          <div
+            class="flex min-h-[86px] items-center justify-between border-b border-[#e5e7eb] px-5 py-4"
+          >
+            <img
+              class="h-[54px] w-[92px] object-contain"
+              src="img/logo.jpeg"
+              alt="TOP TECHDZ"
+            >
             <button
+              class="h-10 w-10 cursor-pointer border-0 bg-transparent text-[32px] text-brand-ink"
               id="closeMenuButton"
               type="button"
               aria-label="إغلاق القائمة"
@@ -48,13 +109,26 @@
               ×
             </button>
           </div>
-          <nav aria-label="التنقل عبر الهاتف">
-            <a href="betakat.html">الرئيسية</a><a href="ux-ui.html">الخدمات</a
-            ><a href="#packages">الباقات</a><a href="blogs.html">المدونة</a
-            ><a href="#">آراء العملاء</a><a href="#contact">تواصل معنا</a
-            ><a href="#faq">الأسئلة الشائعة</a>
+          <nav class="flex flex-col" aria-label="التنقل عبر الهاتف">
+            <a class="block border-b border-[#eee] px-6 py-4" href="betakat.html"
+              >الرئيسية</a
+            ><a class="block border-b border-[#eee] px-6 py-4" href="ux-ui.html"
+              >الخدمات</a
+            ><a class="block border-b border-[#eee] px-6 py-4" href="#packages"
+              >الباقات</a
+            ><a class="block border-b border-[#eee] px-6 py-4" href="blogs.html"
+              >المدونة</a
+            ><a class="block border-b border-[#eee] px-6 py-4" href="#"
+              >آراء العملاء</a
+            ><a class="block border-b border-[#eee] px-6 py-4" href="#contact"
+              >تواصل معنا</a
+            ><a class="block border-b border-[#eee] px-6 py-4" href="#faq"
+              >الأسئلة الشائعة</a
+            >
           </nav>
-          <a class="button button-primary mobile-nav-cta" href="#contact"
+          <a
+            class="button button-primary m-5 hidden min-h-12 items-center justify-center gap-2.5 rounded-[7px] border border-transparent bg-brand-blue px-[25px] py-2.5 font-bold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[1199px]:flex!"
+            href="#contact"
             >احجز استشارة مجانية</a
           >
         </aside>
@@ -62,26 +136,70 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow hero-badge"><span>باقاتنا</span><i></i></span>
-            <h1>
-              <span class="hero-title-main">باقات</span>
-              <strong class="hero-title-brand">TOP TECHDZ</strong>
-              <span class="hero-title-subline">المصممة لنمو مشروعك</span>
+      <section
+        class="relative flex min-h-[650px] items-center overflow-hidden max-[760px]:min-h-0"
+      >
+        <div
+          class="mx-auto grid w-[min(1180px,calc(100%-40px))] grid-cols-[1.03fr_0.97fr] items-center gap-[70px] max-[1199px]:gap-[25px] max-[980px]:grid-cols-[minmax(0,1fr)] max-[760px]:w-full max-[760px]:min-w-0"
+        >
+          <div
+            class="absolute top-[100px] right-[100px] flex h-[495px] w-[528px] flex-col items-end gap-[30px] p-0 max-[1199px]:static max-[1199px]:block max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:py-[85px] max-[980px]:py-[60px_20px] max-[980px]:text-center max-[760px]:min-w-0 max-[760px]:py-[60px_20px]"
+          >
+            <span
+              class="box-border flex h-[38px] w-[89px] flex-none self-start rounded-full border border-[#dbeafe] bg-[#eff6ff] px-4 py-2 font-thmanyah text-[14px] leading-5 font-medium text-[#1d4ed8] [direction:ltr] max-[980px]:mx-auto"
+              ><span
+                class="order-0 flex h-5 w-[31px] flex-none items-center text-right [direction:rtl]"
+                >باقاتنا</span
+              ><i
+                class="relative order-1 h-4 w-4 flex-none bg-transparent"
+                aria-hidden="true"
+                ><span
+                  class="absolute top-[3px] left-[5px] h-2 w-2 rounded-full bg-[#1d4ed8]"
+                ></span></i
+            ></span>
+            <h1
+              class="relative order-1 m-0 h-[218px] w-[528px] flex-none self-stretch p-0 font-thmanyah text-[60px] leading-[60px] font-bold tracking-normal max-[1199px]:static max-[1199px]:my-[22px] max-[1199px]:flex max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:flex-wrap max-[1199px]:items-center max-[1199px]:justify-center max-[1199px]:gap-x-2.5 max-[1199px]:text-[40px] max-[1199px]:leading-[1.25] max-[760px]:max-w-full max-[760px]:text-[clamp(28px,8.5vw,34px)] max-[760px]:[overflow-wrap:anywhere]"
+            >
+              <span
+                class="absolute top-0 right-[0.95px] flex h-[60px] w-[133px] items-center text-right text-black max-[1199px]:static max-[1199px]:inline max-[1199px]:h-auto max-[1199px]:w-auto max-[1199px]:text-inherit max-[1199px]:leading-inherit"
+                >باقات</span
+              >
+              <strong
+                class="absolute top-0 right-[155.14px] flex h-[60px] w-[364px] items-center text-right font-bold text-brand-gold max-[1199px]:static max-[1199px]:inline max-[1199px]:h-auto max-[1199px]:w-auto max-[1199px]:text-inherit max-[1199px]:leading-inherit max-[1199px]:text-brand-gold"
+                >TOP TECHDZ</strong
+              >
+              <span
+                class="absolute top-20 right-[0.81px] flex h-[60px] w-[597px] items-center text-right text-black max-[1199px]:static max-[1199px]:block max-[1199px]:h-auto max-[1199px]:w-auto max-[1199px]:flex-[0_0_100%] max-[1199px]:text-inherit max-[1199px]:leading-inherit"
+                >المصممة لنمو مشروعك</span
+              >
             </h1>
-            <p>
+            <p
+              class="absolute top-[243px] right-0 order-0 m-0 flex h-[59px] w-[528px] max-w-[576px] flex-none flex-col items-end self-stretch box-border pb-0 pl-6 text-right text-[18px] leading-[29px] text-brand-muted max-[1199px]:static max-[1199px]:mx-0 max-[1199px]:block max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:max-w-[590px] max-[1199px]:p-0 max-[980px]:mx-auto max-[980px]:text-center max-[760px]:max-w-full max-[760px]:px-3.5 max-[760px]:text-[16px] max-[760px]:[overflow-wrap:anywhere]"
+            >
               اختر الباقة الأنسب لمرحلة مشروعك، سواء كنت تبدأ من الصفر أو تبحث
               عن منظومة رقمية متكاملة تقودك إلى النتائج.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#contact"
-                ><span>اطلب عرض الباقة</span></a
+            <div
+              class="order-2 flex h-[90px] w-[528px] flex-none flex-row items-start gap-4 self-stretch pt-[30px] pl-[74.3px] [direction:ltr] max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:p-[30px_0_0] max-[980px]:justify-center max-[760px]:flex-col"
+            >
+              <a
+                class="order-1 flex h-[60px] min-h-[60px] w-[232px] flex-none items-center justify-center gap-3 rounded-xl border border-transparent bg-brand-blue px-8 py-[18px] font-bold text-white transition duration-200 [direction:rtl] [isolation:isolate] hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-[0_8px_20px_#1e40af1f] max-[760px]:order-0 max-[760px]:w-full max-[760px]:max-w-full"
+                href="#contact"
+                ><span
+                  class="order-0 z-0 flex h-7 w-[114px] flex-none flex-col items-center font-thmanyah text-[16px] leading-7 font-bold text-white"
+                  >اطلب عرض الباقة</span
+                ></a
               >
-              <a class="button button-outline compare-button" href="#comparison">
-                <span>قارن الباقات</span>
+              <a
+                class="order-0 flex h-[60px] min-h-[60px] w-[182px] flex-none items-center gap-3 rounded-xl border border-[#0633a0] bg-white px-8 py-4 text-[#0633a0] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_#1e40af1f] max-[760px]:order-1 max-[760px]:w-full max-[760px]:max-w-full"
+                href="#comparison"
+              >
+                <span
+                  class="order-0 flex h-7 w-[77px] flex-none flex-col items-center font-thmanyah text-[16px] leading-7 font-bold text-[#0633a0]"
+                  >قارن الباقات</span
+                >
                 <svg
+                  class="order-1 h-5 w-5 flex-none"
                   aria-hidden="true"
                   width="20"
                   height="20"
@@ -100,7 +218,7 @@
             </div>
           </div>
           <img
-            class="package-visual"
+            class="absolute top-12 left-[17px] block h-[537px] w-[716px] max-w-none object-contain max-[1199px]:static max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:max-w-[716px] max-[980px]:mx-auto max-[980px]:min-w-0 max-[760px]:w-full max-[760px]:max-w-full"
             src="img/packages-hero.png"
             width="716"
             height="537"
