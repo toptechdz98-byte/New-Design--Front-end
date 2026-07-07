@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animated";
+
+
+.reveal {
+  opacity: 0;
+}
+@font-face {
+  font-family: 'Thmanyah Serif';
+  src: url('/fonts/thmanyah-serif-text-light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Thmanyah Serif';
+  src: url('/fonts/thmanyah-serif-text-regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Thmanyah Serif';
+  src: url('/fonts/thmanyah-serif-text-medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Thmanyah Serif';
+  src: url('/fonts/thmanyah-serif-text-bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Thmanyah Serif';
+  src: url('/fonts/thmanyah-serif-text-black.otf') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* هذا هو السحر في الخطوط المتغيرة: تدعم كل الأوزان */
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  direction: rtl;
+}
+
+.font-thmanyah {
+  font-family: 'Thmanyah Serif', 'Rubik', system-ui, sans-serif;
+}
+
+.ux-section-title {
+  font-size: clamp(1.75rem, 5vw, 3.75rem);
+  line-height: 1.12;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E40AF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E3A8A;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #1E40AF #F3F4F6;
+}
+

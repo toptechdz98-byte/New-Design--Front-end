@@ -1,0 +1,168 @@
+تمام، هاي القائمة الكاملة لكل شي موجود بمكتبة **tailwindcss-animated** عشان تضيفهم على مشروعك:
+
+## 1️⃣ كل أسماء الأنيميشن الجاهزة (animate-{name})
+
+```
+animate-wiggle
+animate-wiggle-more
+animate-jump
+animate-jump-in
+animate-jump-out
+animate-shake
+animate-fade
+animate-fade-up
+animate-fade-down
+animate-fade-left
+animate-fade-right
+animate-flip-up
+animate-flip-down
+animate-rotate-x
+animate-rotate-y
+animate-spin      (من Tailwind الأساسي)
+animate-ping      (من Tailwind الأساسي)
+animate-pulse     (من Tailwind الأساسي)
+animate-bounce    (من Tailwind الأساسي)
+```
+
+## 2️⃣ المدة (Duration)
+```
+animate-duration-75
+animate-duration-100
+animate-duration-150
+animate-duration-200
+animate-duration-300
+animate-duration-500
+animate-duration-700
+animate-duration-1000
+animate-duration-[5s]     ← قيمة مخصصة
+```
+
+## 3️⃣ التأخير (Delay)
+```
+animate-delay-none
+animate-delay-75
+animate-delay-100
+animate-delay-150
+animate-delay-200
+animate-delay-300
+animate-delay-500
+animate-delay-700
+animate-delay-1000
+animate-delay-[5s]        ← قيمة مخصصة
+```
+
+## 4️⃣ الاتجاه (Direction)
+```
+animate-normal
+animate-reverse
+animate-alternate
+animate-alternate-reverse
+```
+
+## 5️⃣ عدد التكرار (Iteration Count)
+```
+animate-infinite
+animate-once
+animate-twice
+animate-thrice
+animate-iteration-[10]    ← رقم مخصص
+```
+
+## 6️⃣ منحنى الحركة (Timing Function)
+```
+animate-ease
+animate-ease-linear
+animate-ease-in
+animate-ease-out
+animate-ease-in-out
+animate-ease-[cubic-bezier(1,1,0,0)]   ← مخصص
+```
+
+## 7️⃣ وضع البقاء بعد الانتهاء (Fill Mode)
+```
+animate-fill-none
+animate-fill-forwards
+animate-fill-backwards
+animate-fill-both
+```
+
+## 8️⃣ حالة التشغيل (Play State)
+```
+animate-run / animate-play
+animate-stop / animate-pause
+```
+
+---
+
+## 🎯 مثال كامل شغال — 5 sections بأنيميشن مختلف لكل وحدة
+
+```html
+<section class="reveal" data-animate="animate-fade-up animate-duration-700">
+  <h2 class="text-3xl font-bold">قسم 1</h2>
+</section>
+
+<section class="reveal" data-animate="animate-fade-left animate-duration-700">
+  <h2 class="text-3xl font-bold">قسم 2</h2>
+</section>
+
+<section class="reveal" data-animate="animate-fade-right animate-duration-700">
+  <h2 class="text-3xl font-bold">قسم 3</h2>
+</section>
+
+<section class="reveal" data-animate="animate-jump-in animate-duration-700">
+  <h2 class="text-3xl font-bold">قسم 4</h2>
+</section>
+
+<section class="reveal" data-animate="animate-flip-up animate-duration-700">
+  <h2 class="text-3xl font-bold">قسم 5</h2>
+</section>
+
+<section class="reveal" data-animate="animate-wiggle animate-duration-700">
+  <h2 class="text-3xl font-bold">قسم 6</h2>
+</section>
+```
+
+**CSS:**
+```css
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+.reveal {
+  opacity: 0;
+}
+```
+
+**JavaScript (نفس الكود اللي عندك، جاهز):**
+```html
+<script>
+  const items = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const classes = entry.target.dataset.animate.split(' ');
+        entry.target.classList.remove('opacity-0');
+        entry.target.classList.add(...classes);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  items.forEach(item => {
+    item.classList.add('opacity-0');
+    observer.observe(item);
+  });
+</script>
+```
+
+---
+
+💡 **ملاحظة:** ممكن تدمج أكتر من كلاس مع بعض بنفس `data-animate`، مثلاً:
+```html
+data-animate="animate-fade-up animate-duration-1000 animate-delay-300 animate-ease-out"
+```
+
+جرب المصدر الرسمي التفاعلي وشوف كل أنيميشن بالفيديو قبل ما تختار: **tailwindcss-animated.com/configurator.html**
