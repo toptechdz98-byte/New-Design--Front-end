@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'tailwind-animations';
 
 @theme {
   --font-thmanyah: Thmanyah, Arial, sans-serif;
@@ -13,35 +14,35 @@
 
 @font-face {
   font-family: Thmanyah;
-  src: url("fonts/thmanyah-sans-light.otf") format("opentype");
+  src: url("fonts/thmanyah-serif-text-regular.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Thmanyah;
-  src: url("fonts/thmanyah-sans-regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Thmanyah;
-  src: url("fonts/thmanyah-sans-medium.otf") format("opentype");
+  font-family: Thmanyah_medium;
+  src: url("fonts/thmanyah-serif-text-medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Thmanyah;
-  src: url("fonts/thmanyah-sans-bold.otf") format("opentype");
+  font-family: Thmanyah_bold;
+  src: url("fonts/thmanyah-serif-text-bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Thmanyah;
-  src: url("fonts/thmanyah-sans-black.otf") format("opentype");
+  font-family: Thmanyah_black;
+  src: url("fonts/thmanyah-serif-text-black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Rub;
+  src: url("fonts/Rubik-Italic-VariableFont_wght.ttf") format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -59,209 +60,16 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+@theme {
+  --font-thmanyah: "Thmanyah" ;
+  --font-thmanyah-medium: 'Thmanyah_medium', sans-serif;
+}
 body {
+  font-family: var(--font-thmanyah) !important;
   margin: 0;
   color: var(--ink);
-  font-family: Thmanyah, Arial, sans-serif;
   background: #fff;
   line-height: 1.6;
   overflow-x: hidden;
-}
-body.menu-open {
-  overflow: hidden;
-}
-.feature-list li:before {
-  content: "✓";
-  display: inline-grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
-  background: var(--blue);
-  color: #fff;
-  border-radius: 50%;
-  font-size: 11px;
-  margin-left: 12px;
-}
-.gold-card .feature-list li:before {
-  background: var(--gold);
-}
-.comparison-wrap table {
-  border-collapse: collapse;
-  width: 100%;
-  height: 824px;
-  table-layout: fixed;
-  min-width: 720px;
-  text-align: right;
-  background: #fff;
-}
-.comparison-wrap th,
-.comparison-wrap td {
-  width: 33.333%;
-  padding-inline: 32px;
-  border-left: 1px solid #cbd5e1;
-}
-.comparison-wrap th {
-  height: 184px;
-  vertical-align: middle;
-  font-size: 24px;
-  line-height: 32px;
-}
-.comparison-wrap th .comparison-label {
-  display: block;
-  width: max-content;
-  color: #fff;
-  background: var(--blue);
-  border-radius: 9999px;
-  padding: 4px 12px;
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 20px;
-}
-.comparison-wrap th .gold-label {
-  background: #ffc400;
-  color: #111;
-}
-.comparison-wrap td {
-  height: 64px;
-  padding-inline: 40px;
-  border-bottom: 1px solid #cbd5e1;
-  font-size: 16px;
-  line-height: 24px;
-}
-.feature-cell {
-  direction: ltr;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  gap: 12px;
-}
-.feature-cell > span {
-  direction: rtl;
-  color: inherit;
-}
-.feature-cell > svg {
-  width: 20px;
-  height: 20px;
-  overflow: visible;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-.feature-cell > .feature-document-icon {
-  width: 14px;
-  height: 17px;
-  margin-inline: 3px;
-}
-.feature-cell svg path {
-  fill: none;
-  stroke: #1e40af;
-  stroke-width: 1.66667px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.comparison-wrap td:not(:first-child):before {
-  content: "✓";
-  display: inline-grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
-  color: #fff;
-  background: var(--blue);
-  border-radius: 50%;
-  font-size: 11px;
-  margin-left: 12px;
-}
-.comparison-wrap tr > *:nth-child(2) {
-  background: #f8f9ff;
-}
-.comparison-wrap tr > *:last-child {
-  background: #fffbec;
-  border-left: 0;
-}
-.comparison-wrap tr > *:last-child:before {
-  background: #ffc400;
-}
-.faq-item.open p {
-  display: block;
-}
-.faq-item.open button i {
-  transform: rotate(45deg);
-}
-.contact-icon::before {
-  content: "";
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  left: 0;
-  top: calc(50% - 64px / 2);
-  background: rgb(255 255 255 / 0.2%);
-  box-shadow:
-    0 4px 6px -1px rgb(0 0 0 / 10%),
-    0 2px 4px -2px rgb(0 0 0 / 10%);
-  border-radius: 9999px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  z-index: 0;
-}
-.contact-icon svg path {
-  stroke: #0633a0;
-  stroke-width: 2.66667px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.newsletter::before {
-  content: "";
-  position: absolute;
-  width: 128px;
-  height: 128px;
-  right: 40px;
-  bottom: 40px;
-  opacity: 0.4;
-  background: radial-gradient(
-    70.71% 70.71% at 50% 50%,
-    #cbd5e1 4.71%,
-    rgb(203 213 225 / 0%) 4.71%
-  );
-  z-index: 0;
-}
-.newsletter::after {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  right: 80px;
-  top: 67.08%;
-  background: #ffc400;
-  border-radius: 9999px;
-  z-index: 1;
-}
-.newsletter-box::before {
-  content: "";
-  position: absolute;
-  top: 62px;
-  bottom: 62px;
-  left: 50%;
-  width: 1px;
-  background: #e5e7eb;
-}
-@media (max-width: 1199px) {
-  .mobile-overlay.open {
-    opacity: 1;
-    visibility: visible;
-  }
-  .mobile-overlay.open .mobile-nav {
-    transform: translateX(0);
-  }
-  .newsletter-box::before {
-    display: none;
-  }
-}
-@media (max-width: 760px) {
-  .newsletter-box::before {
-    display: none;
-  }
 }

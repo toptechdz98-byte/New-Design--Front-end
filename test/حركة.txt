@@ -1,168 +1,100 @@
-تمام، هاي القائمة الكاملة لكل شي موجود بمكتبة **tailwindcss-animated** عشان تضيفهم على مشروعك:
+تمام، خليني أفصلها معك بشكل عملي أكتر — أنواع الحركات، وكيف تتحكم فيها بالتفصيل.
 
-## 1️⃣ كل أسماء الأنيميشن الجاهزة (animate-{name})
+## 1. أشهر أنواع الـ Animations المتوفرة بالـ package
 
-```
-animate-wiggle
-animate-wiggle-more
-animate-jump
-animate-jump-in
-animate-jump-out
-animate-shake
-animate-fade
-animate-fade-up
-animate-fade-down
-animate-fade-left
-animate-fade-right
-animate-flip-up
-animate-flip-down
-animate-rotate-x
-animate-rotate-y
-animate-spin      (من Tailwind الأساسي)
-animate-ping      (من Tailwind الأساسي)
-animate-pulse     (من Tailwind الأساسي)
-animate-bounce    (من Tailwind الأساسي)
-```
+| Class | التأثير |
+|---|---|
+| `animate-fade-in` | ظهور تدريجي بالمكان (بدون حركة مكانية) |
+| `animate-fade-out` | اختفاء تدريجي |
+| `animate-slide-in-bottom` | يدخل من تحت لفوق |
+| `animate-slide-in-top` | يدخل من فوق لتحت |
+| `animate-slide-in-left` | يدخل من اليسار |
+| `animate-slide-in-right` | يدخل من اليمين |
+| `animate-zoom-in` | يكبر من الصغر للحجم الطبيعي |
+| `animate-zoom-out` | يصغر من الحجم الطبيعي |
+| `animate-blurred-fade-in` | ظهور تدريجي مع تمويه (blur) يزول تدريجيًا |
+| `animate-bounce-in` | يدخل بحركة "نطة" خفيفة |
 
-## 2️⃣ المدة (Duration)
-```
-animate-duration-75
-animate-duration-100
-animate-duration-150
-animate-duration-200
-animate-duration-300
-animate-duration-500
-animate-duration-700
-animate-duration-1000
-animate-duration-[5s]     ← قيمة مخصصة
-```
+## 2. التحكم بـ Delay (متى تبلش الحركة)
 
-## 3️⃣ التأخير (Delay)
+عندك قيم جاهزة:
 ```
-animate-delay-none
-animate-delay-75
+animate-delay-0
 animate-delay-100
 animate-delay-150
 animate-delay-200
+animate-delay-250
 animate-delay-300
+animate-delay-400
 animate-delay-500
 animate-delay-700
+animate-delay-800
+animate-delay-900
 animate-delay-1000
-animate-delay-[5s]        ← قيمة مخصصة
 ```
 
-## 4️⃣ الاتجاه (Direction)
+كل رقم = ملي ثانية. يعني `animate-delay-300` = العنصر ينتظر 300ms قبل ما يبلش يتحرك.
+
+### قاعدة عملية للـ Stagger (التتابع):
+لو عندك N عناصر، خلي الفرق بين كل عنصر والتاني ثابت (مثلاً 100-150ms):
 ```
-animate-normal
-animate-reverse
-animate-alternate
-animate-alternate-reverse
+عنصر 1 → delay-0
+عنصر 2 → delay-100
+عنصر 3 → delay-200
+عنصر 4 → delay-300
+```
+كل ما زاد عدد العناصر أكتر، خلي الفرق أصغر (50-100ms) عشان القائمة كلها ما تاخد وقت طويل تظهر بالكامل.
+
+## 3. التحكم بـ Duration (سرعة الحركة نفسها)
+
+```
+animate-duration-faster
+animate-duration-fast
+animate-duration-normal
+animate-duration-slow
+animate-duration-slower
 ```
 
-## 5️⃣ عدد التكرار (Iteration Count)
-```
-animate-infinite
-animate-once
-animate-twice
-animate-thrice
-animate-iteration-[10]    ← رقم مخصص
-```
+أو بالأرقام المباشرة (زي الـ delay): `animate-duration-300`, `animate-duration-500`, إلخ.
 
-## 6️⃣ منحنى الحركة (Timing Function)
-```
-animate-ease
-animate-ease-linear
-animate-ease-in
-animate-ease-out
-animate-ease-in-out
-animate-ease-[cubic-bezier(1,1,0,0)]   ← مخصص
-```
-
-## 7️⃣ وضع البقاء بعد الانتهاء (Fill Mode)
-```
-animate-fill-none
-animate-fill-forwards
-animate-fill-backwards
-animate-fill-both
-```
-
-## 8️⃣ حالة التشغيل (Play State)
-```
-animate-run / animate-play
-animate-stop / animate-pause
-```
-
----
-
-## 🎯 مثال كامل شغال — 5 sections بأنيميشن مختلف لكل وحدة
+## 4. مثال متكامل — قائمة بطاقات تظهر بالتتابع مع حركة مختلفة عن الأولى
 
 ```html
-<section class="reveal" data-animate="animate-fade-up animate-duration-700">
-  <h2 class="text-3xl font-bold">قسم 1</h2>
-</section>
+<div class="grid grid-cols-3 gap-6">
 
-<section class="reveal" data-animate="animate-fade-left animate-duration-700">
-  <h2 class="text-3xl font-bold">قسم 2</h2>
-</section>
+  <div class="animate-slide-in-bottom animate-delay-0 animate-duration-normal">
+    <div class="bg-white rounded-xl p-6 shadow">بطاقة 1</div>
+  </div>
 
-<section class="reveal" data-animate="animate-fade-right animate-duration-700">
-  <h2 class="text-3xl font-bold">قسم 3</h2>
-</section>
+  <div class="animate-slide-in-bottom animate-delay-150 animate-duration-normal">
+    <div class="bg-white rounded-xl p-6 shadow">بطاقة 2</div>
+  </div>
 
-<section class="reveal" data-animate="animate-jump-in animate-duration-700">
-  <h2 class="text-3xl font-bold">قسم 4</h2>
-</section>
+  <div class="animate-slide-in-bottom animate-delay-300 animate-duration-normal">
+    <div class="bg-white rounded-xl p-6 shadow">بطاقة 3</div>
+  </div>
 
-<section class="reveal" data-animate="animate-flip-up animate-duration-700">
-  <h2 class="text-3xl font-bold">قسم 5</h2>
-</section>
-
-<section class="reveal" data-animate="animate-wiggle animate-duration-700">
-  <h2 class="text-3xl font-bold">قسم 6</h2>
-</section>
+</div>
 ```
 
-**CSS:**
-```css
-@import "tailwindcss";
-@import "tailwindcss-animated";
+## 5. لو بدك الحركة تصير بس لما العنصر يظهر بالشاشة أثناء الـ Scroll (مو أول ما تفتح الصفحة)
 
-.reveal {
-  opacity: 0;
-}
-```
+هون بتستخدم `view-animate-single` بدل `animate-*` العادي:
 
-**JavaScript (نفس الكود اللي عندك، جاهز):**
 ```html
-<script>
-  const items = document.querySelectorAll('.reveal');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const classes = entry.target.dataset.animate.split(' ');
-        entry.target.classList.remove('opacity-0');
-        entry.target.classList.add(...classes);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.2,
-    rootMargin: '0px 0px -50px 0px'
-  });
-
-  items.forEach(item => {
-    item.classList.add('opacity-0');
-    observer.observe(item);
-  });
-</script>
+<div class="view-animate-single fade-in">
+  هاد العنصر رح يتحرك بس لما توصله بالـ scroll
+</div>
 ```
 
----
+هيك الحركة رح تصير تلقائيًا كل ما العنصر يدخل ضمن الشاشة المرئية (viewport)، مفيد جدًا لصفحات Landing الطويلة.
 
-💡 **ملاحظة:** ممكن تدمج أكتر من كلاس مع بعض بنفس `data-animate`، مثلاً:
-```html
-data-animate="animate-fade-up animate-duration-1000 animate-delay-300 animate-ease-out"
-```
+## 6. خلاصة الفرق بين الـ 3 محاور يلي بتتحكم فيهم:
 
-جرب المصدر الرسمي التفاعلي وشوف كل أنيميشن بالفيديو قبل ما تختار: **tailwindcss-animated.com/configurator.html**
+| المحور | الكلاس | وظيفته |
+|---|---|---|
+| نوع الحركة | `animate-fade-in`, `animate-slide-in-*`... | شكل الحركة نفسها |
+| التوقيت | `animate-delay-*` | متى تبلش |
+| السرعة | `animate-duration-*` | كم بتاخد وقت |
+
+جرب دمج الأنواع المختلفة مع بعض (مثلاً `zoom-in` للعنصر الأول و`slide-in-left` للتاني) وشوف الفرق، وقلي لو حبيت تركيبة معينة وما عرفت تظبطها.
