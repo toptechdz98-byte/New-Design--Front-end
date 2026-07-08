@@ -3278,6 +3278,12 @@
       height: 4px;
     }
   }
+  .before\:h-\[21\] {
+    &::before {
+      content: var(--tw-content);
+      height: 21;
+    }
+  }
   .before\:h-\[24px\] {
     &::before {
       content: var(--tw-content);
