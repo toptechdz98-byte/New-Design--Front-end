@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr" class="overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOP TECHDZ | UX/UI</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('fonts/thmanyah-serif-text-light.otf') format('opentype');
+      font-weight: 300;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('fonts/thmanyah-serif-text-regular.otf') format('opentype');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('fonts/thmanyah-serif-text-medium.otf') format('opentype');
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('fonts/thmanyah-serif-text-bold.otf') format('opentype');
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'Thmanyah Serif';
+      src: url('fonts/thmanyah-serif-text-black.otf') format('opentype');
+      font-weight: 900;
+    }
+    @font-face {
+      font-family: 'Rubik';
+      src: url('fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body>
+<div  class="max-w-md mx-auto p-4 ">
+  <!-- التبويبات -->
+  <div class="flex gap-2 bg-[white] p-1 rounded-[11px] mb-4 border border-[#DCE8FF]">
+    <button id="tab-360" onclick="switchTab('360')"
+      class="flex-1 py-2 rounded-[11px]  text-sm font-semibold transition-all">
+      باقة 360°
+    </button>
+    <button id="tab-digital" onclick="switchTab('digital')"
+      class="flex-1 py-2 rounded-[11px] text-sm font-semibold transition-all flex items-center justify-center gap-1">
+      باقة النمو الرقمي
+      <svg id="check-icon" class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 111.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- محتوى باقة النمو الرقمي -->
+  <div id="content-digital" class="bg-white rounded-2xl p-5 shadow-[0px_4px_6px_-4px_#1D4ED833,0px_10px_15px_-3px_#1D4ED833]">
+    <h3 class="text-center font-bold text-lg mb-4">باقة النمو الرقمي</h3>
+    <div class="space-y-2 text-sm">
+    <!-- first -->
+        <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>المشاريع الناشئة</span>
+        <span class="text-[#1E40AF] flex  items-center ">
+            مناسبة لـ
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+            <svg  width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3335 14.1666H17.5002V12.4999C17.5001 11.4349 16.8253 10.4869 15.8191 10.138C14.8129 9.78917 13.6961 10.1161 13.0368 10.9524M13.3335 14.1666H5.00016M5.00016 14.1666V12.4999C5.00016 11.9533 5.10516 11.4308 5.29683 10.9524C5.92998 9.37014 7.46258 8.33267 9.16683 8.33267C10.8711 8.33267 12.4037 9.37014 13.0368 10.9524C13.2285 11.4308 13.3335 11.9533 13.3335 12.4999V14.1666M13.3335 14.1666L11.6668 3.33325M5.00016 14.1666H0.833496V12.4999C0.833574 11.4349 1.50832 10.4869 2.51454 10.138C3.52076 9.78917 4.63753 10.1161 5.29683 10.9524M11.6668 3.33325C11.6668 4.71304 10.5466 5.83325 9.16683 5.83325C7.78704 5.83325 6.66683 4.71304 6.66683 3.33325C6.66683 1.95346 7.78704 0.833252 9.16683 0.833252C10.5466 0.833252 11.6668 1.95346 11.6668 3.33325ZM18.3335 16.6666C18.3335 17.5864 17.5867 18.3333 16.6668 18.3333C15.747 18.3333 15.0002 17.5864 15.0002 16.6666C15.0002 15.7467 15.747 14.9999 16.6668 14.9999C17.5867 14.9999 18.3335 15.7467 18.3335 16.6666ZM5.00016 5.83325C5.00016 6.75311 4.25335 7.49992 3.3335 7.49992C2.41364 7.49992 1.66683 6.75311 1.66683 5.83325C1.66683 4.91339 2.41364 4.16659 3.3335 4.16659C4.25335 4.16659 5.00016 4.91339 5.00016 5.83325Z" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- second -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span> موقع احترافي (5 صفحات)</span>
+        <span class="text-[#1E40AF] flex  items-center ">
+            تصميم الموقع 
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.125 14.1667L7.5 16.6667L6.66667 17.5H13.3333L12.5 16.6667L11.875 14.1667M2.5 10.8333H17.5M4.16667 14.1667H15.8333C16.7538 14.1667 17.5 13.4205 17.5 12.5V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V12.5C2.5 13.4205 3.24619 14.1667 4.16667 14.1667H8.125" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- third -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  3 منصات</span>
+        <span class="text-[#1E40AF] flex  items-center ">
+           إدارة السوشيال ميديا
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00016 7.49992H5.0085M8.3335 7.49992H8.34183M11.6668 7.49992H11.6752M15.8335 7.49992C15.8335 11.1816 12.4752 14.1666 8.3335 14.1666C7.10736 14.1708 5.89582 13.9005 4.78766 13.3758L0.833496 14.1666L1.996 11.0666C1.26016 10.0349 0.833496 8.81159 0.833496 7.49992C0.833496 3.81825 4.19183 0.833252 8.3335 0.833252C12.4752 0.833252 15.8335 3.81825 15.8335 7.49992H5.00016" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- four -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  تحسين أساسي </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+       SEO
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8335 15.8333L10.8335 10.8333M12.5002 6.66658C12.5002 9.88609 9.88633 12.4999 6.66683 12.4999C3.44732 12.4999 0.833496 9.88609 0.833496 6.66658C0.833496 3.44708 3.44732 0.833252 6.66683 0.833252C9.88633 0.833252 12.5002 3.44708 12.5002 6.66658L15.8335 15.8333" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- five -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  12 محتوى شهرياً </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+          المحتوى الشهري
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8335 15.8333L10.8335 10.8333M12.5002 6.66658C12.5002 9.88609 9.88633 12.4999 6.66683 12.4999C3.44732 12.4999 0.833496 9.88609 0.833496 6.66658C0.833496 3.44708 3.44732 0.833252 6.66683 0.833252C9.88633 0.833252 12.5002 3.44708 12.5002 6.66658L15.8335 15.8333" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+       
+      <!-- sex -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  حسب الاحتياج   </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+        الحملات الإعلانية
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.50005 3.23492V14.3666C7.49955 15.0796 6.98632 15.689 6.28376 15.8107C5.5812 15.9324 4.8929 15.5312 4.65255 14.8599L2.86339 9.73492M13.3334 9.16658C14.7132 9.16658 15.8334 8.04637 15.8334 6.66658C15.8334 5.2868 14.7132 4.16659 13.3334 4.16659M2.86339 9.73575C1.40516 9.11574 0.584753 7.55505 0.900834 6.00233C1.21691 4.44962 2.58216 3.33386 4.16672 3.33325H5.69339C9.11005 3.33325 12.0476 2.30492 13.3334 0.833252V12.4999C12.0476 11.0283 9.11089 9.99992 5.69339 9.99992H4.16672C3.71892 10.0006 3.2756 9.91072 2.86339 9.73575L7.50005 3.23492" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</div>
+</span>
+</div>
+      <!-- seven -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  غير أساسية    </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+الهوية البصرية
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+ <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.16683 15.8333C2.32588 15.8333 0.833496 14.3409 0.833496 12.4999V2.49992C0.833496 1.57944 1.57969 0.833252 2.50016 0.833252H5.8335C6.75397 0.833252 7.50016 1.57944 7.50016 2.49992V12.4999C7.50016 14.3409 6.00778 15.8333 4.16683 15.8333V15.8333M4.16683 15.8333H14.1668C15.0873 15.8333 15.8335 15.0871 15.8335 14.1666V10.8333C15.8335 9.91278 15.0873 9.16658 14.1668 9.16658H12.2143M7.50016 4.45242L8.881 3.07159C9.53183 2.42095 10.5868 2.42095 11.2377 3.07159L13.5952 5.42909C14.2458 6.07992 14.2458 7.13492 13.5952 7.78575L6.5235 14.8566M4.16683 12.4999H4.17516" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- night -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>   تقرير شهري    </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+التقارير والتحليل
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 15.8333V10.8333C7.5 9.91286 6.75381 9.16667 5.83333 9.16667H4.16667C3.24619 9.16667 2.5 9.91286 2.5 10.8333V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H5.83333C6.75381 17.5 7.5 16.7538 7.5 15.8333V15.8333M7.5 15.8333V7.5C7.5 6.57953 8.24619 5.83333 9.16667 5.83333H10.8333C11.7538 5.83333 12.5 6.57953 12.5 7.5V15.8333M7.5 15.8333C7.5 16.7538 8.24619 17.5 9.16667 17.5H10.8333C11.7538 17.5 12.5 16.7538 12.5 15.8333M12.5 15.8333V4.16667C12.5 3.24619 13.2462 2.5 14.1667 2.5H15.8333C16.7538 2.5 17.5 3.24619 17.5 4.16667V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H14.1667C13.2462 17.5 12.5 16.7538 12.5 15.8333H7.5" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</div>
+</span>
+</div>
+      <!-- eight -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>    متابعة أساسية    </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+الاجتماعات والمتابعة
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00016 4.16659V0.833252M11.6668 4.16659V0.833252M4.16683 7.49992H12.5002M2.50016 15.8333H14.1668C15.0873 15.8333 15.8335 15.0871 15.8335 14.1666V4.16659C15.8335 3.24611 15.0873 2.49992 14.1668 2.49992H2.50016C1.57969 2.49992 0.833496 3.24611 0.833496 4.16659V14.1666C0.833496 15.0871 1.57969 15.8333 2.50016 15.8333L5.00016 4.16659" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+<!-- ten -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span class="">    عرض مخصص بعد الاستشارة     </span>
+        <span class="text-[#1E40AF] flex  items-center   ">
+نوع العرض            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.8335 4.16659H5.84183M10.8335 0.833252H14.1668C15.0873 0.833252 15.8335 1.57944 15.8335 2.49992V5.83325C15.8335 6.75373 15.0873 7.49992 14.1668 7.49992H2.50016C1.57969 7.49992 0.833496 6.75373 0.833496 5.83325V2.49992C0.833496 1.57944 1.57969 0.833252 2.50016 0.833252H5.8335M10.0002 4.99992L13.3335 1.66659M10.0002 1.66659L13.3335 4.99992" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+</div>
+    <button class="w-full bg-blue-800 text-white py-3 rounded-xl mt-4 font-semibold">اطلب عرض الباقة</button>
+  </div>
+  <!-- محتوى باقة 360 -->
+  <div id="content-360" class="bg-white rounded-2xl p-5 hidden shadow-[0px_4px_6px_-4px_#1D4ED833,0px_10px_15px_-3px_#1D4ED833]">
+    <h3 class="text-center font-bold text-lg mb-4">باقة 360°</h3>
+    <div class="space-y-2 text-sm">
+   <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span> الشركات التي تحتاج إدارة شاملة</span>
+        <span class="text-[#1E40AF] flex  items-center ">
+            مناسبة لـ
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+            <svg  width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3335 14.1666H17.5002V12.4999C17.5001 11.4349 16.8253 10.4869 15.8191 10.138C14.8129 9.78917 13.6961 10.1161 13.0368 10.9524M13.3335 14.1666H5.00016M5.00016 14.1666V12.4999C5.00016 11.9533 5.10516 11.4308 5.29683 10.9524C5.92998 9.37014 7.46258 8.33267 9.16683 8.33267C10.8711 8.33267 12.4037 9.37014 13.0368 10.9524C13.2285 11.4308 13.3335 11.9533 13.3335 12.4999V14.1666M13.3335 14.1666L11.6668 3.33325M5.00016 14.1666H0.833496V12.4999C0.833574 11.4349 1.50832 10.4869 2.51454 10.138C3.52076 9.78917 4.63753 10.1161 5.29683 10.9524M11.6668 3.33325C11.6668 4.71304 10.5466 5.83325 9.16683 5.83325C7.78704 5.83325 6.66683 4.71304 6.66683 3.33325C6.66683 1.95346 7.78704 0.833252 9.16683 0.833252C10.5466 0.833252 11.6668 1.95346 11.6668 3.33325ZM18.3335 16.6666C18.3335 17.5864 17.5867 18.3333 16.6668 18.3333C15.747 18.3333 15.0002 17.5864 15.0002 16.6666C15.0002 15.7467 15.747 14.9999 16.6668 14.9999C17.5867 14.9999 18.3335 15.7467 18.3335 16.6666ZM5.00016 5.83325C5.00016 6.75311 4.25335 7.49992 3.3335 7.49992C2.41364 7.49992 1.66683 6.75311 1.66683 5.83325C1.66683 4.91339 2.41364 4.16659 3.3335 4.16659C4.25335 4.16659 5.00016 4.91339 5.00016 5.83325Z" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- second -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>يشمل ما في باقة النمو</span>
+        <span class="text-[#1E40AF] flex  items-center ">
+            تصميم الموقع 
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.125 14.1667L7.5 16.6667L6.66667 17.5H13.3333L12.5 16.6667L11.875 14.1667M2.5 10.8333H17.5M4.16667 14.1667H15.8333C16.7538 14.1667 17.5 13.4205 17.5 12.5V4.16667C17.5 3.24619 16.7538 2.5 15.8333 2.5H4.16667C3.24619 2.5 2.5 3.24619 2.5 4.16667V12.5C2.5 13.4205 3.24619 14.1667 4.16667 14.1667H8.125" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- third -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  إدارة أوسع ضمن الخطة</span>
+        <span class="text-[#1E40AF] flex  items-center ">
+           إدارة السوشيال ميديا
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+        <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00016 7.49992H5.0085M8.3335 7.49992H8.34183M11.6668 7.49992H11.6752M15.8335 7.49992C15.8335 11.1816 12.4752 14.1666 8.3335 14.1666C7.10736 14.1708 5.89582 13.9005 4.78766 13.3758L0.833496 14.1666L1.996 11.0666C1.26016 10.0349 0.833496 8.81159 0.833496 7.49992C0.833496 3.81825 4.19183 0.833252 8.3335 0.833252C12.4752 0.833252 15.8335 3.81825 15.8335 7.49992H5.00016" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- four -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>   تحسين أعمق ضمن المنظومة </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+       SEO
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8335 15.8333L10.8335 10.8333M12.5002 6.66658C12.5002 9.88609 9.88633 12.4999 6.66683 12.4999C3.44732 12.4999 0.833496 9.88609 0.833496 6.66658C0.833496 3.44708 3.44732 0.833252 6.66683 0.833252C9.88633 0.833252 12.5002 3.44708 12.5002 6.66658L15.8335 15.8333" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- five -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  30 محتوى شهرياً + إنتاج فيديو   </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+          المحتوى الشهري
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8335 15.8333L10.8335 10.8333M12.5002 6.66658C12.5002 9.88609 9.88633 12.4999 6.66683 12.4999C3.44732 12.4999 0.833496 9.88609 0.833496 6.66658C0.833496 3.44708 3.44732 0.833252 6.66683 0.833252C9.88633 0.833252 12.5002 3.44708 12.5002 6.66658L15.8335 15.8333" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- sex -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>  حملات مدارة (Meta + Google)    </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+        الحملات الإعلانية
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.50005 3.23492V14.3666C7.49955 15.0796 6.98632 15.689 6.28376 15.8107C5.5812 15.9324 4.8929 15.5312 4.65255 14.8599L2.86339 9.73492M13.3334 9.16658C14.7132 9.16658 15.8334 8.04637 15.8334 6.66658C15.8334 5.2868 14.7132 4.16659 13.3334 4.16659M2.86339 9.73575C1.40516 9.11574 0.584753 7.55505 0.900834 6.00233C1.21691 4.44962 2.58216 3.33386 4.16672 3.33325H5.69339C9.11005 3.33325 12.0476 2.30492 13.3334 0.833252V12.4999C12.0476 11.0283 9.11089 9.99992 5.69339 9.99992H4.16672C3.71892 10.0006 3.2756 9.91072 2.86339 9.73575L7.50005 3.23492" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- seven -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>   هوية بصرية متكاملة    </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+الهوية البصرية
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+ <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.16683 15.8333C2.32588 15.8333 0.833496 14.3409 0.833496 12.4999V2.49992C0.833496 1.57944 1.57969 0.833252 2.50016 0.833252H5.8335C6.75397 0.833252 7.50016 1.57944 7.50016 2.49992V12.4999C7.50016 14.3409 6.00778 15.8333 4.16683 15.8333V15.8333M4.16683 15.8333H14.1668C15.0873 15.8333 15.8335 15.0871 15.8335 14.1666V10.8333C15.8335 9.91278 15.0873 9.16658 14.1668 9.16658H12.2143M7.50016 4.45242L8.881 3.07159C9.53183 2.42095 10.5868 2.42095 11.2377 3.07159L13.5952 5.42909C14.2458 6.07992 14.2458 7.13492 13.5952 7.78575L6.5235 14.8566M4.16683 12.4999H4.17516" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- night -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>    تقارير وتحليل + لوحة بيانات    </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+التقارير والتحليل
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 15.8333V10.8333C7.5 9.91286 6.75381 9.16667 5.83333 9.16667H4.16667C3.24619 9.16667 2.5 9.91286 2.5 10.8333V15.8333C2.5 16.7538 3.24619 17.5 4.16667 17.5H5.83333C6.75381 17.5 7.5 16.7538 7.5 15.8333V15.8333M7.5 15.8333V7.5C7.5 6.57953 8.24619 5.83333 9.16667 5.83333H10.8333C11.7538 5.83333 12.5 6.57953 12.5 7.5V15.8333M7.5 15.8333C7.5 16.7538 8.24619 17.5 9.16667 17.5H10.8333C11.7538 17.5 12.5 16.7538 12.5 15.8333M12.5 15.8333V4.16667C12.5 3.24619 13.2462 2.5 14.1667 2.5H15.8333C16.7538 2.5 17.5 3.24619 17.5 4.16667V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H14.1667C13.2462 17.5 12.5 16.7538 12.5 15.8333H7.5" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+      <!-- eight -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span>    مدير حساب مخصص + اجتماع أسبوعي     </span>
+        <span class="text-[#1E40AF] flex  items-center ">
+الاجتماعات والمتابعة
+            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00016 4.16659V0.833252M11.6668 4.16659V0.833252M4.16683 7.49992H12.5002M2.50016 15.8333H14.1668C15.0873 15.8333 15.8335 15.0871 15.8335 14.1666V4.16659C15.8335 3.24611 15.0873 2.49992 14.1668 2.49992H2.50016C1.57969 2.49992 0.833496 3.24611 0.833496 4.16659V14.1666C0.833496 15.0871 1.57969 15.8333 2.50016 15.8333L5.00016 4.16659" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>
+<!-- ten -->
+       <div class="flex justify-between items-center border-1 border-[#DCE8FF] p-[10px] rounded-[11px]">
+        <span class="">    عرض مخصص بعد الاستشارة     </span>
+        <span class="text-[#1E40AF] flex  items-center   ">
+نوع العرض            <div class="flex justify-center  rounded-[11px] items-center bg-[#F8F9FF] w-[40px] h-[40px] ">
+<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.8335 4.16659H5.84183M10.8335 0.833252H14.1668C15.0873 0.833252 15.8335 1.57944 15.8335 2.49992V5.83325C15.8335 6.75373 15.0873 7.49992 14.1668 7.49992H2.50016C1.57969 7.49992 0.833496 6.75373 0.833496 5.83325V2.49992C0.833496 1.57944 1.57969 0.833252 2.50016 0.833252H5.8335M10.0002 4.99992L13.3335 1.66659M10.0002 1.66659L13.3335 4.99992" stroke="#1E40AF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+</span>
+</div>   
+  
+  
+  
+    </div>
+    <button class="w-full bg-blue-800 text-white py-3 rounded-xl mt-4 font-semibold">اطلب عرض الباقة</button>
+  </div>
+</div>
+<script>
+function switchTab(tab) {
+  const tab360 = document.getElementById('tab-360');
+  const tabDigital = document.getElementById('tab-digital');
+  const content360 = document.getElementById('content-360');
+  const contentDigital = document.getElementById('content-digital');
+  const checkIcon = document.getElementById('check-icon');
+
+  if (tab === '360') {
+    tab360.classList.add('bg-blue-800', 'text-white');
+    tabDigital.classList.remove('bg-blue-800', 'text-white');
+    content360.classList.remove('hidden');
+    contentDigital.classList.add('hidden');
+    checkIcon.classList.add('hidden');
+  } else {
+    tabDigital.classList.add('bg-blue-800', 'text-white');
+    tab360.classList.remove('bg-blue-800', 'text-white');
+    contentDigital.classList.remove('hidden');
+    content360.classList.add('hidden');
+    checkIcon.classList.remove('hidden');
+  }
+}
+// تفعيل الحالة الافتراضية عند التحميل
+switchTab('digital');
+</script>
+
+</body>
+</html>
