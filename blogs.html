@@ -9,49 +9,35 @@
 <body class="font-thmanyah">
 <!-- Header -->
 <header dir="rtl"
-class="flex items-center justify-between lg:justify-around px-6 lg:px-24 py-5 border-b border-[#DADADA] bg-white">
-    <!-- Logo -->
-    <img src="img/logo.jpeg" class="w-[60px] lg:w-[98px]">
-
-    <!-- Desktop Menu -->
-    <ul class="hidden lg:flex gap-8 text-[20px]">
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الرئيسية</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الخدمات</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الباقات</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">المدونة</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">آراء العملاء</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">تواصل معنا</a></li>
-        <li><a href="#" class="flex w-[63px] h-[25px] pb-[18px]   font-bold text-[20px] hover:text-[#1E40AF] hover:border-b hover:border-b-[#1E40AF] ">الأسئلة الشائعة</a></li>
+class="  flex items-center justify-between lg:justify-around px-6 lg:px-12 lg:py-[10px] border-b border-[#DADADA] bg-white font-thmanyah">
+    <img src="img/logo.jpeg" class="w-[100px] lg:w-[150px]  h-[90px]">
+    <ul class="hidden lg:flex gap-8 text-[20px] pt-[10px]">
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] text-[#1E40AF] border-b-2 border-transparent  duration-300 ease-in-out   border-b border-b-[#1E40AF] ">الرئيسية</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">الخدمات</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">الباقات</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">المدونة</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">آراء العملاء</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">تواصل معنا</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">الأسئلة الشائعة</a></li>
     </ul>
-
-    <!-- Desktop Button -->
     <a href="#"
-    class="hidden lg:flex bg-blue-800 text-white px-8 h-14 rounded-xl items-center">
+    class="hidden lg:flex bg-blue-800 text-white px-8 h-14 rounded-xl items-center
+     transition-all duration-300 ease-out  shadow-[0px_4px_6px_-4px_#1E40AF33,0px_10px_15px_-3px_#1E40AF33] hover:bg-blue-900 hover:shadow-[0px_8px_10px_-6px_#1E40AF4D,0px_20px_25px_-5px_#1E40AF4D] hover:-translate-y-0.5
+    ">
         احجز استشارة مجانية
     </a>
-
     <!-- Burger -->
     <button id="menuBtn"
-    class="lg:hidden flex items-center justify-center w-14 h-14 rounded-xl border border-gray-300 bg-white shadow hover:bg-gray-100 transition">
-
-        <svg xmlns="http://www.w3.org/2000/svg"
-        class="w-8 h-8 text-blue-800"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2">
-            <path stroke-linecap="round"
-            stroke-linejoin="round"
+    class="lg:hidden flex items-center justify-center w-14 h-14 rounded-xl border border-gray-300
+     bg-white shadow hover:bg-gray-100  transition-all duration-300 ease-out shadow-[0px_4px_6px_-4px_#1E40AF33,0px_10px_15px_-3px_#1E40AF33] hover:bg-blue-50 hover:border-blue-800 hover:shadow-[0px_8px_10px_-6px_#1E40AF4D,0px_20px_25px_-5px_#1E40AF4D] hover:-translate-y-0.5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">     <path stroke-linecap="round"     stroke-linejoin="round"
             d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
-
     </button>
-
 </header>
 <!-- ================= Mobile Menu ================= -->
 <div id="overlay"
 class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300 z-50">
-
     <aside id="sidebar"
     class="fixed top-0 right-0 h-screen w-[85%] max-w-[360px] bg-white shadow-2xl translate-x-full transition-transform duration-300">
 
@@ -64,25 +50,23 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
             class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 text-4xl">
                 ×
             </button>
-
         </div>
-
         <!-- Links -->
         <ul class="flex flex-col">
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">الرئيسية</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الرئيسية</a></li>
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">الخدمات</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الخدمات</a></li>
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">الباقات</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الباقات</a></li>
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">المدونة</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">المدونة</a></li>
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">آراء العملاء</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">آراء العملاء</a></li>
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">تواصل معنا</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">تواصل معنا</a></li>
 
-            <li><a class="block px-6 py-5 border-b hover:bg-gray-50" href="#">الأسئلة الشائعة</a></li>
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الأسئلة الشائعة</a></li>
 
         </ul>
 
@@ -98,6 +82,7 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
     </aside>
 
 </div>
+
 <!-- hero -->
 <section class="flex flex-wrap justify-center items-center bg-[#F4F7FE] py-[39px] gap-[50px]">
     <div class="flex flex-col">
@@ -293,29 +278,25 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
 <div class="flex flex-col justify-center  items-center lg:items-start pb-[50px] " >
     <span class="font-[700]     text-[20px] lg:text-[24px]"> اشترك في نشرتنا البريدية</span>
     <span class="text-[#64748B] font-[400] text-[16px] text-center lg:text-right  w-[250px] lg:w-[500px] mt-[20px] ">احصل على نصائح رقمية وأحدث المقالات والعروض مباشرة على بريدك.</span>
-<form action="" class="flex mt-[20px]">
-    <button class="bg-[#0633A0]  w-[100px]   lg:w-[176px] h-[56px]  rounded-tr-xl rounded-br-xl flex  
+<form action="" class="flex  flex-col-reverse gap-[20px]  lg:flex-row mt-[20px]">
+    <button class="bg-[#0633A0]  w-[90%]   lg:w-[176px] h-[56px]  rounded-[12px]  lg:rounded-tr-xl lg:rounded-br-xl flex  
     justify-center items-center  gap-[5px] lg:gap-[16px] font-bold text-[16px] text-[white]">
 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.3112 7.95865C13.6036 7.82345 13.7948 7.53472 13.805 7.21265C13.8151 6.89058 13.6426 6.59035 13.3593 6.43693L1.63264 0.102603C1.33555 -0.057987 0.971623 -0.0278204 0.705027 0.179495C0.43843 0.386811 0.31955 0.73209 0.402011 1.05959L1.48362 5.35342C1.57659 5.72214 1.90277 5.98453 2.28284 5.99634L6.1731 6.11937C6.64283 6.13422 7.01212 6.52764 6.99726 6.99736C6.98241 7.46708 6.589 7.83637 6.11928 7.82152L2.22901 7.69849C1.84895 7.68626 1.50684 7.92751 1.39077 8.28963L0.0408579 12.5066C-0.0623111 12.8281 0.0342553 13.1802 0.28701 13.4041C0.539764 13.628 0.900949 13.6814 1.20768 13.5402L13.3111 7.9595L13.3112 7.95865Z" fill="white"/>
 </svg>
 اشترك الآن
     </button>
-    <input class="   w-[200px]  lg:w-[335px] h-[56px] bg-[#F9FAFB] rounded-tl-xl rounded-bl-xl  border-1  border-[#E5E7EB] ">
+    <input class="   w-[90%]  lg:w-[335px] h-[56px] bg-[#F9FAFB] rounded-tl-xl rounded-bl-xl  border-1  border-[#E5E7EB] ">
 </form>
-
-
 </div>
-
     </div>
  </section>
-
 <!-- footer -->
  <section class="bg-[#1E40AF] p-[70px] mt-[100px] gap-[100px] flex flex-col">
     <!-- first -->
     <div class="flex justify-around flex-wrap gap-[50px] lg:gap-[200px] ">
     <!-- first -->
- <div class="flex flex-col">
+ <div class="flex flex-col flex-1">
     <span class="font-bold text-[20px] text-[#FFFFFF]">TOP TECHDZ</span>
     <p class="text-[#9CA3AF] font-[400] text-[14px] w-[290px] mt-[50px]">نساعد الشركات والعلامات التجارية على النمو رقمياً من
 خلال حلول مبتكرة في تصميم المواقع، التسويق
@@ -364,8 +345,8 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
 </div>
  </div>
  <!-- second -->
-    <div class="flex flex-col justify-start">
-<span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start   lg:justify-center  items-start  lg:items-center gap-[12px]">
+    <div class="flex flex-col justify-start flex-1">
+<span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start   lg:justify-start  items-start  lg:items-center gap-[12px]">
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="12" height="12" rx="6" fill="#FFC400"/>
 </svg>
@@ -415,7 +396,7 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
     </a>
     </div>
     <!-- thrid -->
-       <div class="flex flex-col">
+       <div class="flex flex-col flex-1">
 <span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start items-center gap-[12px]">
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="12" height="12" rx="6" fill="#FFC400"/>
@@ -460,66 +441,12 @@ class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300
 جميع الحقوق محفوظة © 2026 </span>
 
 <div class="flex gap-[20px]">
-    <a href="" class="font-[400] text-[14] text-[white] flex  pl-[20px] border-l-1 border-l-[white]">سياسة الخصوصية</a>
-    <a href="" class="font-[400] text-[14] text-[white]">الشروط والأحكام </a>
+    <a href="" class="font-[400] text-[14px] text-[white] flex  pl-[20px] border-l-1 border-l-[white]">سياسة الخصوصية</a>
+    <a href="" class="font-[400] text-[14px] text-[white]">الشروط والأحكام </a>
 </div>
 </div>
 
  </section>
-
-
-<script>
-
-  const overlay = document.getElementById("overlay");
-const sidebar = document.getElementById("sidebar");
-
-const menuBtn = document.getElementById("menuBtn");
-const closeBtn = document.getElementById("closeBtn");
-
-function openMenu() {
-
-    overlay.classList.remove("opacity-0","invisible");
-
-    sidebar.classList.remove("translate-x-full");
-
-    document.body.style.overflow = "hidden";
-
-}
-
-function closeMenu() {
-
-    overlay.classList.add("opacity-0");
-
-    sidebar.classList.add("translate-x-full");
-
-    document.body.style.overflow = "";
-
-    setTimeout(() => {
-
-        overlay.classList.add("invisible");
-
-    },300);
-
-}
-
-menuBtn.addEventListener("click", openMenu);
-
-closeBtn.addEventListener("click", closeMenu);
-
-overlay.addEventListener("click",(e)=>{
-
-    if(e.target===overlay){
-
-        closeMenu();
-
-    }
-
-});
-</script>
-
-
-
-
-
-
-
+<script src="app.js"></script>
+</body> 
+</html>

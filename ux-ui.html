@@ -1,88 +1,87 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr" class="overflow-x-hidden">
+<html lang="en" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOP TECHDZ | UX/UI</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style type="text/tailwindcss">
-    @font-face {
-      font-family: 'Thmanyah Serif';
-      src: url('fonts/thmanyah-serif-text-light.otf') format('opentype');
-      font-weight: 300;
-    }
-    @font-face {
-      font-family: 'Thmanyah Serif';
-      src: url('fonts/thmanyah-serif-text-regular.otf') format('opentype');
-      font-weight: 400;
-    }
-    @font-face {
-      font-family: 'Thmanyah Serif';
-      src: url('fonts/thmanyah-serif-text-medium.otf') format('opentype');
-      font-weight: 500;
-    }
-    @font-face {
-      font-family: 'Thmanyah Serif';
-      src: url('fonts/thmanyah-serif-text-bold.otf') format('opentype');
-      font-weight: 700;
-    }
-    @font-face {
-      font-family: 'Thmanyah Serif';
-      src: url('fonts/thmanyah-serif-text-black.otf') format('opentype');
-      font-weight: 900;
-    }
-    @font-face {
-      font-family: 'Rubik';
-      src: url('fonts/Rubik-VariableFont_wght.ttf') format('truetype');
-      font-weight: 100 900;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP TECHDZ</title>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body dir="rtl" class="overflow-x-hidden bg-white font-['Thmanyah_Serif','Rubik',system-ui,sans-serif] text-[#101828] antialiased selection:bg-[#1E40AF] selection:text-white">
-  <header id="top" dir="rtl" class="relative flex items-center justify-between gap-5 border-b border-[#DADADA] px-5 py-4 lg:px-12 xl:px-[120px] xl:pl-[50px] xl:pt-[35px] xl:pb-[20px]">
-  <img src="img/logo.jpeg" alt="TOP TECHDZ" class="h-[56px] w-[120px] lg:h-[70px] lg:w-[150px]">
-
-  <!-- Desktop Menu -->
-  <ul class="m-auto hidden gap-5 lg:flex xl:gap-[30px]">
-    <li><a href="#top" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">الرئيسية</a></li>
-    <li><a href="#services" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">الخدمات</a></li>
-    <li><a href="#process" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">الباقات</a></li>
-    <li><a href="#portfolio" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">المدونة</a></li>
-    <li><a href="#benefits" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">اراء العملاء</a></li>
-    <li><a href="#contact" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">تواصل معنا</a></li>
-    <li><a href="#faq" class="pb-[18px] text-[18px] font-[400] hover:border-b hover:border-[#1E40AF] hover:text-[#1E40AF] xl:text-[20px]">الأسئلة الشائعة</a></li>
-  </ul>
-
-  <a href="#contact" class="hidden h-[60px] w-[210px] items-center justify-center rounded-[12px] bg-[#1E40AF] text-[16px] font-[700] text-[#FFFFFF] lg:flex xl:w-[237px]">احجز استشارة مجانية</a>
-  <button id="menu-toggle" class="lg:hidden relative z-50 w-[40px] h-[40px] flex flex-col justify-center items-center gap-[6px]" aria-label="فتح القائمة">
-    <span id="bar1" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
-    <span id="bar2" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
-    <span id="bar3" class="block w-[28px] h-[2px] bg-[#1E40AF] transition-all duration-300 ease-in-out"></span>
-  </button>
-  <div id="menu-overlay" class="lg:hidden fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40"></div>
-  <div id="mobile-menu" class="lg:hidden fixed top-0 right-0 h-full w-[300px] bg-white shadow-[0px_0px_25px_-5px_#0000004D] translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col px-[30px] pt-[35px]">
-
-    <div class="flex justify-between items-center mb-[40px]">
-      <img src="img/logo.jpeg" alt="TOP TECHDZ" class="w-[120px] h-[55px]">
-      <button id="menu-close" class="w-[36px] h-[36px] flex items-center justify-center rounded-full border border-[#DADADA]" aria-label="إغلاق القائمة">
-        <svg class="w-[18px] h-[18px]" fill="none" stroke="#1E40AF" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-
-    <ul class="flex flex-col gap-[28px]">
-      <li><a href="#top" class="block w-fit border-b border-[#1E40AF] pb-[12px] text-[18px] font-[400] text-[#1E40AF]">الرئيسية</a></li>
-      <li><a href="#services" class="block pb-[12px] text-[18px] font-[400] hover:text-[#1E40AF]">الخدمات</a></li>
-      <li><a href="#process" class="block pb-[12px] text-[18px] font-[400] hover:text-[#1E40AF]">الباقات</a></li>
-      <li><a href="#portfolio" class="block pb-[12px] text-[18px] font-[400] hover:text-[#1E40AF]">المدونة</a></li>
-      <li><a href="#benefits" class="block pb-[12px] text-[18px] font-[400] hover:text-[#1E40AF]">اراء العملاء</a></li>
-      <li><a href="#contact" class="block pb-[12px] text-[18px] font-[400] hover:text-[#1E40AF]">تواصل معنا</a></li>
-      <li><a href="#faq" class="block pb-[12px] text-[18px] font-[400] hover:text-[#1E40AF]">الأسئلة الشائعة</a></li>
+<body class="font-thmanyah">
+<!-- Header -->
+<header dir="rtl"
+class="  flex items-center justify-between lg:justify-around px-6 lg:px-12 lg:py-[10px] border-b border-[#DADADA] bg-white font-thmanyah">
+    <img src="img/logo.jpeg" class="w-[100px] lg:w-[150px]  h-[90px]">
+    <ul class="hidden lg:flex gap-8 text-[20px] pt-[10px]">
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] text-[#1E40AF] border-b-2 border-transparent  duration-300 ease-in-out   border-b border-b-[#1E40AF] ">الرئيسية</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">الخدمات</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">الباقات</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">المدونة</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">آراء العملاء</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">تواصل معنا</a></li>
+        <li><a href="#" class="flex pb-[18px]   font-[400] text-[20px] hover:text-[#1E40AF] border-b-2 border-transparent duration-300 ease-in-out  hover:border-b hover:border-b-[#1E40AF] ">الأسئلة الشائعة</a></li>
     </ul>
-    <a href="#contact" class="mt-auto mb-[40px] flex h-[55px] w-full items-center justify-center rounded-[12px] bg-[#1E40AF] text-[16px] font-[700] text-[#FFFFFF]">احجز استشارة مجانية</a>
-  </div>
+    <a href="#"
+    class="hidden lg:flex bg-blue-800 text-white px-8 h-14 rounded-xl items-center
+     transition-all duration-300 ease-out  shadow-[0px_4px_6px_-4px_#1E40AF33,0px_10px_15px_-3px_#1E40AF33] hover:bg-blue-900 hover:shadow-[0px_8px_10px_-6px_#1E40AF4D,0px_20px_25px_-5px_#1E40AF4D] hover:-translate-y-0.5
+    ">
+        احجز استشارة مجانية
+    </a>
+    <!-- Burger -->
+    <button id="menuBtn"
+    class="lg:hidden flex items-center justify-center w-14 h-14 rounded-xl border border-gray-300
+     bg-white shadow hover:bg-gray-100  transition-all duration-300 ease-out shadow-[0px_4px_6px_-4px_#1E40AF33,0px_10px_15px_-3px_#1E40AF33] hover:bg-blue-50 hover:border-blue-800 hover:shadow-[0px_8px_10px_-6px_#1E40AF4D,0px_20px_25px_-5px_#1E40AF4D] hover:-translate-y-0.5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">     <path stroke-linecap="round"     stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </button>
 </header>
+<!-- ================= Mobile Menu ================= -->
+<div id="overlay"
+class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300 z-50">
+    <aside id="sidebar"
+    class="fixed top-0 right-0 h-screen w-[85%] max-w-[360px] bg-white shadow-2xl translate-x-full transition-transform duration-300">
+
+        <!-- Top -->
+        <div class="flex justify-between items-center p-5 border-b">
+
+            <img src="img/logo.jpeg" class="w-28">
+
+            <button id="closeBtn"
+            class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 text-4xl">
+                ×
+            </button>
+        </div>
+        <!-- Links -->
+        <ul class="flex flex-col">
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الرئيسية</a></li>
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الخدمات</a></li>
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الباقات</a></li>
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">المدونة</a></li>
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">آراء العملاء</a></li>
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">تواصل معنا</a></li>
+
+            <li><a class="block px-6 py-5 border-b  transition-all duration-300 ease-out hover:bg-blue-50 hover:text-blue-800 hover:pr-8 hover:border-r-4 hover:border-r-blue-800" href="#">الأسئلة الشائعة</a></li>
+
+        </ul>
+
+        <div class="p-5">
+
+            <a href="#"
+            class="flex justify-center items-center h-14 rounded-xl bg-blue-800 text-white font-bold">
+                احجز استشارة مجانية
+            </a>
+
+        </div>
+
+    </aside>
+
+</div>
 
   <main class="overflow-hidden">
     <section dir="ltr" class="mx-auto grid max-w-[1438px] items-center gap-10 px-5 py-16 lg:min-h-[777px] lg:max-w-[calc(100%-40px)] lg:grid-cols-[minmax(0,1fr)_minmax(420px,528px)] lg:gap-[42px] lg:px-0 lg:py-0 xl:max-w-[1438px] xl:grid-cols-[770px_528px]">
@@ -498,109 +497,178 @@
       </div>
     </section>
 
-    <section id="faq" class="scroll-mt-24 bg-[#F6F8FF] px-5 py-20 lg:py-24">
-      <div class="mx-auto max-w-[1152px]">
-        <div class="text-center">
-          <span class="inline-flex h-[38px] items-center rounded-full border border-[#F1F5F9] bg-[#F8FAFF] px-4 py-2 text-[16px] font-[500] leading-5 text-[#1E40AF]">الأسئلة الشائعة</span>
-          <h2 class="mt-5 text-[clamp(1.75rem,5vw,3.75rem)] font-[700] leading-[1.12] text-black">
-            أسئلة شائعة حول خدمة <span class="text-[#FFC400]">UX/UI</span>
-          </h2>
-          <p class="mx-auto mt-4 max-w-[765px] text-[18px] leading-7 text-[#64748B] lg:text-[20px]">
-            إجابات مختصرة على أكثر الأسئلة التي تساعدك على فهم آلية تصميم تجربة وواجهة المستخدم معنا.
+<!-- faqs -->
+ <section class="flex flex-col  mt-[100px] pt-[50px] pb-[50px] justify-center items-center mb-[100px]">
+    <span class="relative 
+flex items-center justify-center gap-4 text-[18px] font-bold text-[#1E40AF]
+           before:block before:h-[1px] before:w-[48px] before:bg-[#1E40AF]
+           after:block after:h-[1px] after:w-[48px] after:bg-[#1E40AF]">
+  الأسئلة الشائعة
+</span>
+<span class="font-[700]   lg:text-[60px] text-[30px] ">
+         أسئلة يطرحها    <span class="text-[#FFC400]">عملاؤنا </span>  
+    </span>
+    <p class="font-[400] text-[#64748B]  px-[10px] lg:px-[0] text-center text-[20px] mt-[10px]">إجابات سريعة على أكثر الأسئلة شيوعًا حول خدماتنا وآلية العمل معنا.</p>
+ <div id="faq-wrapper" class="flex flex-col  gap-4 mt-[45px] max-w-[1280px] mx-auto">
+    <!-- Row 1 -->
+    <div class="flex flex-col  lg:flex-row gap-4 items-start">
+      <div class="faq-item m-auto lg:m-0 w-[80%] lg:w-full flex-1 border border-[#DCE8FF] rounded-xl">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-right">
+          <span class="font-bold text-[18px]">كم يستغرق تنفيذ المشروع؟</span>
+         <span class="faq-icon shrink-0 w-[30px] h-[30px] bg-[#F6F9FF] flex items-center justify-center rounded-full border border-[#DCE8FF] text-gray-500 transition-transform duration-300">
+            <svg  class="text-[#0633A0]  w-[20px] h-[20px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </span>
+        </button>
+        <div class="faq-content overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+          <p class="px-6 pb-6 text-gray-500 leading-relaxed">
+            يعتمد وقت التنفيذ على حجم المشروع وتعقيده، وعادة نوضح الجدول الزمني التقديري بعد دراسة المتطلبات مباشرة.
           </p>
-        </div>
-
-        <div class="mt-10 grid gap-6 md:grid-cols-2">
-          <button data-faq-item class="grid min-h-[82px] w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 rounded-[16px] bg-white p-6 text-right text-[18px] font-[700] leading-7 text-[#111827] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_35px_-25px_rgba(30,64,175,0.65)]">
-            هل يشمل التصميم نسخة للموبايل؟
-            <span data-faq-icon class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F6F9FF] text-[20px] leading-none text-[#1E40AF]">+</span>
-          </button>
-          <button data-faq-item class="grid min-h-[82px] w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 rounded-[16px] bg-white p-6 text-right text-[18px] font-[700] leading-7 text-[#111827] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_35px_-25px_rgba(30,64,175,0.65)]">
-            هل التصميم يتم على Figma؟
-            <span data-faq-icon class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F6F9FF] text-[20px] leading-none text-[#1E40AF]">+</span>
-          </button>
-          <button data-faq-item class="grid min-h-[82px] w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 rounded-[16px] bg-white p-6 text-right text-[18px] font-[700] leading-7 text-[#111827] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_35px_-25px_rgba(30,64,175,0.65)]">
-            هل يمكنني طلب تعديلات بعد التسليم؟
-            <span data-faq-icon class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F6F9FF] text-[20px] leading-none text-[#1E40AF]">+</span>
-          </button>
-          <button data-faq-item class="grid min-h-[82px] w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 rounded-[16px] bg-white p-6 text-right text-[18px] font-[700] leading-7 text-[#111827] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_35px_-25px_rgba(30,64,175,0.65)]">
-            كم يستغرق تصميم UX/UI؟
-            <span data-faq-icon class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F6F9FF] text-[20px] leading-none text-[#1E40AF]">+</span>
-          </button>
-          <button data-faq-item class="grid min-h-[82px] w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 rounded-[16px] bg-white p-6 text-right text-[18px] font-[700] leading-7 text-[#111827] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_35px_-25px_rgba(30,64,175,0.65)]">
-            هل أحتاج هوية بصرية قبل البدء؟
-            <span data-faq-icon class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F6F9FF] text-[20px] leading-none text-[#1E40AF]">+</span>
-          </button>
-          <button data-faq-item class="grid min-h-[82px] w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 rounded-[16px] bg-white p-6 text-right text-[18px] font-[700] leading-7 text-[#111827] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_35px_-25px_rgba(30,64,175,0.65)]">
-            هل تساعدون المطورين بعد التسليم؟
-            <span data-faq-icon class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#F6F9FF] text-[20px] leading-none text-[#1E40AF]">+</span>
-          </button>
-        </div>
-
-        <div id="contact" class="mt-12 flex min-h-[178px] flex-col items-center justify-between gap-8 rounded-[24px] border border-[#DCE8FF] bg-white px-6 py-10 sm:px-12 lg:flex-row lg:gap-16 lg:py-12">
-          <div class="flex items-center gap-6 text-center lg:text-right">
-            <span class="hidden h-16 w-16 shrink-0 items-center justify-center rounded-full bg-white text-[#0633A0] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-2px_rgba(0,0,0,0.1)] sm:flex">
-              <svg class="h-8 w-8" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path d="M6 17v-3a10 10 0 0 1 20 0v3M6 17a3 3 0 0 0 3 3h2v-7H9a3 3 0 0 0-3 3v1Zm20 0a3 3 0 0 1-3 3h-2v-7h2a3 3 0 0 1 3 3v1ZM21 24c-1 2-3 3-6 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <div>
-              <h3 class="text-[24px] font-[700] leading-8 text-black">لم تجد إجابة لسؤالك؟</h3>
-              <p class="mt-1 text-[16px] leading-6 text-[#64748B]">تواصل معنا وسنجيب عليك بكل سرور.</p>
-            </div>
-          </div>
-          <div class="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
-            <a href="mailto:info@toptech.com" class="flex h-[54px] items-center justify-center gap-2 rounded-[12px] bg-[#0633A0] px-10 text-[16px] font-[700] leading-6 text-white shadow-[0_10px_15px_-3px_rgba(30,58,138,0.2),0_4px_6px_-4px_rgba(30,58,138,0.2)] transition hover:-translate-y-0.5 hover:bg-[#052978]">
-              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 4h14v10H8l-4 3v-3H3V4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-              تواصل معنا
-            </a>
-            <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer" class="flex h-[54px] items-center justify-center gap-2 rounded-[12px] border border-[#0633A0] bg-white px-8 text-[16px] font-[700] leading-6 text-[#0633A0] transition hover:-translate-y-0.5 hover:bg-[#EFF6FF]">
-              راسلنا على واتساب
-              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 18a8 8 0 1 0-4.2-1.2L2 18l1.3-3.6A8 8 0 0 0 10 18Z" stroke="currentColor" stroke-width="1.7"/><path d="M7 6.5c.5 3 2 4.5 5 5l1-1.2 2 .8c-.2 1.5-1 2.4-2.5 2.4-4 0-7-3-7-7 0-1.5.9-2.3 2.4-2.5l.8 2-1.2 1Z" fill="currentColor"/></svg>
-            </a>
-          </div>
         </div>
       </div>
-    </section>
-
-    <section class="bg-[#F8F9FF] px-5 py-16 lg:px-12">
-      <div class="mx-auto flex w-full max-w-[1339px] flex-col items-stretch justify-between gap-10 rounded-[24px] bg-white px-6 py-10 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)] lg:min-h-[252px] lg:flex-row lg:items-center lg:gap-12 lg:px-12 lg:py-12">
-        <div class="flex flex-1 flex-col items-end gap-4 text-right lg:w-[527.55px]">
-          <h2 class="text-[30px] font-[700] leading-[40px] text-black sm:text-[36px]">
-            لنصنع <span class="text-[#FFC400]">معاً</span> نجاحك الرقمي
-          </h2>
-          <p class="max-w-[461px] text-[17px] font-[400] leading-[29px] text-[#64748B] sm:text-[18px]">
-            هل لديك مشروع في ذهنك؟ تواصل معنا الآن ونحوّل رؤيتك إلى واقع رقمي ناجح.
+      <div class="faq-item flex-1 border  m-auto lg:m-0 w-[80%] lg:w-full  border-[#DCE8FF] rounded-xl">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-right">
+          <span class="font-bold text-[18px]">ما هي الخدمات التي تقدمونها؟</span>
+         <span class="faq-icon shrink-0 w-[30px] h-[30px] bg-[#F6F9FF] flex items-center justify-center rounded-full border border-[#DCE8FF] text-gray-500 transition-transform duration-300">
+            <svg  class="text-[#0633A0]  w-[20px] h-[20px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </span>
+        </button>
+        <div class="faq-content overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+          <p class="px-6 pb-6 text-gray-500 leading-relaxed">
+            نقدم خدمات تصميم وتطوير المواقع، التسويق الرقمي، وإدارة المحتوى بما يتناسب مع احتياجات عملك.
           </p>
-        </div>
-
-        <div class="hidden h-[128px] w-px shrink-0 bg-[#E5E7EB] lg:block" aria-hidden="true"></div>
-
-        <div class="flex flex-1 flex-col items-end gap-3 text-right lg:w-[527.54px]">
-          <h3 class="text-[24px] font-[700] leading-8 text-black">اشترك في نشرتنا البريدية</h3>
-          <p class="text-[16px] font-[400] leading-6 text-[#64748B]">
-            احصل على نصائح رقمية وأحدث المقالات والعروض مباشرة على بريدك.
-          </p>
-          <form id="newsletter-form" class="mt-2 flex w-full max-w-[512px] flex-col sm:h-[56px] sm:flex-row">
-            <label class="sr-only" for="newsletter-email">البريد الإلكتروني</label>
-            <button class="order-2 flex h-[56px] shrink-0 items-center justify-center gap-4 rounded-b-[12px] bg-[#0633A0] px-8 text-[16px] font-[700] leading-6 text-white transition hover:bg-[#052978] sm:order-1 sm:w-[176.36px] sm:rounded-r-[12px] sm:rounded-l-none" type="submit">
-              <svg class="h-5 w-[17px]" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M18.3 11.2c.4-.2.6-.6.6-1s-.2-.8-.6-1L2.2.5a1.2 1.2 0 0 0-1.6 1.4l1.5 5.9c.1.5.6.9 1.1.9l5.3.2a1.2 1.2 0 0 1 0 2.4l-5.3-.2c-.5 0-1 .3-1.2.8L.2 17.7a1.2 1.2 0 0 0 1.6 1.4l16.5-7.9Z" fill="currentColor"/>
-              </svg>
-              اشترك الآن
-            </button>
-            <input id="newsletter-email" type="email" required autocomplete="email" placeholder="أدخل بريدك الإلكتروني" class="order-1 h-[56px] min-w-0 flex-1 rounded-t-[12px] border border-[#E5E7EB] bg-[#F9FAFB] px-6 text-right text-[16px] leading-5 text-[#0F172A] outline-none transition placeholder:text-[#64748B] focus:z-10 focus:border-[#1E40AF] focus:ring-4 focus:ring-blue-100 sm:order-2 sm:rounded-l-[12px] sm:rounded-r-none">
-          </form>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+    <!-- Row 2 -->
+    <div class="flex flex-col lg:flex-row gap-4 items-start">
+      <div class="faq-item flex-1 m-auto lg:m-0 w-[80%] lg:w-full border border-[#DCE8FF] rounded-xl">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-right">
+          <span class="font-bold text-[18px]">هل تقدمون ضمان على الخدمات؟</span>
+         <span class="faq-icon shrink-0 w-[30px] h-[30px] bg-[#F6F9FF] flex items-center justify-center rounded-full border border-[#DCE8FF] text-gray-500 transition-transform duration-300">
+            <svg  class="text-[#0633A0]  w-[20px] h-[20px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </span>
+        </button>
+        <div class="faq-content overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+          <p class="px-6 pb-6 text-gray-500 leading-relaxed">
+            نعم، نوفر ضمانًا على جميع خدماتنا لفترة محددة بعد التسليم تغطي أي أعطال أو مشاكل تقنية.
+          </p>
+        </div>
+      </div>
 
-  <section class="mt-[100px] flex flex-col gap-[100px] bg-[#1E40AF] px-5 py-12 sm:p-[70px]">
+      <div class="faq-item flex-1 border  m-auto lg:m-0 w-[80%] lg:w-full  border-[#DCE8FF] rounded-xl">
+        <button type="button" class="faq-trigger w-full flex  m-auto lg:m-0 w-[80%] lg:w-full  items-center justify-between gap-4 p-6 text-right">
+          <span class="font-bold text-[18px]">هل يمكنني طلب تعديل بعد التسليم؟</span>
+         <span class="faq-icon shrink-0 w-[30px] h-[30px] bg-[#F6F9FF] flex items-center justify-center rounded-full border border-[#DCE8FF] text-gray-500 transition-transform duration-300">
+            <svg  class="text-[#0633A0]  w-[20px] h-[20px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </span>
+        </button>
+        <div class="faq-content overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+          <p class="px-6 pb-6 text-gray-500 leading-relaxed">
+            بالتأكيد، نوفر فترة تعديلات مجانية بعد التسليم لضمان رضاك الكامل عن النتيجة النهائية.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="flex flex-col lg:flex-row gap-4 items-start">
+      <div class="faq-item flex-1  m-auto  lg:m-0 w-[80%] lg:w-ful border border-[#DCE8FF] rounded-xl">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-right">
+          <span class="font-bold text-[18px]">هل أحتاج إلى تزويدكم بالمحتوى؟</span>
+        <span class="faq-icon shrink-0 w-[30px] h-[30px] bg-[#F6F9FF] flex items-center justify-center rounded-full border border-[#DCE8FF] text-gray-500 transition-transform duration-300">
+            <svg  class="text-[#0633A0]  w-[20px] h-[20px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </span>
+        </button>
+        <div class="faq-content overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+          <p class="px-6 pb-6 text-gray-500 leading-relaxed">
+            ليس بالضرورة، يمكننا المساعدة في كتابة المحتوى أو تنسيقه إذا لم يكن متوفرًا لديك مسبقًا.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item flex-1  m-auto lg:m-0 w-[80%] lg:w-full  border border-[#DCE8FF] rounded-xl">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-right">
+          <span class="font-bold text-[18px]">ما هي تكلفة المشروع؟</span>
+          <span class="faq-icon shrink-0 w-[30px] h-[30px] bg-[#F6F9FF] flex items-center justify-center rounded-full border border-[#DCE8FF] text-gray-500 transition-transform duration-300">
+            <svg  class="text-[#0633A0]  w-[20px] h-[20px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </span>
+        </button>
+        <div class="faq-content overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+          <p class="px-6 pb-6 text-gray-500 leading-relaxed">
+            تختلف التكلفة حسب نطاق المشروع ومتطلباته، ونوفر عرض سعر مخصص بعد التواصل معك وفهم احتياجاتك.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap bg-[#F6F9FF]  justify-center  gap-[50px] lg:gap-[100px] mt-[100px] border-1  border-[#DCE8FF] rounded-[24px]  px-[46px] py-[84px] "> 
+<div class="flex  w-[300px] lg:w-[700px]  mt-[10px] justify-start items-center p-[16px] rounded-[12px] gap-[10px]">
+<div class="w-[48px] h-[48px] rounded-[50%] shadow-[0px_2px_4px_-2px_#0000001A] shadow-[0px_4px_6px_-1px_#0000001A] bg-[white] flex justify-center items-center ">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7707 12.2292L24.4853 7.51449L28 15.9998M19.7707 19.7705L24.4853 24.4852M12.2293 12.2292L7.51467 7.51449M12.2293 19.7705L7.51467 24.4852M28 15.9998C28 22.6228 22.623 27.9998 16 27.9998C9.37702 27.9998 4 22.6228 4 15.9998C4 9.37684 9.37702 3.99982 16 3.99982C22.623 3.99982 28 9.37684 28 15.9998ZM17.8187 7.51449C17.8187 10.458 15.4289 12.8478 12.4853 12.8478C9.54179 12.8478 7.152 10.458 7.152 7.51449C7.152 4.57094 9.54179 2.18115 12.4853 2.18115C15.4289 2.18115 17.8187 4.57094 17.8187 7.51449Z" stroke="#0633A0" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="flex flex-col">
+    <span class="font-[700] text-[20px] lg:text-[24px]"> لم تجد إجابة لسؤالك؟  </span>
+    <span class="font-[400] text-[#64748B] text-[16px]"> تواصل معنا وسنجيب عليك بكل سرور.  </span>
+</div>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-[20px]">
+    <a href="" class="flex justify-center items-center rounded-[12px] gap-[10px] text-[#0633A0] font-[700] text-[16px] bg-[white] border-1 border-[#0633A0] w-[200px] h-[54px] ">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_52_1038)">
+<path d="M17.0012 2.90756C15.1491 1.03824 12.624 -0.00926463 9.9925 6.17483e-05C4.53375 6.17483e-05 0.085 4.44756 0.08 9.90756C0.08 11.6563 0.5375 13.3576 1.40125 14.8638L0 20.0001L5.255 18.6226C6.70876 19.4137 8.33741 19.8284 9.9925 19.8288H9.9975C15.4575 19.8288 19.905 15.3813 19.91 9.91631C19.9129 7.28585 18.8658 4.76301 17.0012 2.90756ZM9.9925 18.1501C8.51625 18.1506 7.06713 17.7533 5.7975 17.0001L5.4975 16.8201L2.38 17.6376L3.2125 14.5963L3.0175 14.2826C2.19226 12.9705 1.75581 11.4513 1.75875 9.90131C1.75875 5.36881 5.455 1.67131 9.9975 1.67131C12.1833 1.66739 14.2801 2.53629 15.8225 4.08506C17.3703 5.62781 18.2378 7.72476 18.2325 9.91006C18.2275 14.4588 14.5312 18.1501 9.9925 18.1501ZM14.5112 11.9826C14.265 11.8588 13.0487 11.2601 12.82 11.1751C12.5925 11.0938 12.4263 11.0513 12.2638 11.2988C12.0975 11.5451 11.6225 12.1063 11.48 12.2676C11.3375 12.4338 11.19 12.4526 10.9425 12.3301C10.6962 12.2051 9.8975 11.9451 8.9525 11.0988C8.215 10.4426 7.72125 9.63006 7.57375 9.38381C7.43125 9.13631 7.56 9.00381 7.68375 8.88006C7.7925 8.77006 7.93 8.59006 8.05375 8.44756C8.17875 8.30506 8.22 8.20006 8.30125 8.03506C8.3825 7.86756 8.34375 7.72506 8.2825 7.60131C8.22 7.47756 7.72625 6.25631 7.5175 5.76381C7.3175 5.27756 7.11375 5.34506 6.96125 5.33881C6.81875 5.33006 6.6525 5.33006 6.48625 5.33006C6.23245 5.33637 5.99278 5.44827 5.825 5.63881C5.5975 5.88631 4.96125 6.48506 4.96125 7.70631C4.96125 8.92756 5.84875 10.1013 5.97375 10.2676C6.09625 10.4338 7.71625 12.9326 10.2025 14.0076C10.79 14.2638 11.2525 14.4151 11.6138 14.5301C12.2075 14.7201 12.7438 14.6913 13.1713 14.6301C13.6463 14.5576 14.635 14.0301 14.8438 13.4513C15.0487 12.8713 15.0487 12.3763 14.9862 12.2726C14.925 12.1676 14.7587 12.1063 14.5112 11.9826Z" fill="#0633A0"/>
+</g>
+<defs>
+<clipPath id="clip0_52_1038">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+راسلنا على واتساب
+    </a>
+    <a href="" class="flex justify-center items-center shadow-[0px_4px_6px_-4px_#1E3A8A33] rounded-[12px]   shadow-[0px_10px_15px_-3px_#1E3A8A33] gap-[10px] bg-[#0633A0]  w-[183px] h-[54px] text-[white] ">
+تواصل معنا
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.33333 15.8335L2.5 10.0002M2.5 10.0002L8.33333 4.16683M2.5 10.0002H17.5" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+    </a>
+</div>
+  </div>
+</section>
+<!-- newsletter -->
+ <section class="bg-[#F8F9FF] py-[65px] px-[50px]" >
+    <div class="bg-[white] flex flex-wrap justify-around rounded-[24px] shadow-[0px_8px_10px_-6px_#0000001A] shadow-[0px_20px_25px_-5px_#0000001A]">
+
+<div class="flex flex-col  my-[68px]   w-[250px] md:w-[300px] lg:w-[600px] xl:w-[40%] border-l-0   lg:border-l border-l-[#E5E7EB]">
+    <span class="font-[700] text-[20px] lg:text-[36px]">  لنصنع 
+<span class="text-[#FFC400]">معاً</span> نجاحك الرقمي
+ </span>
+<p class="text-[#64748B] font-[400] text-[18px] w-[250px] lg:w-[400px] mt-[10px]">هل لديك مشروع في ذهنك؟ تواصل معنا الآن ونحوّل رؤيتك إلى واقع
+رقمي ناجح.</p>
+</div>
+<div class="flex flex-col justify-center  items-center lg:items-start pb-[50px] " >
+    <span class="font-[700]     text-[20px] lg:text-[24px]"> اشترك في نشرتنا البريدية</span>
+    <span class="text-[#64748B] font-[400] text-[16px] text-center lg:text-right  w-[250px] lg:w-[500px] mt-[20px] ">احصل على نصائح رقمية وأحدث المقالات والعروض مباشرة على بريدك.</span>
+<form action="" class="flex  flex-col-reverse gap-[20px]  lg:flex-row mt-[20px]">
+    <button class="bg-[#0633A0]  w-[90%]   lg:w-[176px] h-[56px]  rounded-[12px]  lg:rounded-tr-xl lg:rounded-br-xl flex  
+    justify-center items-center  gap-[5px] lg:gap-[16px] font-bold text-[16px] text-[white]">
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3112 7.95865C13.6036 7.82345 13.7948 7.53472 13.805 7.21265C13.8151 6.89058 13.6426 6.59035 13.3593 6.43693L1.63264 0.102603C1.33555 -0.057987 0.971623 -0.0278204 0.705027 0.179495C0.43843 0.386811 0.31955 0.73209 0.402011 1.05959L1.48362 5.35342C1.57659 5.72214 1.90277 5.98453 2.28284 5.99634L6.1731 6.11937C6.64283 6.13422 7.01212 6.52764 6.99726 6.99736C6.98241 7.46708 6.589 7.83637 6.11928 7.82152L2.22901 7.69849C1.84895 7.68626 1.50684 7.92751 1.39077 8.28963L0.0408579 12.5066C-0.0623111 12.8281 0.0342553 13.1802 0.28701 13.4041C0.539764 13.628 0.900949 13.6814 1.20768 13.5402L13.3111 7.9595L13.3112 7.95865Z" fill="white"/>
+</svg>
+اشترك الآن
+    </button>
+    <input class="   w-[90%]  lg:w-[335px] h-[56px] bg-[#F9FAFB] rounded-tl-xl rounded-bl-xl  border-1  border-[#E5E7EB] ">
+</form>
+</div>
+    </div>
+ </section>
+<!-- footer -->
+ <section class="bg-[#1E40AF] p-[70px] mt-[100px] gap-[100px] flex flex-col">
     <!-- first -->
     <div class="flex justify-around flex-wrap gap-[50px] lg:gap-[200px] ">
     <!-- first -->
- <div class="flex flex-col">
+ <div class="flex flex-col flex-1">
     <span class="font-bold text-[20px] text-[#FFFFFF]">TOP TECHDZ</span>
     <p class="text-[#9CA3AF] font-[400] text-[14px] w-[290px] mt-[50px]">نساعد الشركات والعلامات التجارية على النمو رقمياً من
 خلال حلول مبتكرة في تصميم المواقع، التسويق
@@ -610,7 +678,7 @@
 <a class="flex items-center justify-center w-[60px] h-[60px]  border-1 border-[rgba(255,255,255,0.2)] rounded-[50%]">
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_54_1215)">
-<path d="M10 1.8C12.67 1.8 12.99 1.81 14.04 1.86C16.75 1.98 18.02 3.27 18.14 5.96C18.19 7.01 18.2 7.33 18.2 10C18.2 12.67 18.19 12.99 18.14 14.04C18.02 16.73 16.75 18.02 14.04 18.14C12.99 18.19 12.67 18.2 10 18.2C7.33 18.2 7.01 18.19 5.96 18.14C3.25 18.02 1.98 16.73 1.86 14.04C1.81 12.99 1.8 12.67 1.8 10C1.8 7.33 1.81 7.01 1.86 5.96C1.98 3.27 3.25 1.98 5.96 1.86C7.01 1.81 7.33 1.8 10 1.8ZM10 0C7.28 0 6.94 .01 5.88 .06C2.25 .23 .23 2.24 .06 5.88C.01 6.94 0 7.28 0 10C0 12.72 .01 13.06 .06 14.12C.23 17.76 2.24 19.77 5.88 19.94C6.94 19.99 7.28 20 10 20C12.72 20 13.06 19.99 14.12 19.94C17.75 19.77 19.77 17.76 19.94 14.12C19.99 13.06 20 12.72 20 10C20 7.28 19.99 6.94 19.94 5.88C19.77 2.25 17.76 .23 14.12 .06C13.06 .01 12.72 0 10 0ZM10 4.86C7.16 4.86 4.86 7.16 4.86 10C4.86 12.84 7.16 15.14 10 15.14C12.84 15.14 15.14 12.84 15.14 10C15.14 7.16 12.84 4.86 10 4.86ZM10 13.33C8.16 13.33 6.67 11.84 6.67 10C6.67 8.16 8.16 6.67 10 6.67C11.84 6.67 13.33 8.16 13.33 10C13.33 11.84 11.84 13.33 10 13.33ZM15.34 3.46C14.68 3.46 14.14 4 14.14 4.66C14.14 5.32 14.68 5.86 15.34 5.86C16 5.86 16.54 5.32 16.54 4.66C16.54 4 16 3.46 15.34 3.46Z" fill="white"/>
+<path d="M10 1.80236C12.67 1.80236 12.9867 1.81236 14.0417 1.86069C16.7517 1.98402 18.0175 3.26986 18.1408 5.95986C18.1892 7.01402 18.1983 7.33069 18.1983 10.0007C18.1983 12.6707 18.1892 12.9882 18.1408 14.0424C18.0167 16.7299 16.7542 18.0182 14.0417 18.1415C12.9867 18.1899 12.6717 18.1999 10 18.1999C7.32833 18.1999 7.01333 18.1899 5.95917 18.1415C3.2425 18.0174 1.98333 16.7257 1.86 14.0415C1.81167 12.9874 1.80167 12.6715 1.80167 10.0007C1.80167 7.32986 1.81167 7.01402 1.86 5.95986C1.98417 3.27069 3.24667 1.98402 5.95917 1.86069C7.01417 1.81319 7.33 1.80319 10 1.80319V1.80236ZM10 -0.000143229C7.28417 -0.000143229 6.94417 0.0115234 5.8775 0.0598568C2.24583 0.226523 0.2275 2.24152 0.0608333 5.87652C0.0116667 6.94402 0 7.28402 0 9.99986Cnan nan 0.0116667 13.0557 0.06 14.1224C0.226667 17.7365 2.24333 19.7724 5.87667 19.939C6.94417 19.9874 7.28417 19.999 10 19.999Cnan nan 13.0558 19.9874 14.1225 19.939C17.7508 19.7724 19.7742 17.7574 19.9383 14.1224C19.9875 13.0557 19.9992 12.7149 19.9992 9.99902Cnan nan 19.9875 6.94319 19.9392 5.87652C19.7758 2.24819 17.7583 0.226523 14.1233 0.0598568C13.0558 0.0106901 12.715 -0.000976563 9.99917 -0.000976563L10 -0.000143229ZM10 4.86486C7.16417 4.86486 4.865 7.16402 4.865 9.99986Cnan nan 7.16417 15.1357 10 15.1357Cnan nan 15.135 12.8365 15.135 9.99986C15.135 7.16402 12.8358 4.86486 10 4.86486ZM10 13.3332C8.15917 13.3332 6.66667 11.8415 6.66667 9.99986C6.66667 8.15902 8.15917 6.66652 10 6.66652Cnan nan 13.3333 8.15902 13.3333 9.99986C13.3333 11.8415 11.8408 13.3332 10 13.3332ZM15.3383 3.46236C14.675 3.46236 14.1375 3.99986 14.1375 4.66236Cnan nan 14.675 5.86236 15.3383 5.86236C16.0008 5.86236 16.5375 5.32486 16.5375 4.66236Cnan nan 16.0008 3.46236 15.3383 3.46236Z" fill="white"/>
 </g>
 <defs>
 <clipPath id="clip0_54_1215">
@@ -649,58 +717,58 @@
 </div>
  </div>
  <!-- second -->
-    <div class="flex flex-col justify-start">
-<span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start   lg:justify-center  items-start  lg:items-center gap-[12px]">
+    <div class="flex flex-col justify-start flex-1">
+<span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start   lg:justify-start  items-start  lg:items-center gap-[12px]">
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="12" height="12" rx="6" fill="#FFC400"/>
 </svg>
     روابط سريعة
 </span>
-    <a href="#top" class="flex justify-start items-center mt-[35px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[35px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 الرئيسية
     </a>
-    <a href="#services" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 الخدمات
     </a>
-    <a href="#process" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 الباقات
     </a>
-    <a href="#portfolio" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 المدونة
     </a>
 
-    <a href="#benefits" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 اراء العملاء
     </a>
-    <a href="#contact" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 تواصل معنا
     </a>
-    <a href="#faq" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]">
+    <a href="" class="flex justify-start items-center mt-[10px] gap-[12px] font-[400] text-[#9CA3AF] text-[14px]"> 
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 9.5L4 6L7.5 2.5" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>الاسئلة الشائعة
     </a>
     </div>
     <!-- thrid -->
-       <div class="flex flex-col">
+       <div class="flex flex-col flex-1">
 <span class="flex font-bold text-[20px] text-[#FFFFFF]  justify-start items-center gap-[12px]">
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="12" height="12" rx="6" fill="#FFC400"/>
@@ -745,115 +813,12 @@
 جميع الحقوق محفوظة © 2026 </span>
 
 <div class="flex gap-[20px]">
-    <a href="#top" class="font-[400] text-[14px] text-[white] flex  pl-[20px] border-l-1 border-l-[white]">سياسة الخصوصية</a>
-    <a href="#top" class="font-[400] text-[14px] text-[white]">الشروط والأحكام </a>
+    <a href="" class="font-[400] text-[14px] text-[white] flex  pl-[20px] border-l-1 border-l-[white]">سياسة الخصوصية</a>
+    <a href="" class="font-[400] text-[14px] text-[white]">الشروط والأحكام </a>
 </div>
 </div>
 
  </section>
-
-  <script>
-    const faqAnswers = [
-      'نعم، نصمم تجربة متجاوبة بعناية لتعمل بوضوح على الهاتف والجهاز اللوحي وشاشات سطح المكتب.',
-      'نعم، نستخدم Figma لتصميم الواجهات، بناء نظام التصميم، وإعداد نموذج تفاعلي قابل للمراجعة.',
-      'بالتأكيد. تتضمن كل مرحلة جولات مراجعة واضحة لضمان توافق النتيجة مع أهداف المشروع.',
-      'تعتمد المدة على حجم المنتج، وعادة تبدأ المشاريع المتوسطة من أسبوعين إلى أربعة أسابيع.',
-      'لا. يمكننا البدء بهوية موجودة أو مساعدتك في تحديد الأسلوب البصري المناسب قبل تصميم الواجهات.',
-      'نعم، نسلم ملفات منظمة ومواصفات واضحة، وننسق مع فريق التطوير لضمان تنفيذ التصميم بدقة.'
-    ];
-
-    document.querySelectorAll('[data-faq-item]').forEach((item, index) => {
-      const answer = document.createElement('span');
-      const answerId = `faq-answer-${index + 1}`;
-      answer.id = answerId;
-      answer.className = 'col-span-2 grid max-h-0 overflow-hidden text-[14px] font-[400] leading-7 text-[#667085] opacity-0 transition-all duration-300';
-      answer.textContent = faqAnswers[index];
-      item.appendChild(answer);
-      item.setAttribute('aria-expanded', 'false');
-      item.setAttribute('aria-controls', answerId);
-
-      item.addEventListener('click', () => {
-        const icon = item.querySelector('[data-faq-icon]');
-        const isOpen = item.getAttribute('aria-expanded') === 'true';
-        item.setAttribute('aria-expanded', String(!isOpen));
-        icon.textContent = isOpen ? '+' : '−';
-        answer.classList.toggle('max-h-0', isOpen);
-        answer.classList.toggle('max-h-32', !isOpen);
-        answer.classList.toggle('mt-0', isOpen);
-        answer.classList.toggle('mt-3', !isOpen);
-        answer.classList.toggle('opacity-0', isOpen);
-        answer.classList.toggle('opacity-100', !isOpen);
-      });
-    });
-
-    const newsletterForm = document.getElementById('newsletter-form');
-    newsletterForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const button = newsletterForm.querySelector('button');
-      button.textContent = 'تم الاشتراك بنجاح ✓';
-      button.classList.remove('bg-[#0633A0]', 'hover:bg-[#052978]');
-      button.classList.add('bg-emerald-600');
-      newsletterForm.reset();
-    });
-
-    const revealTargets = document.querySelectorAll('main section > div, main article');
-    revealTargets.forEach((element) => {
-      element.classList.add('opacity-0', 'translate-y-6', 'transition-[opacity,transform]', 'duration-[650ms]');
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('opacity-0', 'translate-y-6');
-          entry.target.classList.add('opacity-100', 'translate-y-0');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    revealTargets.forEach((element) => observer.observe(element));
-  </script>
-
-  <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const menuClose = document.getElementById('menu-close');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const overlay = document.getElementById('menu-overlay');
-  const bar1 = document.getElementById('bar1');
-  const bar2 = document.getElementById('bar2');
-  const bar3 = document.getElementById('bar3');
-
-  function openMenu() {
-    mobileMenu.classList.remove('translate-x-full');
-    overlay.classList.remove('opacity-0', 'pointer-events-none');
-    overlay.classList.add('opacity-100');
-    mobileMenu.setAttribute('aria-hidden', 'false');
-    menuToggle.setAttribute('aria-expanded', 'true');
-    bar1.style.transform = 'translateY(8px) rotate(45deg)';
-    bar2.style.opacity = '0';
-    bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    mobileMenu.classList.add('translate-x-full');
-    overlay.classList.add('opacity-0', 'pointer-events-none');
-    overlay.classList.remove('opacity-100');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    menuToggle.setAttribute('aria-expanded', 'false');
-    bar1.style.transform = 'translateY(0) rotate(0deg)';
-    bar2.style.opacity = '1';
-    bar3.style.transform = 'translateY(0) rotate(0deg)';
-    document.body.style.overflow = '';
-  }
-
-  menuToggle.addEventListener('click', openMenu);
-  menuClose.addEventListener('click', closeMenu);
-  overlay.addEventListener('click', closeMenu);
-  mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
-  });
-</script>
-</body>
+<script src="app.js"></script>
+</body> 
 </html>
